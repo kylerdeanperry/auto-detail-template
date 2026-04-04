@@ -4,10 +4,12 @@ import { z } from "zod"
 import { clientConfig } from "@/config/client.config"
 import { createClient } from "@supabase/supabase-js"
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+}
 
 const systemPrompt = `You are a friendly booking assistant for ${clientConfig.business.name}. ${clientConfig.business.about}
 
@@ -32,7 +34,7 @@ export async function POST(req: Request) {
   // Save user message to conversations (FR33)
   const lastMessage = messages[messages.length - 1]
   if (sessionId && lastMessage?.role === "user") {
-    await supabase.from("conversations").insert({
+    await getSupabase().from("conversations").insert({
       lead_id: leadId || null,
       session_id: sessionId,
       role: "user",
@@ -61,7 +63,7 @@ export async function POST(req: Request) {
           notes: z.string().optional().describe("Any additional notes from the customer"),
         }),
         execute: async (input) => {
-          const { error } = await supabase.from("bookings").insert({
+          const { error } = await getSupabase().from("bookings").insert({
             lead_id: leadId || null,
             customer_name: input.customerName,
             customer_phone: input.customerPhone,
@@ -87,7 +89,7 @@ export async function POST(req: Request) {
     onFinish: async ({ text }) => {
       // Save assistant response to conversations (FR33)
       if (sessionId && text) {
-        await supabase.from("conversations").insert({
+        await getSupabase().from("conversations").insert({
           lead_id: leadId || null,
           session_id: sessionId,
           role: "assistant",
