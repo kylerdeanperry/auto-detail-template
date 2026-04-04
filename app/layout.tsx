@@ -14,9 +14,15 @@ export const metadata: Metadata = {
   description: clientConfig.business.about,
   keywords: ['auto detailing', 'mobile detailing', 'car wash', 'ceramic coating', clientConfig.business.serviceArea],
   openGraph: {
-    title: clientConfig.business.name,
-    description: clientConfig.business.tagline,
+    title: `${clientConfig.business.name} | ${clientConfig.business.tagline}`,
+    description: clientConfig.business.about,
     type: 'website',
+    siteName: clientConfig.business.name,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${clientConfig.business.name} | ${clientConfig.business.tagline}`,
+    description: clientConfig.business.about,
   },
 }
 
