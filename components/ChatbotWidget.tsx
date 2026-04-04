@@ -1,83 +1,54 @@
-"use client";
+"use client"
 
-import { useState, useRef, useEffect } from "react";
-import { clientConfig } from "@/config/client.config";
-
-interface Message {
-  id: string;
-  text: string;
-  sender: "bot" | "user";
-}
-
-const quickReplies = ["Get a quote", "Check availability", "Book now"];
+import { useState, useRef, useEffect, useId } from "react"
+import { useChat } from "@ai-sdk/react"
+import { DefaultChatTransport, UIMessage } from "ai"
+import { clientConfig } from "@/config/client.config"
 
 export function ChatbotWidget() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: "greeting",
-      text: clientConfig.chatbot.greeting,
-      sender: "bot",
-    },
-  ]);
-  const [inputValue, setInputValue] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [showPulse, setShowPulse] = useState(true);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useState(false)
+  const [input, setInput] = useState("")
+  const [showPulse, setShowPulse] = useState(true)
+  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const sessionId = useId()
+
+  const { messages, sendMessage, status } = useChat({
+    transport: new DefaultChatTransport({
+      api: "/api/chat",
+      body: {
+        sessionId,
+        leadId: clientConfig.meta.clientId || null,
+      },
+    }),
+    messages: [
+      {
+        id: "greeting",
+        role: "assistant" as const,
+        parts: [{ type: "text", text: clientConfig.chatbot.greeting }],
+      },
+    ] as UIMessage[],
+  })
+
+  const isLoading = status === "streaming" || status === "submitted"
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }, [messages])
 
-  // Stop pulse after animation completes (3 iterations x 2s = 6s)
   useEffect(() => {
-    const timer = setTimeout(() => setShowPulse(false), 6000);
-    return () => clearTimeout(timer);
-  }, []);
+    const timer = setTimeout(() => setShowPulse(false), 6000)
+    return () => clearTimeout(timer)
+  }, [])
 
-  const sendMessage = async (text: string) => {
-    if (!text.trim() || isLoading) return;
+  const handleSend = (text: string) => {
+    if (!text.trim() || isLoading) return
+    sendMessage({ text: text.trim() })
+    setInput("")
+  }
 
-    const userMessage: Message = {
-      id: Date.now().toString(),
-      text: text.trim(),
-      sender: "user",
-    };
+  if (!clientConfig.chatbot.enabled) return null
 
-    setMessages((prev) => [...prev, userMessage]);
-    setInputValue("");
-    setIsLoading(true);
-
-    try {
-      const response = await fetch("/api/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: [...messages, userMessage].map(m => ({ role: m.sender === "user" ? "user" : "assistant", content: m.text })) }),
-      });
-      const data = await response.json();
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: (Date.now() + 1).toString(),
-          text: data.content || data.reply || "Thanks for your message!",
-          sender: "bot",
-        },
-      ]);
-    } catch {
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: (Date.now() + 1).toString(),
-          text: "Sorry, I'm having trouble connecting. Please call us directly!",
-          sender: "bot",
-        },
-      ]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  if (!clientConfig.chatbot.enabled) return null;
+  const quickReplies = ["Get a quote", "Check availability", "Book now"]
 
   return (
     <>
@@ -115,102 +86,64 @@ export function ChatbotWidget() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <span
-              style={{
-                width: 8,
-                height: 8,
-                borderRadius: "50%",
-                background: "#22C55E",
-              }}
-            />
+            <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#22C55E" }} />
             <div>
-              <span
-                style={{
-                  fontSize: 13,
-                  fontWeight: 500,
-                  color: "#fff",
-                }}
-              >
+              <span style={{ fontSize: 13, fontWeight: 500, color: "#fff" }}>
                 {clientConfig.business.name}
               </span>
-              <span
-                style={{
-                  display: "block",
-                  fontSize: 10,
-                  color: "rgba(34,197,94,0.8)",
-                }}
-              >
+              <span style={{ display: "block", fontSize: 10, color: "rgba(34,197,94,0.8)" }}>
                 Online
               </span>
             </div>
           </div>
           <button
             onClick={() => setIsOpen(false)}
-            style={{
-              background: "none",
-              border: "none",
-              color: "#fff",
-              fontSize: 18,
-              cursor: "pointer",
-              padding: 0,
-              lineHeight: 1,
-            }}
+            style={{ background: "none", border: "none", color: "#fff", fontSize: 18, cursor: "pointer", padding: 0, lineHeight: 1 }}
           >
             &times;
           </button>
         </div>
 
         {/* Messages */}
-        <div
-          style={{
-            flex: 1,
-            overflowY: "auto",
-            padding: 16,
-          }}
-        >
-          {messages.map((message) => (
-            <div
-              key={message.id}
-              style={{
-                display: "flex",
-                justifyContent:
-                  message.sender === "user" ? "flex-end" : "flex-start",
-                marginBottom: 8,
-              }}
-            >
+        <div style={{ flex: 1, overflowY: "auto", padding: 16 }}>
+          {messages.map((message) => {
+            const text = message.parts
+              .filter((p): p is { type: "text"; text: string } => p.type === "text")
+              .map((p) => p.text)
+              .join("")
+
+            if (!text) return null
+
+            return (
               <div
+                key={message.id}
                 style={{
-                  maxWidth: "85%",
-                  padding: "10px 14px",
-                  fontSize: 13,
-                  borderRadius:
-                    message.sender === "user"
-                      ? "12px 12px 4px 12px"
-                      : "12px 12px 12px 4px",
-                  background:
-                    message.sender === "user"
-                      ? clientConfig.branding.accentColor
-                      : "#F3F4F6",
-                  color: message.sender === "user" ? "#fff" : "#333",
+                  display: "flex",
+                  justifyContent: message.role === "user" ? "flex-end" : "flex-start",
+                  marginBottom: 8,
                 }}
               >
-                {message.text}
+                <div
+                  style={{
+                    maxWidth: "85%",
+                    padding: "10px 14px",
+                    fontSize: 13,
+                    borderRadius: message.role === "user" ? "12px 12px 4px 12px" : "12px 12px 12px 4px",
+                    background: message.role === "user" ? clientConfig.branding.accentColor : "#F3F4F6",
+                    color: message.role === "user" ? "#fff" : "#333",
+                    whiteSpace: "pre-wrap",
+                  }}
+                >
+                  {text}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
 
           {/* Typing indicator */}
           {isLoading && (
             <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: 8 }}>
-              <div
-                style={{
-                  background: "#F3F4F6",
-                  borderRadius: "12px 12px 12px 4px",
-                  padding: "10px 14px",
-                  display: "flex",
-                  gap: 4,
-                }}
-              >
+              <div style={{ background: "#F3F4F6", borderRadius: "12px 12px 12px 4px", padding: "10px 14px", display: "flex", gap: 4 }}>
                 <span className="typing-dot" style={{ width: 6, height: 6, borderRadius: "50%", background: "#999", animationDelay: "0ms" }} />
                 <span className="typing-dot" style={{ width: 6, height: 6, borderRadius: "50%", background: "#999", animationDelay: "150ms" }} />
                 <span className="typing-dot" style={{ width: 6, height: 6, borderRadius: "50%", background: "#999", animationDelay: "300ms" }} />
@@ -218,20 +151,13 @@ export function ChatbotWidget() {
             </div>
           )}
 
-          {/* Quick replies - show only when just the greeting exists */}
-          {messages.length === 1 && !isLoading && (
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 6,
-                marginTop: 8,
-              }}
-            >
+          {/* Quick replies */}
+          {messages.length <= 1 && !isLoading && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 8 }}>
               {quickReplies.map((reply) => (
                 <button
                   key={reply}
-                  onClick={() => sendMessage(reply)}
+                  onClick={() => handleSend(reply)}
                   style={{
                     background: "#fff",
                     border: "0.5px solid #e0e0e0",
@@ -242,12 +168,8 @@ export function ChatbotWidget() {
                     color: "#333",
                     transition: "background 150ms",
                   }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.background = "#F3F4F6")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.background = "#fff")
-                  }
+                  onMouseEnter={(e) => (e.currentTarget.style.background = "#F3F4F6")}
+                  onMouseLeave={(e) => (e.currentTarget.style.background = "#fff")}
                 >
                   {reply}
                 </button>
@@ -258,100 +180,58 @@ export function ChatbotWidget() {
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Input area */}
-        <div
-          style={{
-            borderTop: "0.5px solid #e8e8e8",
-            padding: "12px 16px",
-            display: "flex",
-            gap: 8,
-            alignItems: "center",
-          }}
-        >
+        {/* Input */}
+        <div style={{ borderTop: "0.5px solid #e8e8e8", padding: "12px 16px", display: "flex", gap: 8, alignItems: "center" }}>
           <input
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
-                e.preventDefault();
-                sendMessage(inputValue);
+                e.preventDefault()
+                handleSend(input)
               }
             }}
             placeholder="Type a message..."
             disabled={isLoading}
-            style={{
-              flex: 1,
-              border: "none",
-              outline: "none",
-              fontSize: 13,
-              background: "transparent",
-            }}
+            style={{ flex: 1, border: "none", outline: "none", fontSize: 13, background: "transparent" }}
           />
           <button
-            onClick={() => sendMessage(inputValue)}
-            disabled={!inputValue.trim() || isLoading}
+            onClick={() => handleSend(input)}
+            disabled={!input.trim() || isLoading}
             style={{
-              width: 32,
-              height: 32,
-              borderRadius: "50%",
+              width: 32, height: 32, borderRadius: "50%",
               background: clientConfig.branding.accentColor,
-              border: "none",
-              cursor: "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              border: "none", cursor: "pointer",
+              display: "flex", alignItems: "center", justifyContent: "center",
               flexShrink: 0,
-              opacity: !inputValue.trim() || isLoading ? 0.5 : 1,
+              opacity: !input.trim() || isLoading ? 0.5 : 1,
             }}
           >
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-            >
-              <path
-                d="M12.5 7L1.5 1.5L3.5 7M12.5 7L1.5 12.5L3.5 7M12.5 7H3.5"
-                stroke="#fff"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M12.5 7L1.5 1.5L3.5 7M12.5 7L1.5 12.5L3.5 7M12.5 7H3.5" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
       </div>
 
-      {/* Floating bubble button */}
+      {/* Floating bubble */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close chat" : "Open chat"}
         style={{
-          position: "fixed",
-          bottom: 24,
-          right: 24,
-          width: 52,
-          height: 52,
-          borderRadius: "50%",
+          position: "fixed", bottom: 24, right: 24,
+          width: 52, height: 52, borderRadius: "50%",
           background: clientConfig.chatbot.accentColor,
-          border: "none",
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          zIndex: 50,
-          boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
+          border: "none", cursor: "pointer",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          zIndex: 50, boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
         }}
       >
-        {/* Pulse ring */}
         {showPulse && !isOpen && (
           <span
             className="chatbot-pulse"
             style={{
-              position: "absolute",
-              width: 52,
-              height: 52,
-              borderRadius: "50%",
+              position: "absolute", width: 52, height: 52, borderRadius: "50%",
               border: `2px solid ${clientConfig.chatbot.accentColor}`,
               animation: "chatbot-pulse-ring 2s ease-out 3",
             }}
@@ -363,38 +243,22 @@ export function ChatbotWidget() {
           </svg>
         ) : (
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"
-              stroke="#fff"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         )}
       </button>
 
       <style>{`
         @keyframes chatbot-pulse-ring {
-          0% {
-            width: 52px;
-            height: 52px;
-            opacity: 1;
-          }
-          100% {
-            width: 72px;
-            height: 72px;
-            opacity: 0;
-          }
+          0% { width: 52px; height: 52px; opacity: 1; }
+          100% { width: 72px; height: 72px; opacity: 0; }
         }
         @keyframes typing-bounce {
           0%, 80%, 100% { transform: translateY(0); }
           40% { transform: translateY(-4px); }
         }
-        .typing-dot {
-          animation: typing-bounce 1.2s infinite;
-        }
+        .typing-dot { animation: typing-bounce 1.2s infinite; }
       `}</style>
     </>
-  );
+  )
 }
