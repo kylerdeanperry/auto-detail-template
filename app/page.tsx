@@ -5,6 +5,7 @@ import { Services } from "@/components/sections/Services";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { About } from "@/components/sections/About";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { BlogPreview } from "@/components/sections/BlogPreview";
 import { BookingCTA } from "@/components/sections/BookingCTA";
 import { Footer } from "@/components/sections/Footer";
 import { ChatbotWidget } from "@/components/ChatbotWidget";
@@ -58,6 +59,7 @@ export default function Home() {
       <HowItWorks />
       <About />
       <Testimonials />
+      <BlogPreview />
       <BookingCTA />
       <Footer />
       <ChatbotWidget />
