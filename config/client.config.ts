@@ -90,6 +90,7 @@ export const clientConfig = {
     greeting:
       "Hi! I am Mike's booking assistant. Want to schedule a detail or get a quick quote?",
     accentColor: "#C8102E",
+    customInstructions: "",
   },
   meta: {
     industry: "detailing",

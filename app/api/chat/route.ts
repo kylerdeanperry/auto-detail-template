@@ -26,7 +26,7 @@ Your job:
 3. Be conversational and helpful. Collect booking details naturally, one or two at a time — don't ask for everything at once.
 4. When you have all required booking details (name, phone, service, date/time), use the submitBooking tool to save the booking.
 5. Keep responses concise — 1-3 sentences max. This is a chat widget, not an email.
-6. If asked about something unrelated to ${clientConfig.business.name}, politely redirect to how you can help with their services.`
+6. If asked about something unrelated to ${clientConfig.business.name}, politely redirect to how you can help with their services.${clientConfig.chatbot.customInstructions ? `\n\nAdditional instructions:\n${clientConfig.chatbot.customInstructions}` : ""}`
 
 export async function POST(req: Request) {
   const { messages, sessionId, leadId } = await req.json()
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
   }
 
   const result = streamText({
-    model: anthropic("claude-sonnet-4.5"),
+    model: anthropic("claude-haiku-4-5-20251001"),
     system: systemPrompt,
     messages,
     maxOutputTokens: 300,
