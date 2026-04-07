@@ -2,6 +2,7 @@ import { streamText, tool } from "ai"
 import { anthropic } from "@ai-sdk/anthropic"
 import { z } from "zod"
 import { clientConfig } from "@/config/client.config"
+import { buildSystemPrompt } from "@/lib/buildSystemPrompt"
 import { createClient } from "@supabase/supabase-js"
 
 function getSupabase() {
@@ -11,22 +12,7 @@ function getSupabase() {
   )
 }
 
-const systemPrompt = `You are a friendly booking assistant for ${clientConfig.business.name}. ${clientConfig.business.about}
-
-Service area: ${clientConfig.business.serviceArea}
-Phone: ${clientConfig.business.phone}
-Email: ${clientConfig.business.email}
-
-Available services:
-${clientConfig.services.map((s) => `- ${s.name}: ${s.price} (${s.duration}) — ${s.description}`).join("\n")}
-
-Your job:
-1. Answer questions about the business and its services using ONLY the information above. Do not make up details.
-2. Help visitors book a service. To book, you need: customer name, phone number, desired service, and preferred date/time. Email is optional.
-3. Be conversational and helpful. Collect booking details naturally, one or two at a time — don't ask for everything at once.
-4. When you have all required booking details (name, phone, service, date/time), use the submitBooking tool to save the booking.
-5. Keep responses concise — 1-3 sentences max. This is a chat widget, not an email.
-6. If asked about something unrelated to ${clientConfig.business.name}, politely redirect to how you can help with their services.${clientConfig.chatbot.customInstructions ? `\n\nAdditional instructions:\n${clientConfig.chatbot.customInstructions}` : ""}`
+const systemPrompt = buildSystemPrompt(clientConfig)
 
 export async function POST(req: Request) {
   const { messages, sessionId, leadId } = await req.json()
