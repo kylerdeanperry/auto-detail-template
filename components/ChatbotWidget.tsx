@@ -48,7 +48,13 @@ export function ChatbotWidget() {
 
   if (!clientConfig.chatbot.enabled) return null
 
-  const quickReplies = ["Get a quote", "Check availability", "Book now"]
+  const quickRepliesByGoal: Record<string, string[]> = {
+    instant_quote: ["Get a quote", "What services do you offer?", "Book now"],
+    book_service: ["Book a service", "What's available?", "Check availability"],
+    book_consultation: ["Schedule a consultation", "What do you offer?", "Get an estimate"],
+    qualify_handoff: ["I need help now", "What services do you offer?", "Talk to someone"],
+  }
+  const quickReplies = quickRepliesByGoal[clientConfig.chatbot.closingGoal] || quickRepliesByGoal.book_service
 
   return (
     <>
