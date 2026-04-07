@@ -90,6 +90,15 @@ export const clientConfig = {
     greeting:
       "Hi! I am Mike's booking assistant. Want to schedule a detail or get a quick quote?",
     accentColor: "#C8102E",
+    closingGoal: "instant_quote" as const,
+    tone: "friendly_casual" as const,
+    quoteStyle: "range_from_services" as const,
+    handoffMethod: "email" as const,
+    handoffContact: "",
+    qualifyingQuestions: [
+      "What type of vehicle do you have?",
+      "Any specific concerns (scratches, stains, pet hair)?",
+    ],
     customInstructions: "",
   },
   meta: {
