@@ -1,0 +1,54 @@
+{
+  "industrySlug": "roofing",
+  "displayName": "Elite Roofing",
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1605450099279-533bd3ce379a?w=1600&q=80&auto=format&fit=crop",
+    "imageAlt": "Premium architectural shingle roof on a modern home",
+    "badge": "We are Elite Roofing",
+    "headline": "Next Level Roofs.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "We are Elite Roofing",
+    "body": "We're a modern roofing company. Our premium installation process transforms any home into an energy-efficient, weather-ready fortress — architectural shingles, metal, and slate, all backed by a 30-year transferable warranty."
+  },
+  "personas": [
+    { "label": "for homeowners", "kicker": "Elite Roofing", "href": "/services" },
+    { "label": "for architects", "kicker": "Elite Roofing", "href": "/services" },
+    { "label": "for commercial", "kicker": "Elite Roofing", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": true,
+    "headline": "Find out how much a new roof costs.",
+    "body": "Get an instant estimate based on your home's square footage, pitch, and material preference.",
+    "phoneMockImage": "https://images.unsplash.com/photo-1514947864179-c3b63c910b69?w=480&q=80&auto=format&fit=crop"
+  },
+  "zPatternRows": [
+    {
+      "label": "Premium Materials",
+      "headline": "The right material for every roof.",
+      "body": "From architectural shingles to standing-seam metal and natural slate. We install what lasts — matched to your home's style, climate, and budget.",
+      "image": "https://images.unsplash.com/photo-1635424709845-3a85ad5e1f5e?w=1600&q=80&auto=format&fit=crop",
+      "cta": { "label": "See services", "href": "/services" }
+    },
+    {
+      "label": "Certified Crews",
+      "headline": "Factory-trained, insured, guaranteed.",
+      "body": "Every crew is certified by the manufacturers whose materials we install — GAF Master Elite, Owens Corning Platinum Preferred. Workmanship warranty stays with your home if you sell.",
+      "image": "https://images.unsplash.com/photo-1502473379243-ba6449c3b6c4?w=1600&q=80&auto=format&fit=crop"
+    }
+  ],
+  "portfolio": [
+    { "image": "https://images.unsplash.com/photo-1654865405022-29e931513edb?w=1200&q=80&auto=format&fit=crop", "caption": "Architectural shingle — 4000 sqft" },
+    { "image": "https://images.unsplash.com/photo-1634853982486-c06f0e17940f?w=1200&q=80&auto=format&fit=crop", "caption": "Standing-seam metal install" },
+    { "image": "https://images.unsplash.com/photo-1577398303842-476c0eece92c?w=1200&q=80&auto=format&fit=crop", "caption": "Storm damage insurance claim" },
+    { "image": "https://images.unsplash.com/photo-1604062215216-f417b2778726?w=1200&q=80&auto=format&fit=crop", "caption": "Commercial flat roof" },
+    { "image": "https://images.unsplash.com/photo-1575380585708-681561f22744?w=1200&q=80&auto=format&fit=crop", "caption": "Natural slate replacement" },
+    { "image": "https://images.unsplash.com/photo-1744975748338-d226c7535d49?w=1200&q=80&auto=format&fit=crop", "caption": "Full tear-off + re-deck" }
+  ],
+  "footerCta": {
+    "headline": "Configure your roof.",
+    "subhead": "Get in touch for an initial consultation and estimate.",
+    "cta": { "label": "Explore", "href": "/contact" }
+  }
+}
