@@ -1,68 +1,24 @@
-import { Navbar } from "@/components/sections/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { TrustBar } from "@/components/sections/TrustBar";
-import { Services } from "@/components/sections/Services";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { About } from "@/components/sections/About";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { BlogPreview } from "@/components/sections/BlogPreview";
-import { BookingCTA } from "@/components/sections/BookingCTA";
-import { Footer } from "@/components/sections/Footer";
-import { ChatbotWidget } from "@/components/ChatbotWidget";
-import { clientConfig } from "@/config/client.config";
+import { StickyNav } from "@/components/layout/StickyNav"
+import { SplitHero } from "@/components/hero/SplitHero"
+import { IntroBand } from "@/components/hero/IntroBand"
+import { PersonaSelector } from "@/components/personas/PersonaSelector"
+import { ConfiguratorTeaser } from "@/components/configurator/ConfiguratorTeaser"
+import { ZPatternRow } from "@/components/services/ZPatternRow"
+import { Footer } from "@/components/layout/Footer"
+import { config } from "@/lib/config"
 
-function LocalBusinessJsonLd() {
-  const c = clientConfig;
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: c.business.name,
-    description: c.business.about,
-    telephone: c.business.phone,
-    email: c.business.email,
-    areaServed: c.business.serviceArea,
-    foundingDate: c.business.founded,
-    priceRange: "$$",
-    makesOffer: c.services.map((s) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: s.name,
-        description: s.description,
-      },
-      price: s.price.replace("$", ""),
-      priceCurrency: "USD",
-    })),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: String(c.testimonials.length),
-    },
-  };
-
+export default function HomePage() {
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
-}
-
-export default function Home() {
-  return (
-    <main>
-      <LocalBusinessJsonLd />
-      <Navbar />
-      <Hero />
-      <TrustBar />
-      <Services />
-      <HowItWorks />
-      <About />
-      <Testimonials />
-      <BlogPreview />
-      <BookingCTA />
+    <>
+      <StickyNav />
+      <SplitHero variant="home" />
+      <IntroBand />
+      <PersonaSelector />
+      <ConfiguratorTeaser />
+      {config.visual.zPatternRows.map((row, i) => (
+        <ZPatternRow key={i} row={row} alternating={(i % 2) as 0 | 1} />
+      ))}
       <Footer />
-      <ChatbotWidget />
-    </main>
-  );
+    </>
+  )
 }
