@@ -128,13 +128,18 @@ export function SplitHero({
               ) : null}
             </div>
 
-            {/* Trust strip — minimalist certifications */}
+            {/* Trust strip — minimalist certifications, per-industry from visual-config */}
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-[0.2em] text-paper/55">
-              <span>Licensed · Bonded · Insured</span>
-              <span className="h-3 w-px bg-paper/25" />
-              <span>EPA Lead Safe</span>
-              <span className="h-3 w-px bg-paper/25" />
-              <span>5-Year Labor Warranty</span>
+              {(config.visual.trustStrip ?? ["Licensed · Bonded · Insured"]).map(
+                (item, i, arr) => (
+                  <span key={i} className="flex items-center gap-x-5">
+                    <span>{item}</span>
+                    {i < arr.length - 1 ? (
+                      <span className="h-3 w-px bg-paper/25" aria-hidden />
+                    ) : null}
+                  </span>
+                ),
+              )}
             </div>
           </div>
         ) : null}

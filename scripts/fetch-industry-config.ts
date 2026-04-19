@@ -66,6 +66,23 @@ const clientConfigSchema = z.object({
 const visualConfigSchema = z.object({
   industrySlug: z.enum(["hvac", "roofing", "painting"]),
   displayName: z.string(),
+  theme: z
+    .object({
+      paper: z.string(),
+      paperWarm: z.string(),
+      ink: z.string(),
+      inkSoft: z.string(),
+      accent: z.string(),
+      accentDeep: z.string(),
+      secondary: z.string(),
+      stone: z.string(),
+      muted: z.string(),
+    })
+    .optional(),
+  trustStrip: z.array(z.string()).optional(),
+  trustBand: z
+    .array(z.object({ label: z.string(), sub: z.string() }))
+    .optional(),
   hero: z.object({
     image: z.string(),
     imageAlt: z.string(),

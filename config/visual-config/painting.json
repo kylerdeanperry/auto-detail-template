@@ -1,6 +1,17 @@
 {
   "industrySlug": "painting",
   "displayName": "Elite Painting",
+  "trustStrip": [
+    "Licensed · Bonded · Insured",
+    "EPA Lead Safe",
+    "5-Year Labor Warranty"
+  ],
+  "trustBand": [
+    { "label": "Licensed · Bonded · Insured", "sub": "Washington State" },
+    { "label": "EPA Lead Safe", "sub": "Renovation, Repair & Paint" },
+    { "label": "Google Verified", "sub": "5.0 — verified reviews" },
+    { "label": "BBB Accredited", "sub": "A+ Rating" }
+  ],
   "hero": {
     "image": "/images/generated/hero-craftsman-interior.jpg",
     "imageAlt": "Editorial interior, morning light raking across a freshly painted plaster wall in soft bone white, minimal furnishings in warm walnut tones",

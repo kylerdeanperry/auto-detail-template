@@ -1,54 +1,90 @@
 {
   "industrySlug": "hvac",
   "displayName": "Elite HVAC",
+  "trustStrip": [
+    "Licensed · Bonded · Insured",
+    "NATE Certified",
+    "10-Year Labor Warranty"
+  ],
+  "trustBand": [
+    { "label": "Licensed WA HVAC Contractor", "sub": "Electrical + mechanical" },
+    { "label": "NATE Certified Technicians", "sub": "North American Technician Excellence" },
+    { "label": "EPA Section 608 Universal", "sub": "Refrigerant handling" },
+    { "label": "Carrier Factory Authorized", "sub": "Plus Trane, Lennox, Mitsubishi" }
+  ],
+  "theme": {
+    "paper": "#F4F6F8",
+    "paperWarm": "#E6EAEE",
+    "ink": "#0F1822",
+    "inkSoft": "#2F3A46",
+    "accent": "#2B5BA0",
+    "accentDeep": "#1F4478",
+    "secondary": "#D94F2F",
+    "stone": "#D9DEE4",
+    "muted": "#6B7480"
+  },
   "hero": {
-    "image": "https://images.unsplash.com/photo-1635604866833-70844856de75?w=1600&q=80&auto=format&fit=crop",
-    "imageAlt": "HVAC technician installing a central air unit",
-    "badge": "We are Elite HVAC",
-    "headline": "Next Level Climate.",
-    "cta": { "label": "Get a Quote", "href": "/contact" }
+    "image": "/images/generated/hvac-hero-thermostat-winter.jpg",
+    "imageAlt": "Smart thermostat in a softly lit Pacific Northwest living room on a cold morning, warm glow through the display against dusty blue light outside",
+    "badge": "Bainbridge Island · North Seattle · Est. 2019",
+    "headline": "Temperature, Engineered.",
+    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
   },
   "intro": {
-    "label": "We are Elite HVAC",
-    "body": "We're a modern climate-control contractor. Our install crews and emergency techs keep homes and businesses at the right temperature year-round — licensed, insured, and backed by a 10-year labor warranty."
+    "label": "A climate studio, not a break-fix shop",
+    "body": "A modern climate-control studio for Bainbridge Island and North Seattle. Heat pumps, furnaces, AC — properly load-calculated, cleanly installed, and backed by a ten-year labor warranty."
   },
   "personas": [
-    { "label": "for homeowners", "kicker": "Elite HVAC", "href": "/services" },
-    { "label": "for property managers", "kicker": "Elite HVAC", "href": "/services" },
-    { "label": "for commercial", "kicker": "Elite HVAC", "href": "/services" }
+    { "label": "Residential Homes", "kicker": "For the home you live in", "href": "/services" },
+    { "label": "Property & Rentals", "kicker": "For the ones you manage", "href": "/services" },
+    { "label": "Light Commercial", "kicker": "For the shop, office, or bistro", "href": "/services" }
   ],
   "configuratorTeaser": {
     "enabled": true,
-    "headline": "Find out what size system you need.",
-    "body": "Get a quick sizing estimate based on your square footage, insulation level, and climate zone.",
-    "phoneMockImage": "https://images.unsplash.com/photo-1515974256630-babc85765b1d?w=480&q=80&auto=format&fit=crop"
+    "headline": "Get a written system estimate in under a minute.",
+    "body": "Answer four questions about your home and our virtual estimator returns equipment options, rebate eligibility, and a transparent price range — before a single sales call.",
+    "phoneMockImage": "/images/generated/hvac-estimator-phone-mock.jpg"
   },
   "zPatternRows": [
     {
-      "label": "Our Services",
-      "headline": "Install, service, and emergency repair.",
-      "body": "From high-efficiency new installs to same-day emergency calls. Every job starts with upfront pricing and ends with a satisfied customer.",
-      "image": "https://images.unsplash.com/photo-1761642119720-1ce47b16d09b?w=1600&q=80&auto=format&fit=crop",
-      "cta": { "label": "See services", "href": "/services" }
+      "label": "The Heat-Pump Story",
+      "headline": "Heat pumps are the future. Seattle is ground zero.",
+      "body": "Cold-climate heat pumps now perform at 5°F and below. Between PSE incentives, the federal 25C tax credit, and long-term operating cost, the right heat pump can pay for itself inside a decade. We handle the rebate paperwork so the savings don't get left on the table.",
+      "image": "/images/generated/hvac-heatpump-exterior.jpg",
+      "cta": { "label": "See heat-pump options", "href": "/services" }
     },
     {
-      "label": "Trusted Equipment",
-      "headline": "The brands that last.",
-      "body": "We install Carrier, Trane, and Lennox — systems chosen for reliability, efficiency, and warranty support. All parts are OEM, backed by the manufacturer.",
-      "image": "https://images.unsplash.com/photo-1761599933387-f7488c02427d?w=1600&q=80&auto=format&fit=crop"
+      "label": "Proper Load Calc",
+      "headline": "Load calculated, not eyeballed.",
+      "body": "Most HVAC failures trace back to equipment that was the wrong size for the house. We run a proper Manual J load calculation on every install, evaluate the ductwork, and seal the leaks that quietly burn efficiency. The right-sized system is the one that lasts.",
+      "image": "/images/generated/hvac-tech-install.jpg"
+    },
+    {
+      "label": "Emergency Response",
+      "headline": "We show up when it's 19° and the furnace is out.",
+      "body": "No-heat calls jump to the top of the schedule during cold snaps. On-site within hours, diagnosis explained in plain English, written quote before any work, truck stocked with the common parts — because a cold house at 5am isn't a tomorrow problem.",
+      "image": "/images/generated/hvac-emergency-response.jpg",
+      "cta": { "label": "See the warranty", "href": "/services" }
+    },
+    {
+      "label": "The Warranty",
+      "headline": "Ten years of labor, in writing.",
+      "body": "Equipment warranty is only as good as the labor warranty behind it. Every install we do is backed by ten years of labor coverage — not the industry-standard two. Combine it with a maintenance plan and your system is covered end-to-end.",
+      "image": "/images/generated/hvac-mechanical-room.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
     }
   ],
   "portfolio": [
-    { "image": "https://images.unsplash.com/photo-1751486289950-5c4898a4c773?w=1200&q=80&auto=format&fit=crop", "caption": "Full split-system install" },
-    { "image": "https://images.unsplash.com/photo-1632907364174-285030588b31?w=1200&q=80&auto=format&fit=crop", "caption": "Rooftop commercial unit" },
-    { "image": "https://images.unsplash.com/photo-1708005383082-3a0e5e79a347?w=1200&q=80&auto=format&fit=crop", "caption": "Emergency furnace repair" },
-    { "image": "https://images.unsplash.com/photo-1568634699096-82c9765548a0?w=1200&q=80&auto=format&fit=crop", "caption": "Ductwork retrofit" },
-    { "image": "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=1200&q=80&auto=format&fit=crop", "caption": "Mini-split installation" },
-    { "image": "https://images.unsplash.com/photo-1770838773417-08b18661c62f?w=1200&q=80&auto=format&fit=crop", "caption": "Seasonal tune-up" }
+    { "image": "/images/generated/hvac-portfolio-01-heatpump-craftsman.jpg", "caption": "Mitsubishi hyper-heat pump · Bainbridge craftsman" },
+    { "image": "/images/generated/hvac-portfolio-02-commercial-rooftop.jpg", "caption": "Commercial rooftop package unit · Ballard café" },
+    { "image": "/images/generated/hvac-portfolio-03-mechanical-room.jpg", "caption": "Basement mechanical room retrofit · Queen Anne" },
+    { "image": "/images/generated/hvac-portfolio-04-minisplit-interior.jpg", "caption": "Multi-zone ductless · Fremont ADU" },
+    { "image": "/images/generated/hvac-portfolio-05-ductwork.jpg", "caption": "Full duct seal & balance · Phinney Ridge" },
+    { "image": "/images/generated/hvac-portfolio-06-smart-thermostat.jpg", "caption": "Ecobee integration · Magnolia" }
   ],
   "footerCta": {
-    "headline": "Configure your HVAC system.",
-    "subhead": "Get in touch for a free sizing and install quote.",
-    "cta": { "label": "Explore", "href": "/contact" }
+    "headline": "Ready for a home that's comfortable year-round?",
+    "subhead": "Virtual quote in under a minute. On-site walkthrough scheduled within 48 hours.",
+    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
   }
 }

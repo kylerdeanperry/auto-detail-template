@@ -1,99 +1,57 @@
 {
   "business": {
-    "name": "",
-    "tagline": "HVAC Installation, Service & Emergency Repair",
-    "phone": "",
-    "email": "",
-    "serviceArea": "",
-    "about": "Modern HVAC contractors trusted by homeowners and property managers for installs, tune-ups, and emergency repair.",
-    "founded": "",
-    "jobsCompleted": ""
+    "name": "Elite HVAC",
+    "tagline": "Bainbridge & Seattle Climate Studio",
+    "phone": "(206) 555-0141",
+    "email": "hello@elitehvac.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A modern climate-control studio serving Bainbridge Island and the north Seattle neighborhoods. Heat pumps, furnaces, AC — properly load-calculated, cleanly installed, and backed by a ten-year labor warranty.",
+    "founded": "2019",
+    "jobsCompleted": "800+"
   },
   "branding": {
-    "primaryColor": "#101920",
-    "accentColor": "#FFF365",
-    "backgroundColor": "#FFFFFF",
-    "logo": "/logo.png",
-    "font": "Inter"
+    "primaryColor": "#0F1822",
+    "accentColor": "#2B5BA0",
+    "backgroundColor": "#F4F6F8",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
   },
   "services": [
-    {
-      "name": "AC Installation",
-      "price": "$3,500-$8,000",
-      "duration": "1-2 days",
-      "description": "Complete central air installation including ductwork assessment, equipment, and commissioning."
-    },
-    {
-      "name": "Furnace Installation",
-      "price": "$3,000-$7,000",
-      "duration": "1 day",
-      "description": "High-efficiency gas or electric furnace installation with permit pull and haul-away."
-    },
-    {
-      "name": "Tune-Up & Maintenance",
-      "price": "$149-$249",
-      "duration": "1 hour",
-      "description": "Seasonal tune-up: clean coils, check refrigerant, inspect electrical, test operation."
-    },
-    {
-      "name": "Emergency Repair",
-      "price": "$150+",
-      "duration": "varies",
-      "description": "Same-day diagnosis and repair. Upfront pricing before work begins."
-    }
+    { "name": "Heat Pump Install", "price": "$12,000–$22,000", "duration": "1–2 days", "description": "Cold-climate heat pumps sized with a proper Manual J load calc and paired with your existing or new ductwork. We handle the permit, the PSE rebate paperwork, and the federal 25C tax credit documentation." },
+    { "name": "Furnace Install", "price": "$4,500–$9,500", "duration": "1 day", "description": "High-efficiency gas or electric furnace installed clean — old unit hauled, new unit commissioned, gas lines tested. Two-stage and modulating options for quiet, even heat." },
+    { "name": "AC / Cooling Install", "price": "$5,500–$12,000", "duration": "1–2 days", "description": "Central air sized to your home, not to your square footage. We evaluate ducts, seal leaks, and install equipment that won't short-cycle itself to death in the PNW shoulder seasons." },
+    { "name": "Ductless Mini-Split", "price": "$4,000–$8,500 per zone", "duration": "1 day", "description": "Single- and multi-zone heat pumps for additions, ADUs, home offices, or full-home retrofits where ductwork isn't an option. Mitsubishi and Fujitsu hyper-heat." },
+    { "name": "Maintenance Plan", "price": "$199 / year", "duration": "2 tune-ups", "description": "Two seasonal tune-ups, priority repair pricing, and a discount on parts. Keeps efficiency up and manufacturer warranty valid." },
+    { "name": "Emergency Repair", "price": "$195 service call", "duration": "Same-day for no-heat", "description": "On-site diagnosis within hours. Flat-rate repair quotes before a wrench turns. No-heat calls prioritized during cold snaps." }
   ],
   "testimonials": [
-    {
-      "name": "Happy Customer",
-      "location": "Local",
-      "text": "Fast, honest, and got our AC running the same day.",
-      "rating": 5
-    },
-    {
-      "name": "Satisfied Client",
-      "location": "Local",
-      "text": "Professional install — crew was clean and on time.",
-      "rating": 5
-    },
-    {
-      "name": "Repeat Customer",
-      "location": "Local",
-      "text": "Best HVAC company we've used. Highly recommend.",
-      "rating": 5
-    }
+    { "name": "Katherine B.", "location": "Bainbridge Island", "text": "Heat died during the December cold snap. They had a tech at my door in under three hours, diagnosed it, and had the replacement parts on the truck. Warm by dinner.", "rating": 5 },
+    { "name": "Paul M.", "location": "Queen Anne, Seattle", "text": "Our old gas furnace was 25 years old. They walked me through the heat-pump rebates I didn't know existed — ended up saving nearly $6,000 after PSE and the federal tax credit.", "rating": 5 },
+    { "name": "Jennifer W.", "location": "Ballard, Seattle", "text": "Clean install, booties over shoes, floors covered, old equipment hauled the same day. First HVAC crew that actually paid attention to the details.", "rating": 5 },
+    { "name": "Marcus D.", "location": "Fremont, Seattle", "text": "They ran a proper Manual J on our 1920s bungalow before quoting. The last contractor had tried to sell us a unit twice too big.", "rating": 5 }
   ],
   "process": [
-    {
-      "step": "1",
-      "title": "Call or Book",
-      "description": "Reach us 24/7. Emergency? We can usually be there today."
-    },
-    {
-      "step": "2",
-      "title": "On-Site Diagnosis",
-      "description": "Licensed tech inspects, explains the issue, and quotes before starting work."
-    },
-    {
-      "step": "3",
-      "title": "Problem Solved",
-      "description": "Repair or install complete. Satisfaction guaranteed, warrantied work."
-    }
+    { "step": "01", "title": "Diagnose", "description": "On-site within 24 hours — same-day for no-heat emergencies. Licensed tech inspects the system, explains what's happening, and quotes in writing before a wrench turns." },
+    { "step": "02", "title": "Design", "description": "Manual J load calc, duct evaluation, and equipment sized to your actual home. No one-size-fits-all. The wrong size is the single biggest reason HVAC systems fail early." },
+    { "step": "03", "title": "Install", "description": "Clean crew, booties on, drop cloths down, permits pulled, old equipment hauled. Most jobs finished in one or two days with the house livable throughout." },
+    { "step": "04", "title": "Maintain", "description": "Two tune-ups a year keep efficiency at peak and the manufacturer warranty valid. Members get priority response and repair pricing when something goes wrong." }
   ],
   "chatbot": {
     "enabled": true,
-    "greeting": "Hi — what HVAC issue can I help with today?",
-    "accentColor": "#FFF365",
+    "greeting": "Hi — Elite HVAC's virtual assistant. Quick question to point you the right direction: new install, tune-up, or is something not working?",
+    "accentColor": "#2B5BA0",
     "closingGoal": "qualify_handoff",
-    "tone": "urgent_expert",
+    "tone": "warm-technical",
     "quoteStyle": "range_from_services",
     "handoffMethod": "both",
     "handoffContact": "",
     "qualifyingQuestions": [
-      "Is this for your home or business?",
-      "Is the system running at all, or is this an emergency?",
+      "Is this a new install, a tune-up, or a repair?",
+      "If it's a repair, is the system running at all?",
+      "Approximate square footage of the home?",
       "What's your zip code?"
     ],
-    "customInstructions": ""
+    "customInstructions": "Anchor on engineered reliability, proper load calc, and warranty depth — not lowest price. Reference Manual J, heat-pump rebates (PSE + federal 25C), NATE certification, and the 10-year labor warranty when relevant. Urgent tone for no-heat emergencies in winter; educational tone for heat-pump conversions."
   },
   "meta": {
     "industry": "hvac",

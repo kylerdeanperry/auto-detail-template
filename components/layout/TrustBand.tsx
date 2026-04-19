@@ -4,13 +4,15 @@ import { config, expand } from "@/lib/config"
  * Minimalist trust band — certifications displayed as a typographic
  * row, not a wall of badges. Legitimacy without the clutter.
  */
+const DEFAULT_ITEMS = [
+  { label: "Licensed · Bonded · Insured", sub: "Washington State" },
+  { label: "Google Verified", sub: "5.0 — verified reviews" },
+  { label: "BBB Accredited", sub: "A+ Rating" },
+  { label: "Manufacturer Authorized", sub: "Premium equipment partners" },
+]
+
 export function TrustBand() {
-  const items = [
-    { label: "Licensed · Bonded · Insured", sub: "Washington State" },
-    { label: "EPA Lead Safe", sub: "Renovation, Repair & Paint" },
-    { label: "Google Verified", sub: "5.0 — verified reviews" },
-    { label: "BBB Accredited", sub: "A+ Rating" },
-  ]
+  const items = config.visual.trustBand ?? DEFAULT_ITEMS
 
   return (
     <section className="relative border-y border-stone bg-paper-warm paper-grain">
