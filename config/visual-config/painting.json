@@ -2,53 +2,67 @@
   "industrySlug": "painting",
   "displayName": "Elite Painting",
   "hero": {
-    "image": "https://images.unsplash.com/photo-1776269077163-e26abbc6189d?w=1600&q=80&auto=format&fit=crop",
-    "imageAlt": "Freshly painted modern home exterior with crisp trim",
-    "badge": "We are Elite Painting",
-    "headline": "Next Level Finish.",
-    "cta": { "label": "Get a Quote", "href": "/contact" }
+    "image": "/images/generated/hero-craftsman-interior.jpg",
+    "imageAlt": "Editorial interior, morning light raking across a freshly painted plaster wall in soft bone white, minimal furnishings in warm walnut tones",
+    "badge": "Bainbridge Island · North Seattle · Est. 2019",
+    "headline": "High-End Results, Absolute Predictability.",
+    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
   },
   "intro": {
-    "label": "We are Elite Painting",
-    "body": "We're a premium residential and commercial painting contractor. Sharp lines, clean job sites, durable finishes — every project backed by a 5-year labor warranty on interior and exterior work."
+    "label": "A craftsman studio, not a contractor",
+    "body": "A clean, high-quality painting experience on Bainbridge Island and in Seattle — without the usual contractor chaos. Obsessive prep, daily progress reports, and a finish that lasts."
   },
   "personas": [
-    { "label": "for residential", "kicker": "Elite Painting", "href": "/services" },
-    { "label": "for commercial", "kicker": "Elite Painting", "href": "/services" },
-    { "label": "for new construction", "kicker": "Elite Painting", "href": "/services" }
+    { "label": "Interior & Cabinetry", "kicker": "For the home you already love", "href": "/services" },
+    { "label": "Exterior & Deck", "kicker": "For the one the neighbors see", "href": "/services" },
+    { "label": "Light Commercial", "kicker": "For the one that pays the bills", "href": "/services" }
   ],
   "configuratorTeaser": {
     "enabled": true,
-    "headline": "Estimate your paint project.",
-    "body": "Enter square footage, trim linear feet, and color count — get a ballpark in under a minute.",
-    "phoneMockImage": "https://images.unsplash.com/photo-1589566983471-a0e73071c282?w=480&q=80&auto=format&fit=crop"
+    "headline": "Get a written ballpark in under a minute.",
+    "body": "Answer four questions about your project and our virtual estimator returns a transparent price range — before you ever get on a call.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
   },
   "zPatternRows": [
     {
-      "label": "Interior & Exterior",
-      "headline": "Every surface, every season.",
-      "body": "Interior rooms, exterior siding, trim, cabinet refinishing, epoxy floors. We prep like it matters — because it does. Prep is 80% of a paint job's lifespan.",
-      "image": "https://images.unsplash.com/photo-1742900280861-32bed068938b?w=1600&q=80&auto=format&fit=crop",
-      "cta": { "label": "See services", "href": "/services" }
+      "label": "The Prep Methodology",
+      "headline": "Prep is 90% of the job. The paint is the easy part.",
+      "body": "Most contractors race to get paint on the wall. We spend two-to-three times longer on the surface underneath — sanding, filling, caulking, and priming — because the finish is only as good as what's beneath it. Two years, five years, ten years from now, our work still looks intentional.",
+      "image": "/images/generated/prep-detail-sanding.jpg",
+      "cta": { "label": "See our process", "href": "/services" }
     },
     {
-      "label": "Color Consultation",
-      "headline": "Pick a color you won't regret.",
-      "body": "Free color consultation with every project. Swatches on your wall, lit the way your light hits it. We'd rather spend an extra hour than repaint it next year.",
-      "image": "https://images.unsplash.com/photo-1523465322945-c6b0013393bd?w=1600&q=80&auto=format&fit=crop"
+      "label": "We Protect Your Home",
+      "headline": "Your home is not a job site. We don't act like it is.",
+      "body": "Floors covered before we carry a single ladder through the door. Furniture moved and re-wrapped. Switch plates bagged and labeled. Tools, tarps, and debris cleared from the work zone every single evening. You come home to a home, not a construction mess.",
+      "image": "/images/generated/protection-dropcloths.jpg"
+    },
+    {
+      "label": "Daily Updates",
+      "headline": "The project runs like you're running it.",
+      "body": "A short written update at the end of every workday — what we finished, what's next, any surprises we ran into. Photos when it helps. No wondering what's happening inside your house while you're at work.",
+      "image": "/images/generated/communication-detail.jpg",
+      "cta": { "label": "See the warranty", "href": "/services" }
+    },
+    {
+      "label": "The Gallery",
+      "headline": "Finishes that photograph as well as they live.",
+      "body": "Every project is photographed before we call it done. Macro detail of cut lines, cabinet finishes, trim returns — proof that the last mile matters. Browse the portfolio for completed work across Bainbridge Island and the north Seattle neighborhoods.",
+      "image": "/images/generated/portfolio-hero-cabinet.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
     }
   ],
   "portfolio": [
-    { "image": "https://images.unsplash.com/photo-1688372199140-cade7ae820fe?w=1200&q=80&auto=format&fit=crop", "caption": "Full interior — 4BR home" },
-    { "image": "https://images.unsplash.com/photo-1745665777586-09381ba528d6?w=1200&q=80&auto=format&fit=crop", "caption": "Exterior repaint + trim" },
-    { "image": "https://images.unsplash.com/photo-1511822148790-e7b58ba14c72?w=1200&q=80&auto=format&fit=crop", "caption": "Cabinet refinish" },
-    { "image": "https://images.unsplash.com/photo-1675191863404-e1db618d6655?w=1200&q=80&auto=format&fit=crop", "caption": "Commercial tenant improvement" },
-    { "image": "https://images.unsplash.com/photo-1595446472721-4b7aa63a2bc7?w=1200&q=80&auto=format&fit=crop", "caption": "New construction finish" },
-    { "image": "https://images.unsplash.com/photo-1688372198189-de6a51777a81?w=1200&q=80&auto=format&fit=crop", "caption": "Historic restoration" }
+    { "image": "/images/generated/portfolio-01-cabinet-detail.jpg", "caption": "Cabinet refinish · Madrone White · Queen Anne craftsman" },
+    { "image": "/images/generated/portfolio-02-exterior-craftsman.jpg", "caption": "Full exterior repaint · Cedar Moss · Bainbridge Island" },
+    { "image": "/images/generated/portfolio-03-interior-bone.jpg", "caption": "Whole-home interior · Bone White & Ink · Magnolia" },
+    { "image": "/images/generated/portfolio-04-trim-detail.jpg", "caption": "Custom trim + repaint · Ballard bungalow" },
+    { "image": "/images/generated/portfolio-05-deck-stain.jpg", "caption": "Deck restoration + stain · Fremont" },
+    { "image": "/images/generated/portfolio-06-commercial-bistro.jpg", "caption": "Light commercial repaint · Phinney Ridge bistro" }
   ],
   "footerCta": {
-    "headline": "Configure your paint project.",
-    "subhead": "Get in touch for a color consultation and quote.",
-    "cta": { "label": "Explore", "href": "/contact" }
+    "headline": "Ready for a finish you won't need to fix?",
+    "subhead": "Virtual quote in under a minute. On-site walkthrough scheduled within 48 hours.",
+    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
   }
 }

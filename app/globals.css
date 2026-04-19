@@ -1,108 +1,109 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
-
 @custom-variant dark (&:is(.dark *));
 
-:root {
-  /* Mike's Auto Detail Theme - Dark + Red */
-  --background: oklch(0.972 0.001 106.424);  /* #F8F8F6 warm gray */
-  --foreground: oklch(0.13 0 0);             /* #0f0f0f near black */
-  --card: oklch(1 0 0);                       /* White */
-  --card-foreground: oklch(0.13 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.13 0 0);
-  --primary: oklch(0.13 0 0);               /* #0f0f0f near black */
-  --primary-foreground: oklch(0.985 0 0);    /* Near white */
-  --secondary: oklch(0.955 0.001 286.375);   /* Slightly darker gray */
-  --secondary-foreground: oklch(0.13 0 0);
-  --muted: oklch(0.945 0.001 286.375);
-  --muted-foreground: oklch(0.45 0.005 285.823);
-  --accent: #FFF365;                         /* Autarq yellow — unifying brand color */
-  --accent-foreground: #101920;              /* Slate ink on yellow */
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.905 0.001 286.375);
-  --input: oklch(0.905 0.001 286.375);
-  --ring: oklch(0.505 0.205 27.518);         /* Red ring to match accent */
-  --chart-1: oklch(0.505 0.205 27.518);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.178 0.005 285.823);
-  --sidebar-primary: oklch(0.505 0.205 27.518);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.955 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.178 0.005 285.823);
-  --sidebar-border: oklch(0.905 0.001 286.375);
-  --sidebar-ring: oklch(0.505 0.205 27.518);
-}
+/**
+ * Elite Painting — Craftsman Studio
+ * Warm-neutral editorial palette. Paper, ink, bronze, sage.
+ * Typography: Fraunces (display/serif) + Instrument Sans (body) + JetBrains Mono (kicker).
+ */
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: #FFF365;                         /* Autarq yellow — unifying brand color */
-  --accent-foreground: #101920;              /* Slate ink on yellow */
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+:root {
+  /* Brand palette */
+  --paper: #FAF8F5;          /* Soft off-white */
+  --paper-warm: #F2EDE3;     /* Deeper cream for section bands */
+  --ink: #101920;            /* Deep slate — body + display */
+  --ink-soft: #3A4149;       /* Softer ink for secondary copy */
+  --bronze: #9B6B3C;         /* Warm bronze — primary accent */
+  --bronze-deep: #7A5128;    /* Pressed/hover state */
+  --sage: #4A5A4A;           /* Deep sage — secondary accent */
+  --stone: #E2DACA;          /* Hairline borders, dividers */
+  --muted: #78716A;          /* Warm gray — meta / captions */
+
+  /* shadcn token mapping */
+  --background: #FAF8F5;
+  --foreground: #101920;
+  --card: #FFFFFF;
+  --card-foreground: #101920;
+  --popover: #FFFFFF;
+  --popover-foreground: #101920;
+  --primary: #101920;
+  --primary-foreground: #FAF8F5;
+  --secondary: #F2EDE3;
+  --secondary-foreground: #101920;
+  --muted-bg: #F2EDE3;
+  --muted-foreground: #78716A;
+  --accent: #9B6B3C;
+  --accent-foreground: #FAF8F5;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #FAF8F5;
+  --border: #E2DACA;
+  --input: #E2DACA;
+  --ring: #9B6B3C;
+  --chart-1: #9B6B3C;
+  --chart-2: #4A5A4A;
+  --chart-3: #101920;
+  --chart-4: #78716A;
+  --chart-5: #E2DACA;
+  --radius: 0.375rem;
+  --sidebar: #FAF8F5;
+  --sidebar-foreground: #101920;
+  --sidebar-primary: #101920;
+  --sidebar-primary-foreground: #FAF8F5;
+  --sidebar-accent: #F2EDE3;
+  --sidebar-accent-foreground: #101920;
+  --sidebar-border: #E2DACA;
+  --sidebar-ring: #9B6B3C;
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  /* Elite Service brand palette (v1: yellow is unifying, slate is ink) */
-  --color-slate: #101920;
-  --color-base: #FFFFFF;
-  /* Typography scale — hero/display/section/kicker */
-  --text-hero: 76px;
-  --text-hero--line-height: 1;
-  --text-hero--letter-spacing: -0.035em;
-  --text-hero--font-weight: 900;
-  --text-hero-mobile: 48px;
-  --text-hero-mobile--line-height: 1;
-  --text-hero-mobile--letter-spacing: -0.035em;
-  --text-hero-mobile--font-weight: 900;
-  --text-display: 48px;
-  --text-display--line-height: 1.05;
-  --text-display--letter-spacing: -0.025em;
-  --text-display--font-weight: 900;
-  --text-section: 32px;
-  --text-section--line-height: 1.1;
-  --text-section--letter-spacing: -0.02em;
-  --text-section--font-weight: 900;
+  /* Fonts — distinctive, not Inter */
+  --font-display: var(--font-display), 'Fraunces', 'Times New Roman', serif;
+  --font-body: var(--font-body), 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: var(--font-mono), 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: var(--font-body);
+
+  /* Brand colors — direct utilities (bg-paper, text-ink, text-bronze) */
+  --color-paper: var(--paper);
+  --color-paper-warm: var(--paper-warm);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-bronze: var(--bronze);
+  --color-bronze-deep: var(--bronze-deep);
+  --color-sage: var(--sage);
+  --color-stone: var(--stone);
+  --color-muted: var(--muted);
+
+  /* Editorial typography scale — Fraunces is a variable font with opsz axis.
+     Headings use opsz 96-144 for refined display serifs. */
+  --text-hero: clamp(56px, 9vw, 128px);
+  --text-hero--line-height: 0.92;
+  --text-hero--letter-spacing: -0.04em;
+  --text-hero--font-weight: 450;
+  --text-hero--font-variation-settings: '"opsz" 144';
+
+  --text-display: clamp(44px, 5.5vw, 80px);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.035em;
+  --text-display--font-weight: 450;
+  --text-display--font-variation-settings: '"opsz" 96';
+
+  --text-section: clamp(32px, 3.5vw, 52px);
+  --text-section--line-height: 1.05;
+  --text-section--letter-spacing: -0.025em;
+  --text-section--font-weight: 500;
+  --text-section--font-variation-settings: '"opsz" 72';
+
+  --text-subhead: clamp(18px, 1.4vw, 22px);
+  --text-subhead--line-height: 1.4;
+  --text-subhead--font-weight: 400;
+
   --text-kicker: 11px;
-  --text-kicker--letter-spacing: 0.12em;
-  --text-kicker--font-weight: 600;
+  --text-kicker--line-height: 1;
+  --text-kicker--letter-spacing: 0.18em;
+  --text-kicker--font-weight: 500;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -113,7 +114,6 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
@@ -127,18 +127,10 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
 }
 
 @layer base {
@@ -146,65 +138,135 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-paper text-ink;
+    font-feature-settings: "ss01", "ss02", "cv11";
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--ink);
+  }
+  ::selection {
+    background: var(--bronze);
+    color: var(--paper);
   }
 }
 
-/* Scroll-triggered fade-in animations using CSS only */
-@keyframes fade-in-up {
-  from {
+/* ── Paper grain overlay ─────────────────────────────────────────
+   Subtle SVG noise layered on the paper background. Gives the page
+   a tactile, printed quality that pure flat color can't match. */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.063 0 0 0 0 0.098 0 0 0 0 0.125 0 0 0 0.08 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* ── Hairline rule ───────────────────────────────────────────── */
+.hairline {
+  background: linear-gradient(90deg, transparent, var(--stone) 15%, var(--stone) 85%, transparent);
+  height: 1px;
+}
+
+/* ── Editorial number (large serif display numeral) ──────────── */
+.edit-numeral {
+  font-family: var(--font-display);
+  font-variation-settings: '"opsz" 144';
+  font-weight: 400;
+  font-feature-settings: "lnum", "tnum";
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+/* ── Motion: staggered reveal on load + scroll ───────────────── */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes reveal-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.reveal-up {
+  opacity: 0;
+  animation: reveal-up 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.reveal-fade {
+  opacity: 0;
+  animation: reveal-fade 1.2s ease-out forwards;
+}
+
+/* Scroll-triggered reveal (progressive enhancement) */
+@supports (animation-timeline: view()) {
+  .on-scroll {
     opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    animation: reveal-up 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 55%;
   }
 }
-
-.animate-on-scroll {
-  animation: fade-in-up 0.6s ease-out both;
-  animation-timeline: view();
-  animation-range: entry 0% entry 30%;
-}
-
-/* Fallback for browsers without animation-timeline support */
 @supports not (animation-timeline: view()) {
-  .animate-on-scroll {
-    animation: fade-in-up 0.6s ease-out both;
+  .on-scroll { opacity: 1; }
+}
+
+/* ── Brush-stroke mask reveal for hero image ─────────────────── */
+@keyframes brush-sweep {
+  0%   { mask-position: -120% 0; -webkit-mask-position: -120% 0; }
+  100% { mask-position: 0 0; -webkit-mask-position: 0 0; }
+}
+
+.brush-reveal {
+  --brush-mask: linear-gradient(100deg,
+    transparent 0%,
+    rgba(0,0,0,0.4) 10%,
+    #000 18%,
+    #000 100%);
+  mask-image: var(--brush-mask);
+  -webkit-mask-image: var(--brush-mask);
+  mask-size: 200% 100%;
+  -webkit-mask-size: 200% 100%;
+  mask-position: 100% 0;
+  -webkit-mask-position: 100% 0;
+  animation: brush-sweep 1.6s cubic-bezier(0.3, 0.1, 0.3, 1) 0.2s forwards;
+}
+
+/* ── Respect reduced motion ──────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
-/* Service card hover lift effect */
-.service-card-hover {
-  @apply transition-all duration-300 ease-out;
+/* ── Color-chip tile (paint-swatch cards) ───────────────────── */
+.chip {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.chip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: -1;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-origin: bottom;
+}
+.chip:hover::before {
+  transform: scaleY(1.02);
 }
 
-.service-card-hover:hover {
-  @apply -translate-y-2 shadow-xl;
-}
-
-/* Hero gradient fallback when no image */
-.hero-gradient-fallback {
-  background: linear-gradient(
-    135deg,
-    var(--color-brand-primary, #1B1B1B) 0%,
-    var(--color-brand-accent, #C8102E) 100%
-  );
-}
-
-/* Pulsing red dot animation for eyebrow badge */
+/* ── Pulsing dot for status badges ──────────────────────────── */
 @keyframes pulse-dot {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scale(1.2);
-  }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.55; transform: scale(1.25); }
 }
-
-.animate-pulse-dot {
-  animation: pulse-dot 2s ease-in-out infinite;
-}
+.animate-pulse-dot { animation: pulse-dot 2.4s ease-in-out infinite; }

@@ -1,99 +1,123 @@
 {
   "business": {
-    "name": "",
-    "tagline": "Professional Painting Contractors",
-    "phone": "",
-    "email": "",
-    "serviceArea": "",
-    "about": "Licensed painting contractors delivering clean, lasting results for interior and exterior projects. Free estimates, premium materials, and meticulous prep work.",
-    "founded": "",
-    "jobsCompleted": ""
+    "name": "Elite Painting",
+    "tagline": "Bainbridge & North Seattle Painting Studio",
+    "phone": "(206) 555-0140",
+    "email": "hello@elitepainting.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A premium residential painting studio serving Bainbridge Island and the north Seattle neighborhoods. Obsessive prep, daily updates, and a five-year labor warranty on every interior and exterior project.",
+    "founded": "2019",
+    "jobsCompleted": "500+"
   },
   "branding": {
-    "primaryColor": "#2C3E50",
-    "accentColor": "#E74C3C",
-    "backgroundColor": "#FAFAFA",
-    "logo": "/logo.png",
-    "font": "Inter"
+    "primaryColor": "#101920",
+    "accentColor": "#9B6B3C",
+    "backgroundColor": "#FAF8F5",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
   },
   "services": [
     {
       "name": "Interior Painting",
-      "price": "$1,500+",
-      "duration": "2-4 days",
-      "description": "Walls, ceilings, trim, and doors. Includes prep, priming, and two coats of premium paint."
+      "price": "From $2,400",
+      "duration": "2–5 days",
+      "description": "Walls, ceilings, trim, and doors. Surfaces sanded, patched, caulked, and primed before a single stroke of finish coat. Two coats of premium paint, crisp lines, and a spotless job site every evening."
     },
     {
       "name": "Exterior Painting",
-      "price": "$3,000+",
-      "duration": "3-5 days",
-      "description": "Full exterior including siding, trim, fascia, and shutters. Power wash prep and premium exterior paint."
+      "price": "From $4,800",
+      "duration": "4–7 days",
+      "description": "Full exterior — siding, trim, fascia, eaves, doors. Pressure-wash, scrape, prime bare wood, and seal with exterior-grade coatings engineered for Pacific Northwest weather."
     },
     {
       "name": "Cabinet Refinishing",
-      "price": "$2,500+",
-      "duration": "3-5 days",
-      "description": "Sand, prime, and spray kitchen or bathroom cabinets. Factory-smooth finish at a fraction of replacement cost."
+      "price": "From $3,800",
+      "duration": "4–6 days",
+      "description": "Kitchen and bath cabinets sanded, primed, and sprayed in our spray booth or on-site. A factory-smooth conversion-varnish finish at a fraction of the cost of new cabinetry."
     },
     {
-      "name": "Color Consultation",
-      "price": "Free",
-      "duration": "30 min",
-      "description": "In-home color consultation with our design specialist. We help you pick the perfect palette."
+      "name": "Deck & Fence Staining",
+      "price": "From $1,200",
+      "duration": "2–3 days",
+      "description": "Deep-clean, sand, and restore decks, fences, and outdoor trim. Penetrating stains and solid-color coatings that survive Seattle drizzle and sun."
+    },
+    {
+      "name": "Light Commercial",
+      "price": "Quote on request",
+      "duration": "Varies",
+      "description": "Retail, restaurant, and small-office repaints scheduled around your operating hours. We keep the lights on and the customers in."
+    },
+    {
+      "name": "Custom Carpentry",
+      "price": "Quote on request",
+      "duration": "Varies",
+      "description": "Trim millwork, wainscoting, built-in benches, crown molding, and small repairs. Carpentry paired with paint so the finish is truly seamless."
     }
   ],
   "testimonials": [
     {
-      "name": "Happy Customer",
-      "location": "Local",
-      "text": "Transformed our entire first floor. The prep work made all the difference.",
+      "name": "Clare T.",
+      "location": "Queen Anne, Seattle",
+      "text": "They treated our floors like they were made of glass. Daily updates, obsessive prep, and a finish that actually looks expensive.",
       "rating": 5
     },
     {
-      "name": "Satisfied Client",
-      "location": "Local",
-      "text": "Exterior looks brand new. Neighbors keep asking who we used.",
+      "name": "Michael R.",
+      "location": "Bainbridge Island",
+      "text": "We'd been burned twice before hiring Elite. First contractor who showed up on time every single morning and left the job site cleaner than they found it.",
       "rating": 5
     },
     {
-      "name": "Repeat Customer",
-      "location": "Local",
-      "text": "Third project with them. Always clean, always on schedule, always great.",
+      "name": "Sarah K.",
+      "location": "Magnolia, Seattle",
+      "text": "The cabinet refinish is two years old and still looks factory-new. Not a chip, not a scratch. The prep obviously paid off.",
+      "rating": 5
+    },
+    {
+      "name": "David L.",
+      "location": "Fremont, Seattle",
+      "text": "Color consultation alone was worth the price. They watched how the afternoon light hit our living room before recommending a shade.",
       "rating": 5
     }
   ],
   "process": [
     {
-      "step": "1",
-      "title": "Free Estimate",
-      "description": "We visit your property, measure, and provide a detailed quote — no obligation."
+      "step": "01",
+      "title": "Walkthrough",
+      "description": "We visit, measure every surface, and build you a written quote with line-item scope. No high-pressure sales — just clarity."
     },
     {
-      "step": "2",
-      "title": "Pick Your Colors",
-      "description": "Choose from our curated palettes or bring your own. We provide sample swatches."
+      "step": "02",
+      "title": "Preparation",
+      "description": "Prep is 90% of the job. We sand, patch, caulk, and prime with obsession. The paint is the easy part — the surface underneath is what lasts."
     },
     {
-      "step": "3",
-      "title": "Expert Results",
-      "description": "Meticulous prep, premium paint, clean lines. Backed by our workmanship guarantee."
+      "step": "03",
+      "title": "Protection",
+      "description": "Your home isn't a job site. Floors covered daily, furniture moved and re-covered, tools stowed before we leave each evening."
+    },
+    {
+      "step": "04",
+      "title": "Finish",
+      "description": "Two coats of premium paint, cut lines inspected in daylight, final walkthrough with you before we pack up. Five-year labor warranty on everything we touch."
     }
   ],
   "chatbot": {
     "enabled": true,
-    "greeting": "Hi! Looking for a painting estimate? Tell me about your project and I'll get you started.",
-    "accentColor": "#E74C3C",
+    "greeting": "Hi — I'm Elite Painting's virtual assistant. Tell me about the project and I'll give you a written ballpark in under a minute.",
+    "accentColor": "#9B6B3C",
     "closingGoal": "book_consultation",
-    "tone": "professional",
+    "tone": "warm-professional",
     "quoteStyle": "range_from_services",
     "handoffMethod": "email",
     "handoffContact": "",
     "qualifyingQuestions": [
-      "Is this interior or exterior?",
-      "How many rooms or what's the square footage?",
-      "When are you looking to get this done?"
+      "Interior, exterior, or both?",
+      "Roughly how many rooms or what's the exterior square footage?",
+      "When would you like the work completed?",
+      "What's your zip code?"
     ],
-    "customInstructions": ""
+    "customInstructions": "Anchor on quality and predictability, not speed or lowest price. Reference the 5-year warranty, daily updates, and obsessive prep. Mention Bainbridge Island and North Seattle service area when relevant."
   },
   "meta": {
     "industry": "painting",

@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from "react"
-import { mode } from "@/lib/config"
+import { config, mode } from "@/lib/config"
 
 type Msg = { role: "user" | "assistant"; content: string }
 
@@ -28,43 +28,81 @@ export function ChatPanel({ onClose }: { onClose: () => void }) {
       })
       const data = await res.json()
       setMessages([...next, { role: "assistant", content: data.content ?? "..." }])
-    } catch (err) {
-      setMessages([...next, { role: "assistant", content: "Sorry, something broke. Please try again." }])
+    } catch {
+      setMessages([
+        ...next,
+        { role: "assistant", content: "Sorry, something broke. Please try again or call us directly." },
+      ])
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <div className="fixed bottom-24 right-5 w-[360px] max-w-[calc(100vw-32px)] h-[520px] bg-white border-2 border-slate shadow-xl z-50 flex flex-col">
-      <div className="flex items-center justify-between bg-slate text-white px-4 py-3">
-        <div className="text-sm font-black uppercase">
-          {mode === "demo" ? "Talk to Elite Service" : "Chat"}
+    <div className="fixed bottom-24 right-6 z-50 flex h-[560px] w-[380px] max-w-[calc(100vw-32px)] flex-col rounded-xl border border-stone bg-paper shadow-[0_40px_80px_-20px_rgba(16,25,32,0.35)]">
+      <header className="flex items-center justify-between border-b border-stone px-5 py-4">
+        <div>
+          <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-bronze">
+            § — Virtual Estimator
+          </div>
+          <div
+            className="font-display text-[20px] leading-[1.1] tracking-[-0.015em] text-ink mt-0.5"
+            style={{ fontVariationSettings: '"opsz" 48', fontWeight: 450 }}
+          >
+            {mode === "demo" ? "Ask Elite Painting" : "Chat"}
+          </div>
         </div>
-        <button onClick={onClose} aria-label="Close" className="text-white text-xl leading-none">×</button>
-      </div>
-      <div ref={scrollRef} className="flex-grow overflow-y-auto px-4 py-3 text-sm">
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          className="font-mono text-[12px] text-muted hover:text-ink transition"
+        >
+          Close ×
+        </button>
+      </header>
+
+      <div
+        ref={scrollRef}
+        className="flex-grow overflow-y-auto px-5 py-4 text-[14px] leading-[1.55]"
+      >
         {messages.length === 0 ? (
-          <div className="text-[#666] text-xs">Ask us anything.</div>
+          <div className="max-w-[280px] text-[14px] leading-[1.55] text-ink-soft">
+            <span className="text-bronze">→</span> {config.chatbot.greeting}
+          </div>
         ) : null}
         {messages.map((m, i) => (
           <div key={i} className={`mb-3 ${m.role === "user" ? "text-right" : ""}`}>
-            <div className={`inline-block px-3 py-2 rounded ${m.role === "user" ? "bg-slate text-white" : "bg-[#f4f4f4]"}`}>
+            <div
+              className={`inline-block max-w-[85%] rounded-md px-3.5 py-2.5 text-[14px] leading-[1.5] ${
+                m.role === "user"
+                  ? "bg-ink text-paper"
+                  : "bg-paper-warm text-ink border border-stone"
+              }`}
+            >
               {m.content}
             </div>
           </div>
         ))}
-        {loading ? <div className="text-xs text-[#666]">…</div> : null}
+        {loading ? (
+          <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-bronze animate-pulse">
+            thinking…
+          </div>
+        ) : null}
       </div>
-      <div className="border-t border-[#eee] p-2 flex gap-2">
+
+      <div className="border-t border-stone p-3 flex gap-2">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && send()}
-          placeholder="Type your message"
-          className="flex-grow border border-[#ddd] px-3 py-2 text-sm"
+          placeholder="Describe your project…"
+          className="flex-grow rounded-md border border-stone bg-paper px-3 py-2.5 text-[14px] text-ink placeholder:text-muted/70 outline-none focus:border-bronze transition"
         />
-        <button onClick={send} disabled={loading} className="bg-slate text-white px-4 text-sm font-semibold">
+        <button
+          onClick={send}
+          disabled={loading}
+          className="rounded-md bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper transition-colors hover:bg-bronze disabled:opacity-50"
+        >
           Send
         </button>
       </div>
