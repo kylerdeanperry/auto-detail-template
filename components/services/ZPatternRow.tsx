@@ -5,18 +5,18 @@ import type { ZPatternRow as Row } from "@/types/visual-config"
 
 export function ZPatternRow({ row, alternating }: { row: Row; alternating: 0 | 1 }) {
   const textSide = (
-    <div className="flex flex-col justify-center px-8 py-12 md:py-20">
-      <div className="text-kicker uppercase mb-3">{expand(row.label)}</div>
-      <h2 className="text-section md:text-display max-w-[480px] mb-4">
+    <div className="flex flex-col justify-center bg-white px-8 py-12 md:py-20">
+      <div className="text-kicker uppercase mb-3 text-slate">{expand(row.label)}</div>
+      <h2 className="text-section md:text-display max-w-[480px] mb-4 text-slate">
         {expand(row.headline)}
       </h2>
-      <p className="max-w-[440px] text-sm md:text-base text-[#222]">
+      <p className="max-w-[440px] text-sm md:text-base text-slate/80">
         {expand(row.body)}
       </p>
       {row.cta ? (
         <Link
           href={row.cta.href}
-          className="mt-6 inline-flex w-fit rounded-full border border-slate px-5 py-2 text-sm font-semibold hover:bg-slate hover:text-white transition"
+          className="mt-6 inline-flex w-fit rounded-full border border-slate px-5 py-2 text-sm font-semibold text-slate hover:bg-slate hover:text-white transition"
         >
           {row.cta.label}
         </Link>

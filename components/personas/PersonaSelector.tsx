@@ -14,10 +14,10 @@ export function PersonaSelector() {
             }`}
           >
             <div>
-              <div className="text-kicker uppercase text-[#666] mb-2">
+              <div className="text-kicker uppercase text-muted-foreground mb-2">
                 {expand(p.kicker)}
               </div>
-              <div className="text-2xl font-black tracking-tight leading-tight">
+              <div className="text-2xl font-black tracking-tight leading-tight text-slate">
                 {expand(p.label)}
               </div>
             </div>
