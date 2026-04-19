@@ -117,19 +117,19 @@ async function fetchAgencyOsConfig(slug: string) {
 }
 
 async function loadFallback(slug: string) {
-  const path = resolve(ROOT, `src/config/fallback/${slug}.json`)
+  const path = resolve(ROOT, `config/fallback/${slug}.json`)
   const raw = await readFile(path, "utf8")
   return clientConfigSchema.parse(JSON.parse(raw))
 }
 
 async function loadVisual(slug: string) {
-  const path = resolve(ROOT, `src/config/visual-config/${slug}.json`)
+  const path = resolve(ROOT, `config/visual-config/${slug}.json`)
   const raw = await readFile(path, "utf8")
   return visualConfigSchema.parse(JSON.parse(raw))
 }
 
 async function loadClient() {
-  const path = resolve(ROOT, "src/config/client-config.json")
+  const path = resolve(ROOT, "config/client-config.json")
   try {
     const raw = await readFile(path, "utf8")
     return clientConfigSchema.parse(JSON.parse(raw))
@@ -174,7 +174,7 @@ async function main() {
   merged._mode = client ? "client" : "demo"
   merged._generatedAt = new Date().toISOString()
 
-  const outPath = resolve(ROOT, "src/config/industry-config.json")
+  const outPath = resolve(ROOT, "config/industry-config.json")
   await mkdir(dirname(outPath), { recursive: true })
   await writeFile(outPath, JSON.stringify(merged, null, 2), "utf8")
   console.log(`✓ Wrote ${outPath} (mode=${merged._mode})`)
