@@ -1,0 +1,54 @@
+{
+  "industrySlug": "hvac",
+  "displayName": "Elite HVAC",
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1635604866833-70844856de75?w=1600&q=80&auto=format&fit=crop",
+    "imageAlt": "HVAC technician installing a central air unit",
+    "badge": "We are Elite HVAC",
+    "headline": "Next Level Climate.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "We are Elite HVAC",
+    "body": "We're a modern climate-control contractor. Our install crews and emergency techs keep homes and businesses at the right temperature year-round — licensed, insured, and backed by a 10-year labor warranty."
+  },
+  "personas": [
+    { "label": "for homeowners", "kicker": "Elite HVAC", "href": "/services" },
+    { "label": "for property managers", "kicker": "Elite HVAC", "href": "/services" },
+    { "label": "for commercial", "kicker": "Elite HVAC", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": true,
+    "headline": "Find out what size system you need.",
+    "body": "Get a quick sizing estimate based on your square footage, insulation level, and climate zone.",
+    "phoneMockImage": "https://images.unsplash.com/photo-1515974256630-babc85765b1d?w=480&q=80&auto=format&fit=crop"
+  },
+  "zPatternRows": [
+    {
+      "label": "Our Services",
+      "headline": "Install, service, and emergency repair.",
+      "body": "From high-efficiency new installs to same-day emergency calls. Every job starts with upfront pricing and ends with a satisfied customer.",
+      "image": "https://images.unsplash.com/photo-1761642119720-1ce47b16d09b?w=1600&q=80&auto=format&fit=crop",
+      "cta": { "label": "See services", "href": "/services" }
+    },
+    {
+      "label": "Trusted Equipment",
+      "headline": "The brands that last.",
+      "body": "We install Carrier, Trane, and Lennox — systems chosen for reliability, efficiency, and warranty support. All parts are OEM, backed by the manufacturer.",
+      "image": "https://images.unsplash.com/photo-1761599933387-f7488c02427d?w=1600&q=80&auto=format&fit=crop"
+    }
+  ],
+  "portfolio": [
+    { "image": "https://images.unsplash.com/photo-1751486289950-5c4898a4c773?w=1200&q=80&auto=format&fit=crop", "caption": "Full split-system install" },
+    { "image": "https://images.unsplash.com/photo-1632907364174-285030588b31?w=1200&q=80&auto=format&fit=crop", "caption": "Rooftop commercial unit" },
+    { "image": "https://images.unsplash.com/photo-1708005383082-3a0e5e79a347?w=1200&q=80&auto=format&fit=crop", "caption": "Emergency furnace repair" },
+    { "image": "https://images.unsplash.com/photo-1568634699096-82c9765548a0?w=1200&q=80&auto=format&fit=crop", "caption": "Ductwork retrofit" },
+    { "image": "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=1200&q=80&auto=format&fit=crop", "caption": "Mini-split installation" },
+    { "image": "https://images.unsplash.com/photo-1770838773417-08b18661c62f?w=1200&q=80&auto=format&fit=crop", "caption": "Seasonal tune-up" }
+  ],
+  "footerCta": {
+    "headline": "Configure your HVAC system.",
+    "subhead": "Get in touch for a free sizing and install quote.",
+    "cta": { "label": "Explore", "href": "/contact" }
+  }
+}
