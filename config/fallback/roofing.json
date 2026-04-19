@@ -1,0 +1,102 @@
+{
+  "business": {
+    "name": "",
+    "tagline": "Trusted Local Roofing Experts",
+    "phone": "",
+    "email": "",
+    "serviceArea": "",
+    "about": "Licensed and insured roofing contractors providing quality roof repairs, replacements, and inspections for homeowners and businesses.",
+    "founded": "",
+    "jobsCompleted": ""
+  },
+  "branding": {
+    "primaryColor": "#1a1a2e",
+    "accentColor": "#e94560",
+    "backgroundColor": "#F5F5F5",
+    "logo": "/logo.png",
+    "font": "Inter"
+  },
+  "services": [
+    {
+      "name": "Roof Inspection",
+      "price": "$199",
+      "duration": "1-2 hrs",
+      "description": "Comprehensive roof inspection with detailed report. Identify leaks, damage, and wear before they become costly problems."
+    },
+    {
+      "name": "Roof Repair",
+      "price": "$350+",
+      "duration": "Half day",
+      "description": "Patch leaks, replace damaged shingles, fix flashing and vent issues. Most repairs completed same day."
+    },
+    {
+      "name": "Full Roof Replacement",
+      "price": "$8,000+",
+      "duration": "2-5 days",
+      "description": "Complete tear-off and replacement with premium materials. Includes cleanup, haul-away, and manufacturer warranty."
+    },
+    {
+      "name": "Gutter Installation",
+      "price": "$1,200+",
+      "duration": "1 day",
+      "description": "Seamless aluminum gutters with downspouts. Protect your foundation from water damage."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Happy Homeowner",
+      "location": "Local",
+      "text": "Fixed our leak fast and the price was fair. Highly recommend!",
+      "rating": 5
+    },
+    {
+      "name": "Satisfied Client",
+      "location": "Local",
+      "text": "Professional crew, cleaned up everything. Roof looks brand new.",
+      "rating": 5
+    },
+    {
+      "name": "Repeat Customer",
+      "location": "Local",
+      "text": "Used them for inspection and then full replacement. Great experience both times.",
+      "rating": 5
+    }
+  ],
+  "process": [
+    {
+      "step": "1",
+      "title": "Free Estimate",
+      "description": "We inspect your roof and provide a detailed, no-obligation quote."
+    },
+    {
+      "step": "2",
+      "title": "Schedule the Work",
+      "description": "Pick a date that works for you. We handle permits and materials."
+    },
+    {
+      "step": "3",
+      "title": "Quality Guaranteed",
+      "description": "Professional installation backed by our workmanship warranty."
+    }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi! Need a roof inspection or repair estimate? I can help!",
+    "accentColor": "#e94560",
+    "closingGoal": "book_consultation",
+    "tone": "professional",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "email",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "How old is your roof?",
+      "Are you dealing with a leak or storm damage?",
+      "Is this for insurance or out-of-pocket?"
+    ],
+    "customInstructions": ""
+  },
+  "meta": {
+    "industry": "roofing",
+    "clientId": ""
+  }
+}

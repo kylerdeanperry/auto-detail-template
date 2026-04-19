@@ -1,0 +1,102 @@
+{
+  "business": {
+    "name": "",
+    "tagline": "HVAC Installation, Service & Emergency Repair",
+    "phone": "",
+    "email": "",
+    "serviceArea": "",
+    "about": "Modern HVAC contractors trusted by homeowners and property managers for installs, tune-ups, and emergency repair.",
+    "founded": "",
+    "jobsCompleted": ""
+  },
+  "branding": {
+    "primaryColor": "#101920",
+    "accentColor": "#FFF365",
+    "backgroundColor": "#FFFFFF",
+    "logo": "/logo.png",
+    "font": "Inter"
+  },
+  "services": [
+    {
+      "name": "AC Installation",
+      "price": "$3,500-$8,000",
+      "duration": "1-2 days",
+      "description": "Complete central air installation including ductwork assessment, equipment, and commissioning."
+    },
+    {
+      "name": "Furnace Installation",
+      "price": "$3,000-$7,000",
+      "duration": "1 day",
+      "description": "High-efficiency gas or electric furnace installation with permit pull and haul-away."
+    },
+    {
+      "name": "Tune-Up & Maintenance",
+      "price": "$149-$249",
+      "duration": "1 hour",
+      "description": "Seasonal tune-up: clean coils, check refrigerant, inspect electrical, test operation."
+    },
+    {
+      "name": "Emergency Repair",
+      "price": "$150+",
+      "duration": "varies",
+      "description": "Same-day diagnosis and repair. Upfront pricing before work begins."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Happy Customer",
+      "location": "Local",
+      "text": "Fast, honest, and got our AC running the same day.",
+      "rating": 5
+    },
+    {
+      "name": "Satisfied Client",
+      "location": "Local",
+      "text": "Professional install — crew was clean and on time.",
+      "rating": 5
+    },
+    {
+      "name": "Repeat Customer",
+      "location": "Local",
+      "text": "Best HVAC company we've used. Highly recommend.",
+      "rating": 5
+    }
+  ],
+  "process": [
+    {
+      "step": "1",
+      "title": "Call or Book",
+      "description": "Reach us 24/7. Emergency? We can usually be there today."
+    },
+    {
+      "step": "2",
+      "title": "On-Site Diagnosis",
+      "description": "Licensed tech inspects, explains the issue, and quotes before starting work."
+    },
+    {
+      "step": "3",
+      "title": "Problem Solved",
+      "description": "Repair or install complete. Satisfaction guaranteed, warrantied work."
+    }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi — what HVAC issue can I help with today?",
+    "accentColor": "#FFF365",
+    "closingGoal": "qualify_handoff",
+    "tone": "urgent_expert",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "both",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "Is this for your home or business?",
+      "Is the system running at all, or is this an emergency?",
+      "What's your zip code?"
+    ],
+    "customInstructions": ""
+  },
+  "meta": {
+    "industry": "hvac",
+    "clientId": ""
+  }
+}

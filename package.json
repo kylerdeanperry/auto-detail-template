@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "fetch-config": "tsx scripts/fetch-industry-config.ts",
+    "snapshot-fallbacks": "tsx scripts/snapshot-fallbacks.ts",
     "prebuild": "tsx scripts/fetch-industry-config.ts"
   },
   "dependencies": {

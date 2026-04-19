@@ -1,0 +1,102 @@
+{
+  "business": {
+    "name": "",
+    "tagline": "Professional Painting Contractors",
+    "phone": "",
+    "email": "",
+    "serviceArea": "",
+    "about": "Licensed painting contractors delivering clean, lasting results for interior and exterior projects. Free estimates, premium materials, and meticulous prep work.",
+    "founded": "",
+    "jobsCompleted": ""
+  },
+  "branding": {
+    "primaryColor": "#2C3E50",
+    "accentColor": "#E74C3C",
+    "backgroundColor": "#FAFAFA",
+    "logo": "/logo.png",
+    "font": "Inter"
+  },
+  "services": [
+    {
+      "name": "Interior Painting",
+      "price": "$1,500+",
+      "duration": "2-4 days",
+      "description": "Walls, ceilings, trim, and doors. Includes prep, priming, and two coats of premium paint."
+    },
+    {
+      "name": "Exterior Painting",
+      "price": "$3,000+",
+      "duration": "3-5 days",
+      "description": "Full exterior including siding, trim, fascia, and shutters. Power wash prep and premium exterior paint."
+    },
+    {
+      "name": "Cabinet Refinishing",
+      "price": "$2,500+",
+      "duration": "3-5 days",
+      "description": "Sand, prime, and spray kitchen or bathroom cabinets. Factory-smooth finish at a fraction of replacement cost."
+    },
+    {
+      "name": "Color Consultation",
+      "price": "Free",
+      "duration": "30 min",
+      "description": "In-home color consultation with our design specialist. We help you pick the perfect palette."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Happy Customer",
+      "location": "Local",
+      "text": "Transformed our entire first floor. The prep work made all the difference.",
+      "rating": 5
+    },
+    {
+      "name": "Satisfied Client",
+      "location": "Local",
+      "text": "Exterior looks brand new. Neighbors keep asking who we used.",
+      "rating": 5
+    },
+    {
+      "name": "Repeat Customer",
+      "location": "Local",
+      "text": "Third project with them. Always clean, always on schedule, always great.",
+      "rating": 5
+    }
+  ],
+  "process": [
+    {
+      "step": "1",
+      "title": "Free Estimate",
+      "description": "We visit your property, measure, and provide a detailed quote — no obligation."
+    },
+    {
+      "step": "2",
+      "title": "Pick Your Colors",
+      "description": "Choose from our curated palettes or bring your own. We provide sample swatches."
+    },
+    {
+      "step": "3",
+      "title": "Expert Results",
+      "description": "Meticulous prep, premium paint, clean lines. Backed by our workmanship guarantee."
+    }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi! Looking for a painting estimate? Tell me about your project and I'll get you started.",
+    "accentColor": "#E74C3C",
+    "closingGoal": "book_consultation",
+    "tone": "professional",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "email",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "Is this interior or exterior?",
+      "How many rooms or what's the square footage?",
+      "When are you looking to get this done?"
+    ],
+    "customInstructions": ""
+  },
+  "meta": {
+    "industry": "painting",
+    "clientId": ""
+  }
+}
