@@ -1,0 +1,54 @@
+{
+  "industrySlug": "painting",
+  "displayName": "Elite Painting",
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1776269077163-e26abbc6189d?w=1600&q=80&auto=format&fit=crop",
+    "imageAlt": "Freshly painted modern home exterior with crisp trim",
+    "badge": "We are Elite Painting",
+    "headline": "Next Level Finish.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "We are Elite Painting",
+    "body": "We're a premium residential and commercial painting contractor. Sharp lines, clean job sites, durable finishes — every project backed by a 5-year labor warranty on interior and exterior work."
+  },
+  "personas": [
+    { "label": "for residential", "kicker": "Elite Painting", "href": "/services" },
+    { "label": "for commercial", "kicker": "Elite Painting", "href": "/services" },
+    { "label": "for new construction", "kicker": "Elite Painting", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": true,
+    "headline": "Estimate your paint project.",
+    "body": "Enter square footage, trim linear feet, and color count — get a ballpark in under a minute.",
+    "phoneMockImage": "https://images.unsplash.com/photo-1589566983471-a0e73071c282?w=480&q=80&auto=format&fit=crop"
+  },
+  "zPatternRows": [
+    {
+      "label": "Interior & Exterior",
+      "headline": "Every surface, every season.",
+      "body": "Interior rooms, exterior siding, trim, cabinet refinishing, epoxy floors. We prep like it matters — because it does. Prep is 80% of a paint job's lifespan.",
+      "image": "https://images.unsplash.com/photo-1742900280861-32bed068938b?w=1600&q=80&auto=format&fit=crop",
+      "cta": { "label": "See services", "href": "/services" }
+    },
+    {
+      "label": "Color Consultation",
+      "headline": "Pick a color you won't regret.",
+      "body": "Free color consultation with every project. Swatches on your wall, lit the way your light hits it. We'd rather spend an extra hour than repaint it next year.",
+      "image": "https://images.unsplash.com/photo-1523465322945-c6b0013393bd?w=1600&q=80&auto=format&fit=crop"
+    }
+  ],
+  "portfolio": [
+    { "image": "https://images.unsplash.com/photo-1688372199140-cade7ae820fe?w=1200&q=80&auto=format&fit=crop", "caption": "Full interior — 4BR home" },
+    { "image": "https://images.unsplash.com/photo-1745665777586-09381ba528d6?w=1200&q=80&auto=format&fit=crop", "caption": "Exterior repaint + trim" },
+    { "image": "https://images.unsplash.com/photo-1511822148790-e7b58ba14c72?w=1200&q=80&auto=format&fit=crop", "caption": "Cabinet refinish" },
+    { "image": "https://images.unsplash.com/photo-1675191863404-e1db618d6655?w=1200&q=80&auto=format&fit=crop", "caption": "Commercial tenant improvement" },
+    { "image": "https://images.unsplash.com/photo-1595446472721-4b7aa63a2bc7?w=1200&q=80&auto=format&fit=crop", "caption": "New construction finish" },
+    { "image": "https://images.unsplash.com/photo-1688372198189-de6a51777a81?w=1200&q=80&auto=format&fit=crop", "caption": "Historic restoration" }
+  ],
+  "footerCta": {
+    "headline": "Configure your paint project.",
+    "subhead": "Get in touch for a color consultation and quote.",
+    "cta": { "label": "Explore", "href": "/contact" }
+  }
+}
