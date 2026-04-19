@@ -1,99 +1,57 @@
 {
   "business": {
-    "name": "",
-    "tagline": "Trusted Local Roofing Experts",
-    "phone": "",
-    "email": "",
-    "serviceArea": "",
-    "about": "Licensed and insured roofing contractors providing quality roof repairs, replacements, and inspections for homeowners and businesses.",
-    "founded": "",
-    "jobsCompleted": ""
+    "name": "Elite Roofing",
+    "tagline": "Bainbridge & Seattle GAF Master Elite Roofer",
+    "phone": "(206) 555-0142",
+    "email": "hello@eliteroofing.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A premium roofing studio serving Bainbridge Island and the north Seattle neighborhoods. GAF Master Elite-certified crews, honest inspections, proper underlayment and flashing detail, and storm-response teams on call when the weather finds a weakness.",
+    "founded": "2019",
+    "jobsCompleted": "650+"
   },
   "branding": {
-    "primaryColor": "#1a1a2e",
-    "accentColor": "#e94560",
-    "backgroundColor": "#F5F5F5",
-    "logo": "/logo.png",
-    "font": "Inter"
+    "primaryColor": "#1A1D1B",
+    "accentColor": "#2C3D38",
+    "backgroundColor": "#F2F0EB",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
   },
   "services": [
-    {
-      "name": "Roof Inspection",
-      "price": "$199",
-      "duration": "1-2 hrs",
-      "description": "Comprehensive roof inspection with detailed report. Identify leaks, damage, and wear before they become costly problems."
-    },
-    {
-      "name": "Roof Repair",
-      "price": "$350+",
-      "duration": "Half day",
-      "description": "Patch leaks, replace damaged shingles, fix flashing and vent issues. Most repairs completed same day."
-    },
-    {
-      "name": "Full Roof Replacement",
-      "price": "$8,000+",
-      "duration": "2-5 days",
-      "description": "Complete tear-off and replacement with premium materials. Includes cleanup, haul-away, and manufacturer warranty."
-    },
-    {
-      "name": "Gutter Installation",
-      "price": "$1,200+",
-      "duration": "1 day",
-      "description": "Seamless aluminum gutters with downspouts. Protect your foundation from water damage."
-    }
+    { "name": "Roof Replacement", "price": "$14,000–$38,000", "duration": "3–5 days", "description": "Full tear-off and replacement with GAF Timberline HDZ architectural shingles or standing-seam metal panel. Proper underlayment, ice-and-water barrier, drip edge, step flashing, and ridge ventilation. Permit pulled, final inspection passed." },
+    { "name": "Roof Repair", "price": "$450–$2,500", "duration": "½ day – 1 day", "description": "Leaks, wind-lifted shingles, failed flashing, damaged vents, and boot replacements. Most repairs same-day. If a repair isn't the right call, we'll tell you — and back it with a written scope either way." },
+    { "name": "Storm Damage Response", "price": "$300 inspection (credited to repair)", "duration": "Same-day for active leaks", "description": "Storm-response team on-call through every wind event. Emergency tarp, documented damage photography, and insurance-claim-ready written reports." },
+    { "name": "Annual Inspection", "price": "$249", "duration": "1–2 hours", "description": "Licensed roofer on the roof. Photo-documented assessment of every flash, vent, fastener, sealant, and drainage point. Written report delivered within 24 hours." },
+    { "name": "Seamless Gutters", "price": "$1,800–$4,500", "duration": "1 day", "description": "On-site formed seamless aluminum or copper gutters with custom downspouts. Leaf-guard options available. Protects the fascia, soffit, and foundation from water damage." },
+    { "name": "Skylights + Flashing", "price": "$800–$3,500", "duration": "1 day", "description": "VELUX and Kingspan skylight installation, replacement, and proper re-flashing into existing roof systems. Any flashing-only repairs also welcome." }
   ],
   "testimonials": [
-    {
-      "name": "Happy Homeowner",
-      "location": "Local",
-      "text": "Fixed our leak fast and the price was fair. Highly recommend!",
-      "rating": 5
-    },
-    {
-      "name": "Satisfied Client",
-      "location": "Local",
-      "text": "Professional crew, cleaned up everything. Roof looks brand new.",
-      "rating": 5
-    },
-    {
-      "name": "Repeat Customer",
-      "location": "Local",
-      "text": "Used them for inspection and then full replacement. Great experience both times.",
-      "rating": 5
-    }
+    { "name": "Graham H.", "location": "Bainbridge Island", "text": "They found two issues the insurance adjuster missed and documented everything properly. Claim went through without a fight. Roof looks like architecture instead of shingles.", "rating": 5 },
+    { "name": "Rita C.", "location": "Ballard, Seattle", "text": "Asked three companies to bid. Two tried to sell me a full replacement I didn't need. Elite Roofing said it was a flashing repair and fixed it in a day for $700.", "rating": 5 },
+    { "name": "Jim P.", "location": "Queen Anne, Seattle", "text": "Storm ripped part of my ridge cap during the windstorm. Their emergency line answered at 11pm, a tarp was on the next morning, full repair by Friday.", "rating": 5 },
+    { "name": "Andrea W.", "location": "Phinney Ridge, Seattle", "text": "Full replacement on our 1920s foursquare. Crew never left debris, never blocked the driveway, and the ridge vents look intentional for once.", "rating": 5 }
   ],
   "process": [
-    {
-      "step": "1",
-      "title": "Free Estimate",
-      "description": "We inspect your roof and provide a detailed, no-obligation quote."
-    },
-    {
-      "step": "2",
-      "title": "Schedule the Work",
-      "description": "Pick a date that works for you. We handle permits and materials."
-    },
-    {
-      "step": "3",
-      "title": "Quality Guaranteed",
-      "description": "Professional installation backed by our workmanship warranty."
-    }
+    { "step": "01", "title": "Inspect", "description": "Licensed roofer climbs the roof, photographs every flash, vent, fastener, and sealant, and delivers a written assessment to your inbox — not a sales pitch." },
+    { "step": "02", "title": "Diagnose", "description": "If it's repairable, we say repairable. No pressure-to-replace. When a replacement is the right call, you'll see photo evidence, not vague claims." },
+    { "step": "03", "title": "Replace", "description": "Proper underlayment. Ice-and-water barrier over eaves and valleys. Drip edge, step flashing, ridge venting. GAF Timberline HDZ or standing-seam metal. Permit pulled, inspections passed, job site clean." },
+    { "step": "04", "title": "Warranty", "description": "GAF Golden Pledge on full replacements — the strongest shingle warranty in North America. 25 years of workmanship on every install. Active storm-response line for the weather that finds a weakness." }
   ],
   "chatbot": {
     "enabled": true,
-    "greeting": "Hi! Need a roof inspection or repair estimate? I can help!",
-    "accentColor": "#e94560",
-    "closingGoal": "book_consultation",
-    "tone": "professional",
+    "greeting": "Hi — Elite Roofing's virtual assistant. Quick question: is this a new roof, a repair, a leak, or storm damage?",
+    "accentColor": "#2C3D38",
+    "closingGoal": "qualify_handoff",
+    "tone": "warm-direct",
     "quoteStyle": "range_from_services",
-    "handoffMethod": "email",
+    "handoffMethod": "both",
     "handoffContact": "",
     "qualifyingQuestions": [
-      "How old is your roof?",
-      "Are you dealing with a leak or storm damage?",
-      "Is this for insurance or out-of-pocket?"
+      "Is this a repair, a replacement, or storm damage?",
+      "Roughly how old is the current roof?",
+      "Do you have an active leak right now?",
+      "What's your zip code?"
     ],
-    "customInstructions": ""
+    "customInstructions": "Anchor on honest assessment, proper system installation (underlayment + flashing + ventilation, not just shingles), GAF Master Elite credentials, and storm-response availability — not lowest price. If the user describes symptoms that sound like a repair, keep them steered to the repair path; don't upsell. Urgent tone for active leaks and storm damage."
   },
   "meta": {
     "industry": "roofing",

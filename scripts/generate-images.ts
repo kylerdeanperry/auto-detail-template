@@ -270,11 +270,126 @@ const HVAC_JOBS: Job[] = [
   },
 ]
 
+// ── Roofing (Weatherproof Moss palette) ────────────────────────
+const ROOFING_PALETTE =
+  "Brand palette: warm off-white #F2F0EB paper, deep near-black #1A1D1B ink, deep moss green #2C3D38 accents, copper/rust #A8643E sparingly (emergency tarps, copper gutter details), warm stone #D8D4C9. No rainbow palettes, no garish accents, no cartoon illustration."
+
+const ROOFING_JOBS: Job[] = [
+  {
+    file: "roofing-hero-aerial-craftsman.jpg",
+    aspect: "16:9",
+    prompt:
+      "Aerial drone photograph looking down at a 45-degree angle on a freshly shingled Pacific Northwest craftsman home, architectural asphalt shingles in a warm charcoal, crisp ridge caps, clean step flashing visible where the dormer meets the main roof plane. Cedar and Douglas fir trees surround the property, slate walkway, a deep moss-green front door just visible below. Late afternoon PNW overcast light with a thin break of sun on the ridge. No people, no text, no visible logos. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-flashing-detail.jpg",
+    aspect: "3:2",
+    prompt:
+      "Extreme close-up, macro detail of step flashing meeting a brick chimney on a freshly shingled roof. Rubber membrane visible beneath the top flange, copper counter-flashing tucked into a mortar reglet, a bead of sealant clean at the edge. Shingles laid perfectly around the penetration. Overcast PNW light. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-inspection-detail.jpg",
+    aspect: "3:2",
+    prompt:
+      "Close-up of a roofer's gloved hand holding a small DSLR camera, photographing a section of architectural shingle where a few tabs show wind-lift. A small moisture meter and a metal chalk scribe rest on the ridge beside him. Late-afternoon PNW light rakes across the shingles, highlighting texture. No face visible, honest-inspection feel. No text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-storm-response.jpg",
+    aspect: "3:2",
+    prompt:
+      "A dark moss-green service van parked in the driveway of a Pacific Northwest home in heavy rain, headlights on, side door slid open revealing neatly organized tarps and ladder. A roofer in a weatherproof jacket and hard hat walking toward the porch carrying a folded reinforced blue tarp. Cedars bending in the wind, puddles on the slate walkway. Atmosphere: reliable urgency, calm professionalism. No readable text on the van. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-hero-metal.jpg",
+    aspect: "3:2",
+    prompt:
+      "Wide architectural photograph of a modern Pacific Northwest cabin with a standing-seam metal roof in a deep charcoal/moss finish, cedar siding, full-height glass on the gabled end reflecting Douglas fir trees. The metal roof's seams are razor-straight, snow guards aligned, gutter in dark bronze. Low afternoon light skimming the panels. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-01-craftsman-front.jpg",
+    aspect: "3:2",
+    prompt:
+      "Street-level photograph of a restored Bainbridge craftsman home with a brand-new GAF Timberline HDZ architectural shingle roof in a warm charcoal. Deep moss-green front door, warm bone-white trim, cedar hedges. Overcast PNW sky. The roof is the visual centerpiece — crisp ridge cap, clean valleys, perfect line where eave meets fascia. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-02-metal-cabin.jpg",
+    aspect: "3:2",
+    prompt:
+      "Editorial architectural photograph of a modern Bainbridge Island cabin from a slightly-below angle, showing the full expanse of a standing-seam metal roof in charcoal-black against dark green cedar trees. Copper downspouts catch the eye. Faint mist in the forest. The roof looks like engineered architecture, not a cap. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-03-cedar-composite.jpg",
+    aspect: "3:2",
+    prompt:
+      "Queen Anne Seattle heritage home with a freshly installed composite cedar-look shake roof (DaVinci or similar). Rich warm shake tones, the composite so convincingly textured it reads as real cedar. Two dormers on the front, stone chimney, muted overcast light. The house looks like it's been cared for generationally. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-04-hip-complex.jpg",
+    aspect: "3:2",
+    prompt:
+      "Elevated photograph (from a neighboring slope) of a complex hip-roofed Magnolia home showing multiple roof planes meeting at precise ridges and hips. Two skylights flush with the plane, ridge vents running the crown, architectural asphalt shingles in warm charcoal. Edge flashing crisp and aligned. The geometry reads as carefully engineered. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-05-commercial-tpo.jpg",
+    aspect: "3:2",
+    prompt:
+      "Photograph of a low-slope commercial roof retrofit on a small Ballard warehouse: bright white TPO membrane, seams heat-welded neatly, flashing at the parapet tucked and capped, a pair of rooftop HVAC units visible in the distance. Morning light. Orderly, expensive, commercial. No readable text, no visible signage. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-portfolio-06-copper-gutters.jpg",
+    aspect: "3:2",
+    prompt:
+      "Macro close-up of seamless copper half-round gutters running along the eave of a Phinney Ridge craftsman home in early autumn. The copper has begun its first patina toward warm brown, a few fallen bigleaf maple leaves rest inside, a drip chain descends toward a small ceramic rain bowl below. Crisp hangers, level installation. No people, no text. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+  {
+    file: "roofing-estimator-phone-mock.jpg",
+    aspect: "9:16",
+    prompt:
+      "Product rendering: a photoreal iPhone-style smartphone floating on a warm off-white paper background. The screen shows a minimalist roofing quote interface with a large serif headline 'Your roof estimate', a deep moss-green accent progress bar, a price range, and a small icon row showing shingle vs. metal options. The phone has a polished titanium frame. A few small roofing material chips (asphalt shingle corner, copper scrap, a strip of ice-and-water) arranged beside it. Editorial product-still aesthetic. No brand logos, readable text limited to the stylized headline. " +
+      STYLE_BASE +
+      " " +
+      ROOFING_PALETTE,
+  },
+]
+
 // ── Dispatch by industry ───────────────────────────────────────
 const JOBS_BY_INDUSTRY: Record<string, Job[]> = {
   painting: PAINTING_JOBS,
   hvac: HVAC_JOBS,
-  // roofing: ROOFING_JOBS,  // TODO when roofing gets its design pass
+  roofing: ROOFING_JOBS,
 }
 
 const industry = (process.env.INDUSTRY_SLUG ?? "painting").toLowerCase()

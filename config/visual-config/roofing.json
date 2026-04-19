@@ -1,54 +1,90 @@
 {
   "industrySlug": "roofing",
   "displayName": "Elite Roofing",
+  "trustStrip": [
+    "GAF Master Elite · Top 2%",
+    "25-Year Workmanship",
+    "Licensed · Bonded · Insured"
+  ],
+  "trustBand": [
+    { "label": "GAF Master Elite", "sub": "Top 2% of contractors nationally" },
+    { "label": "25-Year Workmanship", "sub": "On every install we touch" },
+    { "label": "GAF Golden Pledge", "sub": "50-year system warranty available" },
+    { "label": "BBB A+ · GuildQuality Certified", "sub": "Verified reviews & job audits" }
+  ],
+  "theme": {
+    "paper": "#F2F0EB",
+    "paperWarm": "#E5E0D3",
+    "ink": "#1A1D1B",
+    "inkSoft": "#3C423E",
+    "accent": "#2C3D38",
+    "accentDeep": "#1E2A27",
+    "secondary": "#A8643E",
+    "stone": "#D8D4C9",
+    "muted": "#6E6F65"
+  },
   "hero": {
-    "image": "https://images.unsplash.com/photo-1605450099279-533bd3ce379a?w=1600&q=80&auto=format&fit=crop",
-    "imageAlt": "Premium architectural shingle roof on a modern home",
-    "badge": "We are Elite Roofing",
-    "headline": "Next Level Roofs.",
-    "cta": { "label": "Get a Quote", "href": "/contact" }
+    "image": "/images/generated/roofing-hero-aerial-craftsman.jpg",
+    "imageAlt": "Aerial drone photograph of a freshly shingled Pacific Northwest craftsman home surrounded by cedar trees in late-afternoon light",
+    "badge": "Bainbridge Island · North Seattle · GAF Master Elite · Est. 2019",
+    "headline": "A Roof, Permanently.",
+    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
   },
   "intro": {
-    "label": "We are Elite Roofing",
-    "body": "We're a modern roofing company. Our premium installation process transforms any home into an energy-efficient, weather-ready fortress — architectural shingles, metal, and slate, all backed by a 30-year transferable warranty."
+    "label": "A roofing studio, not a bid mill",
+    "body": "Thirty-year roof systems, properly installed. GAF Master Elite-certified crews, honest inspections, and active storm response for Bainbridge Island and North Seattle — from the first leak to the final ridge cap."
   },
   "personas": [
-    { "label": "for homeowners", "kicker": "Elite Roofing", "href": "/services" },
-    { "label": "for architects", "kicker": "Elite Roofing", "href": "/services" },
-    { "label": "for commercial", "kicker": "Elite Roofing", "href": "/services" }
+    { "label": "Residential Replacement", "kicker": "For the roof you'll hand down", "href": "/services" },
+    { "label": "Storm & Repair", "kicker": "For the weather that finds a weakness", "href": "/services" },
+    { "label": "Inspection & Maintenance", "kicker": "For the roof you want to last", "href": "/services" }
   ],
   "configuratorTeaser": {
     "enabled": true,
-    "headline": "Find out how much a new roof costs.",
-    "body": "Get an instant estimate based on your home's square footage, pitch, and material preference.",
-    "phoneMockImage": "https://images.unsplash.com/photo-1514947864179-c3b63c910b69?w=480&q=80&auto=format&fit=crop"
+    "headline": "Get a written roof estimate in under a minute.",
+    "body": "Answer four questions about your home and our virtual estimator returns a transparent price range for repair or replacement — plus material options (architectural shingle vs. metal) — before a single sales call.",
+    "phoneMockImage": "/images/generated/roofing-estimator-phone-mock.jpg"
   },
   "zPatternRows": [
     {
-      "label": "Premium Materials",
-      "headline": "The right material for every roof.",
-      "body": "From architectural shingles to standing-seam metal and natural slate. We install what lasts — matched to your home's style, climate, and budget.",
-      "image": "https://images.unsplash.com/photo-1635424709845-3a85ad5e1f5e?w=1600&q=80&auto=format&fit=crop",
-      "cta": { "label": "See services", "href": "/services" }
+      "label": "System, Not Shingles",
+      "headline": "A roof is not shingles. It's a system.",
+      "body": "Underlayment, ice-and-water barrier, drip edge, step flashing, ridge ventilation, fastener schedule — the shingles are the last 10%. A properly installed system outlasts a premium shingle poorly installed, every time. We build systems, and we build them to manufacturer spec.",
+      "image": "/images/generated/roofing-flashing-detail.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
     },
     {
-      "label": "Certified Crews",
-      "headline": "Factory-trained, insured, guaranteed.",
-      "body": "Every crew is certified by the manufacturers whose materials we install — GAF Master Elite, Owens Corning Platinum Preferred. Workmanship warranty stays with your home if you sell.",
-      "image": "https://images.unsplash.com/photo-1502473379243-ba6449c3b6c4?w=1600&q=80&auto=format&fit=crop"
+      "label": "Honest Assessment",
+      "headline": "We'd rather repair it than oversell it.",
+      "body": "Most roofing calls don't need a new roof. They need a proper inspection, a clear diagnosis, and a repair scoped to the actual problem. If we can fix it for $700, we'll tell you. If it's time for a replacement, you'll see the evidence — photographed, written, and explained.",
+      "image": "/images/generated/roofing-inspection-detail.jpg"
+    },
+    {
+      "label": "Storm Response",
+      "headline": "When the storm hits, we're already on the way.",
+      "body": "Every wind event activates the storm-response team. Emergency tarp, damage photography, and insurance-claim-ready documentation — same day for active leaks. Because a compromised roof at 11pm is a right-now problem, not a next-Tuesday problem.",
+      "image": "/images/generated/roofing-storm-response.jpg",
+      "cta": { "label": "See the warranty", "href": "/services" }
+    },
+    {
+      "label": "The Warranty",
+      "headline": "GAF Golden Pledge, backed by 25 years of workmanship.",
+      "body": "Full replacements qualify for the GAF Golden Pledge — the strongest shingle warranty in North America, available only to the top 2% of contractors. Every install carries a 25-year workmanship guarantee. The materials last because the installation earns the right to let them.",
+      "image": "/images/generated/roofing-portfolio-hero-metal.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
     }
   ],
   "portfolio": [
-    { "image": "https://images.unsplash.com/photo-1654865405022-29e931513edb?w=1200&q=80&auto=format&fit=crop", "caption": "Architectural shingle — 4000 sqft" },
-    { "image": "https://images.unsplash.com/photo-1634853982486-c06f0e17940f?w=1200&q=80&auto=format&fit=crop", "caption": "Standing-seam metal install" },
-    { "image": "https://images.unsplash.com/photo-1577398303842-476c0eece92c?w=1200&q=80&auto=format&fit=crop", "caption": "Storm damage insurance claim" },
-    { "image": "https://images.unsplash.com/photo-1604062215216-f417b2778726?w=1200&q=80&auto=format&fit=crop", "caption": "Commercial flat roof" },
-    { "image": "https://images.unsplash.com/photo-1575380585708-681561f22744?w=1200&q=80&auto=format&fit=crop", "caption": "Natural slate replacement" },
-    { "image": "https://images.unsplash.com/photo-1744975748338-d226c7535d49?w=1200&q=80&auto=format&fit=crop", "caption": "Full tear-off + re-deck" }
+    { "image": "/images/generated/roofing-portfolio-01-craftsman-front.jpg", "caption": "GAF Timberline HDZ · Bainbridge craftsman · full replacement" },
+    { "image": "/images/generated/roofing-portfolio-02-metal-cabin.jpg", "caption": "Standing-seam metal · Bainbridge cabin" },
+    { "image": "/images/generated/roofing-portfolio-03-cedar-composite.jpg", "caption": "Cedar-look composite · Queen Anne heritage home" },
+    { "image": "/images/generated/roofing-portfolio-04-hip-complex.jpg", "caption": "Multi-plane hip roof · Magnolia" },
+    { "image": "/images/generated/roofing-portfolio-05-commercial-tpo.jpg", "caption": "Low-slope TPO · Ballard warehouse" },
+    { "image": "/images/generated/roofing-portfolio-06-copper-gutters.jpg", "caption": "Copper half-round gutters · Phinney Ridge" }
   ],
   "footerCta": {
-    "headline": "Configure your roof.",
-    "subhead": "Get in touch for an initial consultation and estimate.",
-    "cta": { "label": "Explore", "href": "/contact" }
+    "headline": "Ready for a roof that'll still be here in thirty years?",
+    "subhead": "Virtual quote in under a minute. On-site inspection scheduled within 48 hours.",
+    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
   }
 }
