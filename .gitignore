@@ -15,3 +15,7 @@ node_modules
 .next/
 .DS_Store
 .vercel
+
+# Generated at build time
+src/config/industry-config.json
+src/config/industry-config.generated-at.txt
