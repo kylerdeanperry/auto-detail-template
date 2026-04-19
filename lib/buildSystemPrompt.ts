@@ -1,4 +1,4 @@
-import type { ClientConfig } from "@/config/client.config"
+import type { ClientConfig } from "@/types/config"
 
 export function buildSystemPrompt(config: ClientConfig): string {
   const layers: string[] = []
