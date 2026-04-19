@@ -6,7 +6,7 @@
     "imageAlt": "Editorial interior, morning light raking across a freshly painted plaster wall in soft bone white, minimal furnishings in warm walnut tones",
     "badge": "Bainbridge Island · North Seattle · Est. 2019",
     "headline": "High-End Results, Absolute Predictability.",
-    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
+    "cta": { "label": "Get a Virtual Quote", "href": "https://www.kylerperry.com/estimate/elite-painting" }
   },
   "intro": {
     "label": "A craftsman studio, not a contractor",
@@ -63,6 +63,6 @@
   "footerCta": {
     "headline": "Ready for a finish you won't need to fix?",
     "subhead": "Virtual quote in under a minute. On-site walkthrough scheduled within 48 hours.",
-    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
+    "cta": { "label": "Get a Virtual Quote", "href": "https://www.kylerperry.com/estimate/elite-painting" }
   }
 }
