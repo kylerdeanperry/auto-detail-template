@@ -98,6 +98,8 @@ API key lives in `.env.local` as `KIE_API_KEY`; it is gitignored.
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | leads intake |
 | `LEADS_INTAKE_SECRET` | leads intake |
 | `KIE_API_KEY` | local-only, for image generation |
+| `CLIENT_ID` | optional UUID — when set, bakes a specific painter's config |
+| `NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN_PUBLIC` | Mapbox Searchbox token for chat address autocomplete |
 
 CLI `vercel env add <name> preview` may silently fail without flags. Use:
 `vercel env add <name> preview --value <value> --yes`. If the CLI still errors,

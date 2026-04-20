@@ -131,12 +131,16 @@ const visualConfigSchema = z.object({
 })
 
 async function fetchAgencyOsConfig(slug: string) {
-  const url = process.env.AGENCY_OS_URL
+  const urlBase = process.env.AGENCY_OS_URL
   const secret = process.env.INDUSTRY_CONFIG_BUILD_SECRET
-  if (!url || !secret) {
+  if (!urlBase || !secret) {
     throw new Error("AGENCY_OS_URL and INDUSTRY_CONFIG_BUILD_SECRET required")
   }
-  const res = await fetch(`${url}/api/industries/${slug}/config`, {
+  const clientId = process.env.CLIENT_ID
+  const u = new URL(`${urlBase}/api/industries/${slug}/config`)
+  if (clientId) u.searchParams.set("clientId", clientId)
+
+  const res = await fetch(u.toString(), {
     headers: { "X-Build-Secret": secret },
   })
   if (!res.ok) throw new Error(`Fetch failed: ${res.status}`)
