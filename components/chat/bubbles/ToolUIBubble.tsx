@@ -3,7 +3,7 @@
 import type { ToolUIState } from "@/lib/chat/types"
 import { LeadForm } from "../widgets/LeadForm"
 import { QuoteCardStub } from "../widgets/QuoteCardStub"
-import { AddressAutocompleteStub } from "../widgets/AddressAutocompleteStub"
+import { AddressAutocomplete } from "../widgets/AddressAutocomplete"
 import { SatelliteSnapshotStub } from "../widgets/SatelliteSnapshotStub"
 import { PhotoDropzoneStub } from "../widgets/PhotoDropzoneStub"
 import { BookingWidgetStub } from "../widgets/BookingWidgetStub"
@@ -21,7 +21,15 @@ export function ToolUIBubble({
     case "quote_card":
       return <QuoteCardStub state={widget.state} />
     case "address_autocomplete":
-      return <AddressAutocompleteStub onSubmit={(a) => onSubmit(`My address is ${a}.`)} />
+      return (
+        <AddressAutocomplete
+          onSelect={(sel) =>
+            onSubmit(
+              `My address is ${sel.formattedAddress}. (placeId=${sel.placeId}, lat=${sel.lat}, lng=${sel.lng})`
+            )
+          }
+        />
+      )
     case "satellite_snapshot":
       return <SatelliteSnapshotStub state={widget.state} />
     case "photo_dropzone":
