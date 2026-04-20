@@ -29,13 +29,13 @@ describe("buildChatTools", () => {
   it("exposes all 8 tool names", () => {
     const tools = buildChatTools(fakeConfig, "http://localhost:3000")
     expect(Object.keys(tools).sort()).toEqual([
-      "analyze_photo",
       "answer_faq",
       "book_walkthrough",
       "capture_address",
       "capture_lead",
       "end_conversation",
       "generate_quote",
+      "request_photo",
       "start_exterior_estimate",
     ])
   })
@@ -59,22 +59,32 @@ describe("buildChatTools", () => {
     expect(result.matched).toBe(false)
   })
 
-  it("start_exterior_estimate returns a deterministic-looking id", async () => {
+  it("start_exterior_estimate returns pending placeholder", async () => {
     const tools = buildChatTools(fakeConfig, "http://localhost:3000")
     const result = await tools.start_exterior_estimate.execute!(
       {},
       { toolCallId: "t1", messages: [] } as any
     )
-    expect(result.estimateId).toMatch(/^est_[a-z0-9]+$/)
+    expect(result.estimateId).toBe("pending")
   })
 
   it("generate_quote stub returns a fixed price range", async () => {
-    const tools = buildChatTools(fakeConfig, "http://localhost:3000")
-    const result = await tools.generate_quote.execute!(
-      { estimateId: "est_test", paintTier: "standard" },
-      { toolCallId: "t1", messages: [] } as any
-    )
-    expect(result.priceLow).toBeGreaterThan(0)
-    expect(result.priceHigh).toBeGreaterThan(result.priceLow)
+    const origFetch = global.fetch
+    global.fetch = (async () => ({
+      ok: true,
+      json: async () => ({ data: { priceLow: 4200, priceHigh: 4800, prepLevel: "med", aiBreakdown: "x", includes: [] } }),
+    })) as any
+
+    try {
+      const tools = buildChatTools(fakeConfig, "http://localhost:3000")
+      const result = await tools.generate_quote.execute!(
+        { estimateId: "est_test", sqft: 2400, stories: 2, paintTier: "standard" },
+        { toolCallId: "t1", messages: [] } as any
+      )
+      expect(result.priceLow).toBeGreaterThan(0)
+      expect(result.priceHigh).toBeGreaterThan(result.priceLow)
+    } finally {
+      global.fetch = origFetch
+    }
   })
 })
