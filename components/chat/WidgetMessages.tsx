@@ -36,6 +36,12 @@ function toolOutputToWidget(toolName: string, output: any): ToolUIState | null {
       state: { provider: output.provider ?? "native" },
     }
   }
+  if (toolName === "request_photo" && output) {
+    return {
+      type: "photo_dropzone",
+      state: { uploaded: false, estimateId: output.estimateId },
+    }
+  }
   return null
 }
 

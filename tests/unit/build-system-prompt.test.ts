@@ -114,4 +114,14 @@ describe("buildSystemPrompt", () => {
     })
     expect(casual).not.toEqual(urgent)
   })
+
+  it("TOOL USAGE routes through request_photo", () => {
+    const s = buildSystemPrompt(painting)
+    expect(s).toMatch(/request_photo/)
+  })
+
+  it("TOOL USAGE no longer mentions analyze_photo", () => {
+    const s = buildSystemPrompt(painting)
+    expect(s).not.toMatch(/analyze_photo/)
+  })
 })

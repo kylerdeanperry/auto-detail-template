@@ -73,7 +73,7 @@ Hard rule: Never quote a price not in the services list above. For exterior pain
 
   blocks.push(
     `TOOL USAGE (routing tree):
-- Exterior painting intent → call start_exterior_estimate immediately, then walk through capture_address → analyze_photo → generate_quote → book_walkthrough.
+- Exterior painting intent → call start_exterior_estimate immediately, then walk through capture_address → request_photo → (visitor uploads, then the upload result appears as a user message with siding/conditionScore) → generate_quote → book_walkthrough.
 - Non-exterior intent (interior, cabinets, decks, "not sure yet") → gather a short description, then call capture_lead with jobType matching the work.
 - Generic question → call answer_faq FIRST; if no match, fall through to capture_lead.
 - End of conversation → call end_conversation with the correct outcome.`

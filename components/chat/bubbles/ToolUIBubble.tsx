@@ -5,7 +5,7 @@ import { LeadForm } from "../widgets/LeadForm"
 import { QuoteCardStub } from "../widgets/QuoteCardStub"
 import { AddressAutocomplete } from "../widgets/AddressAutocomplete"
 import { SatelliteSnapshotStub } from "../widgets/SatelliteSnapshotStub"
-import { PhotoDropzoneStub } from "../widgets/PhotoDropzoneStub"
+import { PhotoDropzone } from "../widgets/PhotoDropzone"
 import { BookingWidgetStub } from "../widgets/BookingWidgetStub"
 
 export function ToolUIBubble({
@@ -33,7 +33,16 @@ export function ToolUIBubble({
     case "satellite_snapshot":
       return <SatelliteSnapshotStub state={widget.state} />
     case "photo_dropzone":
-      return <PhotoDropzoneStub onUploaded={() => onSubmit("I've uploaded a photo.")} />
+      return (
+        <PhotoDropzone
+          estimateId={widget.state.estimateId}
+          onUploaded={(a) =>
+            onSubmit(
+              `Uploaded photo (${a.photoUrl}). Analysis: siding=${a.sidingMaterial}, conditionScore=${a.conditionScore}, failures=${a.paintFailures.map((f) => `${f.type}:${f.severity}`).join(",") || "none"}.`
+            )
+          }
+        />
+      )
     case "booking_widget":
       return <BookingWidgetStub state={widget.state} onBooked={() => onSubmit("I've booked a walkthrough.")} />
   }
