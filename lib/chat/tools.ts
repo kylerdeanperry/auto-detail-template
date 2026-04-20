@@ -116,16 +116,16 @@ export function buildChatTools(
           .default("other"),
       }),
       execute: async (input) => {
-        const res = await fetch(`${originUrl}/api/chat/lead-stub`, {
+        const res = await fetch(`${originUrl}/api/chat/lead`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(input),
         })
         if (!res.ok) {
-          return { ok: false, error: `lead-stub ${res.status}` }
+          return { ok: false, error: `lead ${res.status}` }
         }
         const data = await res.json()
-        return { ok: true, leadId: data.leadId as string }
+        return { ok: true, leadId: (data.leadId as string) ?? null, contactId: (data.contactId as string) ?? null }
       },
     }),
 
