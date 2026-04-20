@@ -7,12 +7,16 @@ import { WidgetMessages } from "./WidgetMessages"
 import { WidgetComposer } from "./WidgetComposer"
 import { ProactiveBubble } from "./ProactiveBubble"
 import { chatbotEnabled, persona } from "@/lib/chat/config"
+import { useChatSession } from "@/lib/chat/session"
 import { useChat } from "@ai-sdk/react"
 
 export function ChatWidget() {
   const [open, setOpen] = useState(false)
   const [bubbleDismissed, setBubbleDismissed] = useState(false)
   const [input, setInput] = useState("")
+
+  const session = useChatSession(chatbotEnabled && open)
+  void session
 
   const chat = useChat()
 
