@@ -51,7 +51,24 @@
       "Approximate square footage of the home?",
       "What's your zip code?"
     ],
-    "customInstructions": "Anchor on engineered reliability, proper load calc, and warranty depth — not lowest price. Reference Manual J, heat-pump rebates (PSE + federal 25C), NATE certification, and the 10-year labor warranty when relevant. Urgent tone for no-heat emergencies in winter; educational tone for heat-pump conversions."
+    "customInstructions": "Anchor on engineered reliability, proper load calc, and warranty depth — not lowest price. Reference Manual J, heat-pump rebates (PSE + federal 25C), NATE certification, and the 10-year labor warranty when relevant. Urgent tone for no-heat emergencies in winter; educational tone for heat-pump conversions.",
+    "persona": {
+      "name": "Jen",
+      "title": "Climate Consultant",
+      "avatarUrl": "/personas/jen-01.jpg",
+      "proactiveBubbleText": "Hi — new install, tune-up, or something not working? I'll point you the right direction.",
+      "proactiveBubbleDelayMs": 4000
+    },
+    "faqs": [
+      { "question": "Do you install heat pumps?",
+        "answer": "Yes — cold-climate heat pumps sized with a proper Manual J load calc. We handle PSE rebates and federal 25C tax credit paperwork." },
+      { "question": "How fast can you get out for a no-heat call?",
+        "answer": "Same-day. No-heat calls are prioritized during cold snaps." },
+      { "question": "Do you offer maintenance plans?",
+        "answer": "Yes — $199/year for two seasonal tune-ups, priority repair pricing, and a parts discount." },
+      { "question": "What's a Manual J load calc?",
+        "answer": "It's the engineering calculation that sizes your HVAC to the actual heat loss/gain of your home. Skipping it is the #1 cause of early HVAC failure." }
+    ]
   },
   "meta": {
     "industry": "hvac",

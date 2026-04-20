@@ -51,7 +51,24 @@
       "Do you have an active leak right now?",
       "What's your zip code?"
     ],
-    "customInstructions": "Anchor on honest assessment, proper system installation (underlayment + flashing + ventilation, not just shingles), GAF Master Elite credentials, and storm-response availability — not lowest price. If the user describes symptoms that sound like a repair, keep them steered to the repair path; don't upsell. Urgent tone for active leaks and storm damage."
+    "customInstructions": "Anchor on honest assessment, proper system installation (underlayment + flashing + ventilation, not just shingles), GAF Master Elite credentials, and storm-response availability — not lowest price. If the user describes symptoms that sound like a repair, keep them steered to the repair path; don't upsell. Urgent tone for active leaks and storm damage.",
+    "persona": {
+      "name": "Mike",
+      "title": "Roofing Coordinator",
+      "avatarUrl": "/personas/mike-01.jpg",
+      "proactiveBubbleText": "Hi — got a leak, storm damage, or a roof replacement in mind? I can help.",
+      "proactiveBubbleDelayMs": 4000
+    },
+    "faqs": [
+      { "question": "Do you work with insurance claims?",
+        "answer": "Yes. We document storm damage with photos and deliver insurance-ready written reports." },
+      { "question": "Are you GAF certified?",
+        "answer": "Yes — GAF Master Elite, which qualifies for the Golden Pledge warranty on full replacements." },
+      { "question": "How fast can you get out for a leak?",
+        "answer": "Same-day for active leaks during storm events. Standard inspections within 24–48 hours." },
+      { "question": "Do you do gutters?",
+        "answer": "Yes — seamless aluminum and copper gutters formed on-site, with leaf-guard options." }
+    ]
   },
   "meta": {
     "industry": "roofing",

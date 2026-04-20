@@ -106,7 +106,7 @@
     "enabled": true,
     "greeting": "Hi — I'm Elite Painting's virtual assistant. Tell me about the project and I'll give you a written ballpark in under a minute.",
     "accentColor": "#9B6B3C",
-    "closingGoal": "book_consultation",
+    "closingGoal": "instant_quote",
     "tone": "warm-professional",
     "quoteStyle": "range_from_services",
     "handoffMethod": "email",
@@ -117,7 +117,26 @@
       "When would you like the work completed?",
       "What's your zip code?"
     ],
-    "customInstructions": "Anchor on quality and predictability, not speed or lowest price. Reference the 5-year warranty, daily updates, and obsessive prep. Mention Bainbridge Island and North Seattle service area when relevant."
+    "customInstructions": "Anchor on quality and predictability, not speed or lowest price. Reference the 5-year warranty, daily updates, and obsessive prep. Mention Bainbridge Island and North Seattle service area when relevant.",
+    "persona": {
+      "name": "Sarah",
+      "title": "Office Manager",
+      "avatarUrl": "/personas/sarah-01.jpg",
+      "proactiveBubbleText": "Hi! Want a virtual quote for your home in under 60 seconds?",
+      "proactiveBubbleDelayMs": 3000
+    },
+    "faqs": [
+      { "question": "Do you do interior painting?",
+        "answer": "Yes — interior walls, trim, ceilings, and cabinets. For those I'll grab your info and the team will call you with a quote." },
+      { "question": "What areas do you serve?",
+        "answer": "Bainbridge Island and North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake." },
+      { "question": "How long does an exterior job take?",
+        "answer": "Most single-story homes take 2–4 days; two-story is 4–7 days depending on prep." },
+      { "question": "What paint brands do you use?",
+        "answer": "Sherwin-Williams and Benjamin Moore — Duration and Aura tiers for the best warranty." },
+      { "question": "Do you offer financing?",
+        "answer": "Yes, 0% APR for qualified customers up to 18 months through our partner." }
+    ]
   },
   "meta": {
     "industry": "painting",
