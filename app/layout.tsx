@@ -3,7 +3,7 @@ import { Fraunces, Instrument_Sans, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { config, expand } from "@/lib/config"
 import type { CSSProperties } from "react"
-import { AiFab } from "@/components/fab/AiFab"
+import { ChatWidget } from "@/components/chat/Widget"
 import type { IndustryTheme } from "@/types/visual-config"
 import "./globals.css"
 
@@ -71,7 +71,7 @@ export default function RootLayout({
     >
       <body className="bg-paper font-body antialiased text-ink">
         {children}
-        <AiFab />
+        <ChatWidget />
         <Analytics />
       </body>
     </html>
