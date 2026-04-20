@@ -6,7 +6,7 @@ import { QuoteCardStub } from "../widgets/QuoteCardStub"
 import { AddressAutocomplete } from "../widgets/AddressAutocomplete"
 import { SatelliteSnapshotStub } from "../widgets/SatelliteSnapshotStub"
 import { PhotoDropzone } from "../widgets/PhotoDropzone"
-import { BookingWidgetStub } from "../widgets/BookingWidgetStub"
+import { BookingWidget } from "../widgets/BookingWidget"
 
 export function ToolUIBubble({
   widget,
@@ -44,6 +44,17 @@ export function ToolUIBubble({
         />
       )
     case "booking_widget":
-      return <BookingWidgetStub state={widget.state} onBooked={() => onSubmit("I've booked a walkthrough.")} />
+      return (
+        <BookingWidget
+          state={widget.state}
+          onBooked={(slotIso) =>
+            onSubmit(
+              `I'd like the ${new Date(slotIso).toLocaleString(undefined, {
+                weekday: "short", month: "short", day: "numeric", hour: "numeric",
+              })} slot (slotIso=${slotIso}).`
+            )
+          }
+        />
+      )
   }
 }
