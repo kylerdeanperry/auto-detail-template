@@ -71,6 +71,7 @@ const clientConfigSchema = z.object({
   meta: z.object({
     industry: z.string(),
     clientId: z.string(),
+    clientSlug: z.string().optional(),
   }),
 })
 

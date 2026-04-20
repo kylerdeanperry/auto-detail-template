@@ -62,5 +62,6 @@ export interface ClientConfig {
   meta: {
     industry: string
     clientId: string
+    clientSlug?: string
   }
 }
