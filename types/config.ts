@@ -38,12 +38,26 @@ export interface ClientConfig {
     greeting: string
     accentColor: string
     closingGoal: "instant_quote" | "book_service" | "book_consultation" | "qualify_handoff"
-    tone: "friendly_casual" | "professional" | "urgent_expert"
+    tone:
+      | "friendly_casual"
+      | "professional"
+      | "urgent_expert"
+      | "warm-professional"
+      | "warm-technical"
+      | "warm-direct"
     quoteStyle: "range_from_services" | "exact_from_services"
     handoffMethod: "sms" | "email" | "both"
     handoffContact: string
     qualifyingQuestions: string[]
     customInstructions: string
+    persona: {
+      name: string
+      title: string
+      avatarUrl: string
+      proactiveBubbleText: string
+      proactiveBubbleDelayMs: number
+    }
+    faqs: Array<{ question: string; answer: string }>
   }
   meta: {
     industry: string

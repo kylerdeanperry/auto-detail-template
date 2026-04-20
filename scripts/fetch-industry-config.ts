@@ -56,6 +56,17 @@ const clientConfigSchema = z.object({
     handoffContact: z.string(),
     qualifyingQuestions: z.array(z.string()),
     customInstructions: z.string(),
+    persona: z.object({
+      name: z.string(),
+      title: z.string(),
+      avatarUrl: z.string(),
+      proactiveBubbleText: z.string(),
+      proactiveBubbleDelayMs: z.number(),
+    }),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })),
   }),
   meta: z.object({
     industry: z.string(),
