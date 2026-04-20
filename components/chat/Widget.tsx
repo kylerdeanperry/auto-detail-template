@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { WidgetHeader } from "./WidgetHeader"
 import { WidgetMessages } from "./WidgetMessages"
@@ -19,6 +19,31 @@ export function ChatWidget() {
   void session
 
   const chat = useChat()
+
+  const persistedCount = useRef(0)
+
+  useEffect(() => {
+    if (!session) return
+    if (chat.messages.length <= persistedCount.current) return
+    const toPersist = chat.messages.slice(persistedCount.current)
+    persistedCount.current = chat.messages.length
+
+    for (const m of toPersist) {
+      const parts = (m as any).parts as Array<any> | undefined
+      const text = parts
+        ? parts.filter((p) => p.type === "text").map((p) => p.text as string).join(" ")
+        : typeof (m as any).content === "string" ? ((m as any).content as string) : ""
+      if (!text) continue
+      fetch("/api/chat/persist-message", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          role: m.role === "user" || m.role === "assistant" ? m.role : "system",
+          content: text,
+        }),
+      }).catch((err) => console.error("[chat] persist failed", err))
+    }
+  }, [chat.messages, session])
 
   useEffect(() => {
     if (open) setBubbleDismissed(true)
