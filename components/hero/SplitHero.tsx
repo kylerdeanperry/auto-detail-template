@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { config, expand } from "@/lib/config"
+import { HeroCtaButton } from "@/components/hero/HeroCtaButton"
 
 /**
  * Editorial Hero — asymmetric, magazine-spread inspired.
@@ -109,15 +110,7 @@ export function SplitHero({
         {isHome ? (
           <div className="reveal-up [animation-delay:650ms] flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="flex flex-wrap items-center gap-4">
-              <Link
-                href={h.cta.href}
-                className="group inline-flex items-center gap-3 rounded-full bg-paper px-7 py-4 font-body text-[14px] font-medium tracking-[0.02em] text-ink transition-all duration-300 hover:bg-bronze hover:text-paper"
-              >
-                {h.cta.label}
-                <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </Link>
+              <HeroCtaButton label={h.cta.label} />
               {telHref ? (
                 <Link
                   href={telHref}

@@ -3,11 +3,13 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { config, expand } from "@/lib/config"
+import { useQuoteForm } from "@/components/quote/QuoteFormProvider"
 
 export function StickyNav() {
   const cta = config.visual.hero.cta
   const phone = config.business.phone
   const [scrolled, setScrolled] = useState(false)
+  const { open } = useQuoteForm()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48)
@@ -81,8 +83,8 @@ export function StickyNav() {
               {phone}
             </Link>
           ) : null}
-          <Link
-            href={cta.href}
+          <button
+            onClick={open}
             className={`group relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-[12px] font-medium tracking-[0.06em] transition-all duration-300 ${
               scrolled
                 ? "bg-ink text-paper hover:bg-bronze-deep"
@@ -91,7 +93,7 @@ export function StickyNav() {
           >
             {cta.label}
             <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">→</span>
-          </Link>
+          </button>
         </div>
       </div>
     </header>

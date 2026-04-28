@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/next"
 import { config, expand } from "@/lib/config"
 import type { CSSProperties } from "react"
 import { ChatWidget } from "@/components/chat/Widget"
+import { QuoteFormProvider } from "@/components/quote/QuoteFormProvider"
+import { QuoteSlideOver } from "@/components/quote/QuoteSlideOver"
 import type { IndustryTheme } from "@/types/visual-config"
 import "./globals.css"
 
@@ -70,8 +72,11 @@ export default function RootLayout({
       style={themeVarsFor(config.visual.theme)}
     >
       <body className="bg-paper font-body antialiased text-ink">
-        {children}
-        <ChatWidget />
+        <QuoteFormProvider>
+          {children}
+          <ChatWidget />
+          <QuoteSlideOver />
+        </QuoteFormProvider>
         <Analytics />
       </body>
     </html>

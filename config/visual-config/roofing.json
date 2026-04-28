@@ -28,7 +28,7 @@
     "imageAlt": "Aerial drone photograph of a freshly shingled Pacific Northwest craftsman home surrounded by cedar trees in late-afternoon light",
     "badge": "Bainbridge Island · North Seattle · GAF Master Elite · Est. 2019",
     "headline": "A Roof, Permanently.",
-    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
+    "cta": { "label": "Get a Quote", "href": "/contact" }
   },
   "intro": {
     "label": "A roofing studio, not a bid mill",
@@ -84,7 +84,7 @@
   ],
   "footerCta": {
     "headline": "Ready for a roof that'll still be here in thirty years?",
-    "subhead": "Virtual quote in under a minute. On-site inspection scheduled within 48 hours.",
-    "cta": { "label": "Get a Virtual Quote", "href": "/contact" }
+    "subhead": "We'll be in touch within a few hours to schedule a walkthrough.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
   }
 }
