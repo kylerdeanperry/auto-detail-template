@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { config } from "@/lib/config"
 import { useQuoteForm } from "@/components/quote/QuoteFormProvider"
 
@@ -11,9 +11,10 @@ type FieldProps = {
   rows?: number
   placeholder?: string
   children?: React.ReactNode
+  inputRef?: React.RefObject<HTMLInputElement | null>
 }
 
-function Field({ label, name, type = "text", required, rows, placeholder, children }: FieldProps) {
+function Field({ label, name, type = "text", required, rows, placeholder, children, inputRef }: FieldProps) {
   const baseClass =
     "w-full border-0 border-b border-stone bg-transparent pb-3 pt-1 text-[17px] text-ink placeholder:text-muted/60 outline-none transition-colors focus:border-bronze"
   return (
@@ -34,6 +35,7 @@ function Field({ label, name, type = "text", required, rows, placeholder, childr
         />
       ) : (
         <input
+          ref={inputRef}
           name={name}
           type={type}
           required={required}
@@ -49,8 +51,34 @@ export function QuoteSlideOver() {
   const { isOpen, close } = useQuoteForm()
   const [status, setStatus] = useState<"idle" | "submitting" | "ok" | "err">("idle")
   const [errorMsg, setErrorMsg] = useState<string>("")
+  const firstInputRef = useRef<HTMLInputElement>(null)
 
   const agencyUrl = process.env.NEXT_PUBLIC_AGENCY_OS_URL ?? ""
+
+  // Escape key dismiss
+  useEffect(() => {
+    if (!isOpen) return
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") close()
+    }
+    document.addEventListener("keydown", handleKeyDown)
+    return () => document.removeEventListener("keydown", handleKeyDown)
+  }, [isOpen, close])
+
+  // Auto-focus first input when drawer opens
+  useEffect(() => {
+    if (isOpen) firstInputRef.current?.focus()
+  }, [isOpen])
+
+  // Body scroll lock
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => { document.body.style.overflow = "" }
+  }, [isOpen])
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -62,7 +90,7 @@ export function QuoteSlideOver() {
       name: data.name,
       phone: data.phone,
       service: data.service,
-      message: data.message,
+      message: (data.message as string) || undefined,
       industrySlug: config.meta.industry,
       clientId: config.meta.clientId,
     }
@@ -93,7 +121,13 @@ export function QuoteSlideOver() {
       />
 
       {/* Drawer */}
-      <div className="fixed inset-y-0 right-0 z-50 flex w-full max-w-[480px] flex-col bg-paper shadow-2xl">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="quote-dialog-title"
+        onClick={(e) => e.stopPropagation()}
+        className="fixed inset-y-0 right-0 z-50 flex w-full max-w-[480px] flex-col bg-paper shadow-2xl"
+      >
         {/* Header */}
         <div className="flex items-center justify-between border-b border-stone px-6 py-5">
           <div>
@@ -101,6 +135,7 @@ export function QuoteSlideOver() {
               § — Quick Quote
             </div>
             <h2
+              id="quote-dialog-title"
               className="font-display text-[26px] text-ink leading-tight"
               style={{ fontVariationSettings: '"opsz" 72', fontWeight: 400 }}
             >
@@ -130,13 +165,13 @@ export function QuoteSlideOver() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="flex flex-col gap-7">
-              <Field label="Name" name="name" required />
+              <Field label="Name" name="name" required inputRef={firstInputRef} />
               <Field label="Phone" name="phone" type="tel" required />
               <Field label="Service Needed" name="service" required>
                 <select
                   name="service"
                   required
-                  className="w-full border-0 border-b border-stone bg-transparent pb-3 pt-1 text-[17px] text-ink outline-none transition-colors focus:border-bronze"
+                  className="w-full appearance-none border-0 border-b border-stone bg-transparent pb-3 pt-1 text-[17px] text-ink outline-none transition-colors focus:border-bronze"
                   defaultValue=""
                 >
                   <option value="" disabled>Select a service…</option>

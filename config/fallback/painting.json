@@ -122,7 +122,7 @@
       "name": "Sarah",
       "title": "Office Manager",
       "avatarUrl": "/personas/sarah-01.jpg",
-      "proactiveBubbleText": "Hi! Want a virtual quote for your home in under 60 seconds?",
+      "proactiveBubbleText": "Hi! Looking for a painting quote? Tell me about the project.",
       "proactiveBubbleDelayMs": 3000
     },
     "faqs": [
