@@ -1,5 +1,6 @@
 "use client"
 
+import { config } from "@/lib/config"
 import { persona } from "@/lib/chat/config"
 
 export function WidgetHeader({ onClose }: { onClose: () => void }) {
@@ -24,6 +25,11 @@ export function WidgetHeader({ onClose }: { onClose: () => void }) {
         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-bronze">
           {persona.title}
         </span>
+        {config.business.name && (
+          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+            Built for {config.business.name}
+          </span>
+        )}
       </div>
       <button
         type="button"

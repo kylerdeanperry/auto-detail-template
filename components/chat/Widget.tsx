@@ -11,7 +11,7 @@ import { useChatSession } from "@/lib/chat/session"
 import { useChat } from "@ai-sdk/react"
 
 export function ChatWidget() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   const [bubbleDismissed, setBubbleDismissed] = useState(false)
   const [input, setInput] = useState("")
 
