@@ -14,7 +14,7 @@ const payloadSchema = z.object({
 })
 
 export async function POST(req: Request) {
-  const agencyUrl = process.env.AGENCY_OS_URL
+  const agencyUrl = process.env.BRUVV_URL
   const secret = process.env.LEADS_INTAKE_SECRET
   if (!agencyUrl || !secret) {
     return NextResponse.json({ error: "Server not configured" }, { status: 500 })

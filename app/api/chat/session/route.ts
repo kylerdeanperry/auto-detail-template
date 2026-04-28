@@ -28,7 +28,7 @@ export async function POST(req: Request) {
   })
   if (!res.ok) {
     const errText = await res.text().catch(() => "")
-    console.error("[chat/session] agency-os error", res.status, errText)
+    console.error("[chat/session] bruvv error", res.status, errText)
     return NextResponse.json({ error: "Could not start session" }, { status: res.status })
   }
 

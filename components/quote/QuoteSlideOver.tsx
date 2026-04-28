@@ -53,7 +53,7 @@ export function QuoteSlideOver() {
   const [errorMsg, setErrorMsg] = useState<string>("")
   const firstInputRef = useRef<HTMLInputElement>(null)
 
-  const agencyUrl = process.env.NEXT_PUBLIC_AGENCY_OS_URL ?? ""
+  const agencyUrl = process.env.NEXT_PUBLIC_BRUVV_URL ?? ""
 
   // Escape key dismiss
   useEffect(() => {

@@ -131,11 +131,11 @@ const visualConfigSchema = z.object({
   }),
 })
 
-async function fetchAgencyOsConfig(slug: string) {
-  const urlBase = process.env.AGENCY_OS_URL
+async function fetchBruvvConfig(slug: string) {
+  const urlBase = process.env.BRUVV_URL
   const secret = process.env.INDUSTRY_CONFIG_BUILD_SECRET
   if (!urlBase || !secret) {
-    throw new Error("AGENCY_OS_URL and INDUSTRY_CONFIG_BUILD_SECRET required")
+    throw new Error("BRUVV_URL and INDUSTRY_CONFIG_BUILD_SECRET required")
   }
   const clientId = process.env.CLIENT_ID
   const u = new URL(`${urlBase}/api/industries/${slug}/config`)
@@ -180,8 +180,8 @@ async function main() {
 
   let business
   try {
-    console.log(`Fetching agency-os config for ${slug}...`)
-    business = await fetchAgencyOsConfig(slug)
+    console.log(`Fetching bruvv config for ${slug}...`)
+    business = await fetchBruvvConfig(slug)
     console.log("✓ Fetched live")
   } catch (err) {
     console.warn(`Fetch failed (${err instanceof Error ? err.message : err}), using fallback`)
