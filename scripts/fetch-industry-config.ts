@@ -76,7 +76,7 @@ const clientConfigSchema = z.object({
 })
 
 const visualConfigSchema = z.object({
-  industrySlug: z.enum(["hvac", "roofing", "painting", "plumbing", "construction", "landscaping", "electrical", "concrete", "flooring", "garage-door"]),
+  industrySlug: z.enum(["hvac", "roofing", "painting", "plumbing", "construction", "landscaping", "electrical", "concrete", "flooring"]),
   displayName: z.string(),
   theme: z
     .object({
