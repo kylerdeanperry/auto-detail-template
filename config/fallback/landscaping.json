@@ -1,0 +1,73 @@
+{
+  "business": {
+    "name": "Elite Landscaping",
+    "tagline": "Bainbridge & Seattle Landscape Design & Care",
+    "phone": "(206) 555-0146",
+    "email": "hello@elitelandscaping.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A design-forward landscaping studio serving Bainbridge Island and the north Seattle neighborhoods. From full landscape installs and hardscape to year-round maintenance — we build it right and keep it looking that way through every PNW season.",
+    "founded": "2017",
+    "jobsCompleted": "480+"
+  },
+  "branding": {
+    "primaryColor": "#1A1D1B",
+    "accentColor": "#2C3D38",
+    "backgroundColor": "#F2F0EB",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
+  },
+  "services": [
+    { "name": "Landscape Design + Install", "price": "$8,000–$45,000", "duration": "1–6 weeks", "description": "Site assessment, plant selection suited to PNW soil and light conditions, drainage plan, and full installation. We design for year-round interest, not just spring color." },
+    { "name": "Lawn Maintenance", "price": "$149–$349/month", "duration": "Recurring", "description": "Weekly or bi-weekly mowing, edging, blowing, and seasonal adjustments. No skip weeks, no missed appointments — consistent crew who know your property." },
+    { "name": "Hardscaping — Patios & Walls", "price": "$12,000–$38,000", "duration": "2–5 weeks", "description": "Natural stone, concrete paver, and modular block patios, walkways, and retaining walls. Properly graded and compacted base, built to handle Seattle freeze-thaw cycles." },
+    { "name": "Irrigation Install & Repair", "price": "$2,400–$6,500", "duration": "1–3 days", "description": "Zone-by-zone drip and spray system design, installation, and seasonal startup/shutdown. Smart controller upgrades available — saves water and keeps your investment alive." },
+    { "name": "Tree & Shrub Care", "price": "$350–$2,500", "duration": "Half day – 1 day", "description": "Pruning, shaping, crown thinning, and removal of dead or hazardous material. ISA-certified arborist consultation available for large or protected trees." },
+    { "name": "Seasonal Cleanup", "price": "$349–$799", "duration": "Half day – 1 day", "description": "Spring and fall cleanups including leaf removal, bed edging, mulch application, and pruning spent perennials. Keeps the property looking intentional all year." }
+  ],
+  "testimonials": [
+    { "name": "Laura P.", "location": "Bainbridge Island", "text": "They designed our back garden around our drainage problem instead of pretending it didn't exist. Two years later it drains perfectly and looks better every season.", "rating": 5 },
+    { "name": "James W.", "location": "Magnolia, Seattle", "text": "Patio install was a major project — retaining wall, steps, lighting. One crew managed the whole thing. The base prep alone was more thorough than anything I'd seen before.", "rating": 5 },
+    { "name": "Caitlin B.", "location": "Ballard, Seattle", "text": "Monthly maintenance crew actually knows our property — they don't need instructions each time. The lawn has never looked this consistent.", "rating": 5 },
+    { "name": "Ryan M.", "location": "Queen Anne, Seattle", "text": "Seasonal cleanups are worth every dollar. They mulch the beds, edge everything, and haul away every leaf. Takes the whole chore off my plate.", "rating": 5 }
+  ],
+  "process": [
+    { "step": "01", "title": "Consult", "description": "We walk the property, assess sun, soil, drainage, and your goals — then deliver a design concept with a clear written estimate." },
+    { "step": "02", "title": "Design", "description": "Plant selection for PNW conditions, hardscape layout, and drainage plan. We design for longevity, not just the day of install." },
+    { "step": "03", "title": "Install", "description": "Experienced install crews with proper equipment. Clean job site, daily progress updates, and no shortcuts on base prep or plant spacing." },
+    { "step": "04", "title": "Maintain", "description": "Year-round maintenance plans keep your investment looking the way it did on install day. Same crew, same property, consistent results." }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi — Elite Landscaping's consultant here. Tell me about your project and I'll point you toward the right service and a rough budget range.",
+    "accentColor": "#2C3D38",
+    "closingGoal": "qualify_handoff",
+    "tone": "warm-professional",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "both",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "Is this a new install, ongoing maintenance, or a hardscape project?",
+      "Roughly how large is the area — front yard, back yard, or full property?",
+      "Do you have any drainage or slope challenges on the site?",
+      "What's your zip code?"
+    ],
+    "customInstructions": "Anchor on design-forward approach, PNW plant and drainage expertise, and year-round maintenance commitment. Reference hardscape longevity and irrigation smart-controller water savings when relevant. Steer installs toward a site consultation before quoting specific numbers.",
+    "persona": {
+      "name": "Olivia",
+      "title": "Landscape Consultant",
+      "avatarUrl": "/personas/sarah-01.jpg",
+      "proactiveBubbleText": "Hi — new landscape install, maintenance plan, or a patio project? I can help.",
+      "proactiveBubbleDelayMs": 4000
+    },
+    "faqs": [
+      { "question": "Do you do ongoing maintenance?", "answer": "Yes — weekly and bi-weekly maintenance plans starting at $149/month. Same crew every visit." },
+      { "question": "Can you handle drainage problems?", "answer": "Yes — we assess drainage before every install and design around it rather than ignoring it." },
+      { "question": "What's included in a seasonal cleanup?", "answer": "Leaf removal, bed edging, mulch application, and pruning spent perennials. Spring and fall." },
+      { "question": "Do you install irrigation?", "answer": "Yes — full system design, installation, and seasonal startup/shutdown. Smart controller upgrades available." }
+    ]
+  },
+  "meta": {
+    "industry": "landscaping",
+    "clientId": ""
+  }
+}

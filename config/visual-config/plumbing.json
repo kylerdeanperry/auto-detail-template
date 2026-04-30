@@ -1,0 +1,90 @@
+{
+  "industrySlug": "plumbing",
+  "displayName": "Elite Plumbing",
+  "theme": {
+    "paper": "#F4F6F8",
+    "paperWarm": "#E6EAF0",
+    "ink": "#0D1F2D",
+    "inkSoft": "#2A3E52",
+    "accent": "#1B4F8A",
+    "accentDeep": "#0F3564",
+    "secondary": "#3A7BC8",
+    "stone": "#C8D4E0",
+    "muted": "#6B7A8C"
+  },
+  "trustStrip": [
+    "Licensed Master Plumber · WA State",
+    "Same-Day Emergency Service",
+    "Licensed · Bonded · Insured"
+  ],
+  "trustBand": [
+    { "label": "Licensed Master Plumber", "sub": "Washington State" },
+    { "label": "Same-Day Emergency", "sub": "Active leaks, burst pipes, sewage backup" },
+    { "label": "Licensed · Bonded · Insured", "sub": "Washington State" },
+    { "label": "BBB Accredited", "sub": "A+ Rating" }
+  ],
+  "hero": {
+    "image": "/images/generated/plumbing-hero-mechanical-room.jpg",
+    "imageAlt": "Licensed master plumber working on a clean mechanical room installation, copper pipe fittings precisely soldered",
+    "badge": "Bainbridge Island · North Seattle · Licensed Master Plumber · Est. 2016",
+    "headline": "Plumbing Done Right. Not Just Fast.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "A plumbing studio, not a dispatch center",
+    "body": "Licensed master plumbers serving Bainbridge Island and the north Seattle neighborhoods. Emergency response, drain clearing, water heater replacement, and remodel rough-in done properly — permit pulled, inspection passed, no gray-area work."
+  },
+  "personas": [
+    { "label": "Emergency Repair", "kicker": "For the leak that can't wait", "href": "/services" },
+    { "label": "Installations", "kicker": "For the project done right", "href": "/services" },
+    { "label": "Remodel Plumbing", "kicker": "For the home you're improving", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": false,
+    "headline": "Get a written estimate in under a minute.",
+    "body": "Describe the issue and get a transparent price range before any call.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
+  },
+  "zPatternRows": [
+    {
+      "label": "Emergency First",
+      "headline": "An active leak doesn't wait for tomorrow.",
+      "body": "Burst pipe, major leak, sewage backup — these are real emergencies. Licensed plumber on-site the same day, not next week. Flat-rate diagnosis before a wrench turns so you know exactly what you're paying before the work starts.",
+      "image": "/images/generated/plumbing-emergency-response.jpg",
+      "cta": { "label": "See our services", "href": "/services" }
+    },
+    {
+      "label": "Camera Diagnosis",
+      "headline": "We find the actual cause, not just clear the symptom.",
+      "body": "Camera inspection on every drain and sewer line job. If there's root intrusion, a collapsed section, or a build-up point, we show you — on screen, in writing — before recommending repair or replacement. No guesswork, no unnecessary excavation.",
+      "image": "/images/generated/plumbing-camera-drain.jpg"
+    },
+    {
+      "label": "Permit-Managed",
+      "headline": "The permit is proof the work is safe.",
+      "body": "Every job that requires a permit gets one. We pull it, schedule the inspection, and pass it before we close the job. That permit protects your home insurance, your resale value, and your family. No gray-area work that lives in the walls forever.",
+      "image": "/images/generated/plumbing-pipe-install.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
+    },
+    {
+      "label": "The Guarantee",
+      "headline": "One-year workmanship, emergency line after hours.",
+      "body": "Every installation carries a one-year workmanship warranty. Emergency line active after hours for anything that comes up. We stand behind the work — because a properly done plumbing job shouldn't need a callback.",
+      "image": "/images/generated/plumbing-water-heater-install.jpg",
+      "cta": { "label": "Contact us", "href": "/contact" }
+    }
+  ],
+  "portfolio": [
+    { "image": "/images/generated/plumbing-portfolio-01-mechanical-room.jpg", "caption": "Mechanical room rough-in · Bainbridge Island addition" },
+    { "image": "/images/generated/plumbing-portfolio-02-water-heater.jpg", "caption": "Tankless water heater install · Queen Anne" },
+    { "image": "/images/generated/plumbing-portfolio-03-bath-rough.jpg", "caption": "Bathroom remodel rough-in · Magnolia" },
+    { "image": "/images/generated/plumbing-portfolio-04-kitchen-rough.jpg", "caption": "Kitchen rough-in · Ballard craftsman" },
+    { "image": "/images/generated/plumbing-portfolio-05-sewer-line.jpg", "caption": "Sewer line replacement · Fremont" },
+    { "image": "/images/generated/plumbing-portfolio-06-repipe.jpg", "caption": "Full repipe · Bainbridge Island" }
+  ],
+  "footerCta": {
+    "headline": "Ready to get the plumbing done right?",
+    "subhead": "We'll be in touch within a few hours to schedule a visit.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "business": {
+    "name": "Elite Concrete",
+    "tagline": "Bainbridge & Seattle Flatwork & Decorative Concrete",
+    "phone": "(206) 555-0148",
+    "email": "hello@eliteconcrete.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A concrete flatwork and decorative concrete studio serving Bainbridge Island and the north Seattle neighborhoods. Proper base preparation, reinforced pours, and Seattle drainage planning — done right the first time so it doesn't crack, heave, or drain toward your foundation.",
+    "founded": "2015",
+    "jobsCompleted": "720+"
+  },
+  "branding": {
+    "primaryColor": "#1A1D1B",
+    "accentColor": "#2C3D38",
+    "backgroundColor": "#F2F0EB",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
+  },
+  "services": [
+    { "name": "Driveway", "price": "$8,500–$22,000", "duration": "3–5 days", "description": "Demolition, excavation, compacted gravel base, rebar or wire-mesh reinforcement, and a properly sloped pour. Control joints placed to manage cracking, not hide it. Brushed, broom, or exposed-aggregate finish." },
+    { "name": "Patio & Walkways", "price": "$4,500–$14,000", "duration": "2–4 days", "description": "Outdoor living surfaces poured with drainage grade away from the house — a Seattle non-negotiable. Brushed, broom, exposed aggregate, or decorative border options." },
+    { "name": "Foundation & Footings", "price": "$6,000–$28,000", "duration": "3–7 days", "description": "Footings for additions, decks, garages, and ADUs poured to Washington frost depth. Engineer-stamped designs accepted and coordinated with permit requirements." },
+    { "name": "Stamped & Decorative", "price": "$7,500–$18,000", "duration": "3–5 days", "description": "Stamped patterns, color integral or acid stain, and exposed aggregate finishes. We set expectations honestly — stamped concrete is beautiful but requires sealing every 2–3 years in PNW conditions." },
+    { "name": "Retaining Wall", "price": "$4,800–$16,000", "duration": "3–6 days", "description": "Cast-in-place concrete retaining walls with proper drainage aggregate, weep holes, and rebar schedule for your specific soil and height conditions." },
+    { "name": "Repair & Resurfacing", "price": "$1,200–$4,500", "duration": "1–2 days", "description": "Crack repair, surface grinding, and microtop or overlay resurfacing for driveways and patios that are structurally sound but cosmetically aged." }
+  ],
+  "testimonials": [
+    { "name": "Steve L.", "location": "Bainbridge Island", "text": "Previous driveway cracked in three spots within two winters. Elite Concrete spent two hours just on base prep before pouring. That was four years ago — still no cracks.", "rating": 5 },
+    { "name": "Amanda K.", "location": "Ballard, Seattle", "text": "Stamped patio looked incredible and they were upfront about the sealing schedule. No surprises. The drainage grade was something the other bidder didn't even mention.", "rating": 5 },
+    { "name": "Phil R.", "location": "Queen Anne, Seattle", "text": "Retaining wall on a steep slope. They submitted the rebar schedule to our structural engineer before pouring. That's the standard I expected — not everyone delivers it.", "rating": 5 },
+    { "name": "Karen H.", "location": "Magnolia, Seattle", "text": "New walkway and steps from the driveway to the front door. Clean pour, good texture, and perfectly graded away from the house. Job site was spotless every evening.", "rating": 5 }
+  ],
+  "process": [
+    { "step": "01", "title": "Assess", "description": "We visit the site, evaluate soil conditions, drainage, and existing concrete, then deliver a written scope with material and reinforcement spec — not just a price." },
+    { "step": "02", "title": "Prepare", "description": "Demo, excavation, and base preparation are where a concrete job is won or lost. We compact the sub-base in lifts, set drainage grade, and place reinforcement before a truck rolls up." },
+    { "step": "03", "title": "Pour", "description": "Proper mix design for PNW conditions, control joints placed at correct spacing, and a finish texture suited to foot or vehicle traffic. No troweling over bleed water." },
+    { "step": "04", "title": "Cure", "description": "Curing compound applied immediately after finishing. We don't walk away at pour day — we monitor the slab through the cure window and return for final joint sealing." }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi — Elite Concrete's project estimator. Tell me about the concrete work you need and I'll give you a ballpark and next steps.",
+    "accentColor": "#2C3D38",
+    "closingGoal": "qualify_handoff",
+    "tone": "warm-technical",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "both",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "What type of concrete work are you looking at — driveway, patio, foundation, or something else?",
+      "Is this new pour or repair/replacement of existing concrete?",
+      "Roughly what size is the area in square feet?",
+      "What's your zip code?"
+    ],
+    "customInstructions": "Anchor on base prep quality, proper drainage slope, reinforcement specification, and Seattle freeze-thaw and rain considerations. Reference honest expectations on decorative concrete maintenance. Steer large projects toward an on-site assessment before quoting.",
+    "persona": {
+      "name": "Olivia",
+      "title": "Project Estimator",
+      "avatarUrl": "/personas/sarah-01.jpg",
+      "proactiveBubbleText": "Hi — driveway, patio, or foundation work? I can give you a ballpark fast.",
+      "proactiveBubbleDelayMs": 4000
+    },
+    "faqs": [
+      { "question": "How long before I can use a new driveway?", "answer": "Light foot traffic at 24–48 hours; vehicle traffic at 7 days minimum. We'll give you the specific timeline for your pour." },
+      { "question": "Why do concrete driveways crack?", "answer": "Usually inadequate base prep, missing control joints, or overwatering during cure. All three are addressed in our standard process." },
+      { "question": "Do you do stamped concrete?", "answer": "Yes — and we're honest that PNW conditions require sealing every 2–3 years to keep it looking good." },
+      { "question": "Do you handle demolition of the existing slab?", "answer": "Yes — demo, haul-away, and sub-base prep are included in our driveway and patio replacement process." }
+    ]
+  },
+  "meta": {
+    "industry": "concrete",
+    "clientId": ""
+  }
+}

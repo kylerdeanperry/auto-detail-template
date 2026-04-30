@@ -1,0 +1,73 @@
+{
+  "business": {
+    "name": "Elite Construction",
+    "tagline": "Bainbridge & Seattle Design-Build Remodels",
+    "phone": "(206) 555-0145",
+    "email": "hello@eliteconstruction.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A design-build remodeling studio serving Bainbridge Island and the north Seattle neighborhoods. We pull every permit, carry our own licensed crews, and manage the project from design through final inspection — no subcontractor chaos, no surprises.",
+    "founded": "2018",
+    "jobsCompleted": "320+"
+  },
+  "branding": {
+    "primaryColor": "#1A1D1B",
+    "accentColor": "#2C3D38",
+    "backgroundColor": "#F2F0EB",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
+  },
+  "services": [
+    { "name": "Kitchen Remodel", "price": "$35,000–$90,000", "duration": "6–12 weeks", "description": "Full gut-and-rebuild or strategic refresh. Custom cabinetry, island layout, proper ventilation, and trade-quality plumbing and electrical rough-in. Every permit pulled, every inspection passed." },
+    { "name": "Bathroom Remodel", "price": "$18,000–$45,000", "duration": "3–6 weeks", "description": "Tile work, waterproofing, vanity, shower glass, and fixture installation done by a single coordinated crew. No subcontractor scheduling roulette." },
+    { "name": "Room Addition", "price": "$85,000–$200,000", "duration": "3–6 months", "description": "New living space, home office, or ADU addition with full structural engineering, permit package, and foundation work. Tied seamlessly into the existing roofline and siding." },
+    { "name": "Deck & Porch Build", "price": "$12,000–$35,000", "duration": "2–4 weeks", "description": "Pressure-treated, composite, or hardwood decks engineered for PNW rain and wind loads. Permit pulled, footings poured to frost depth, and built to last 30+ years." },
+    { "name": "Basement Finish", "price": "$40,000–$90,000", "duration": "6–10 weeks", "description": "Egress windows, vapor barrier, framing, insulation, drywall, and finish work for a livable lower level. Full permit package managed start to finish." },
+    { "name": "Whole-Home Renovation", "price": "Custom quote", "duration": "4–12 months", "description": "Phased or full-home renovation with a single point of contact, detailed schedule, and weekly progress reports. We coordinate every trade so you don't have to." }
+  ],
+  "testimonials": [
+    { "name": "Megan S.", "location": "Bainbridge Island", "text": "Three contractors gave us conflicting timelines and no permit clarity. Elite Construction pulled every permit, managed every trade, and finished our kitchen two weeks early.", "rating": 5 },
+    { "name": "Tom H.", "location": "Queen Anne, Seattle", "text": "Room addition on a 1910 Craftsman. They matched the trim profile, matched the siding profile, and the addition looks like it was always there.", "rating": 5 },
+    { "name": "Rachel D.", "location": "Ballard, Seattle", "text": "Bathroom remodel was done in four weeks flat — one crew, one point of contact, zero surprises on price. I've never had a contractor experience like that.", "rating": 5 },
+    { "name": "Brian T.", "location": "Fremont, Seattle", "text": "They caught a structural issue during the deck demo that a cheaper crew would have buried. Fixed it properly, showed us the photos, and kept us on schedule.", "rating": 5 }
+  ],
+  "process": [
+    { "step": "01", "title": "Design", "description": "We visit the site, review your goals, and develop a design with a detailed written scope and line-item estimate — not a round-number guess." },
+    { "step": "02", "title": "Permits", "description": "We pull every permit and manage every inspection. You never have to call the city, chase an inspector, or wonder if the work is code-compliant." },
+    { "step": "03", "title": "Build", "description": "One lead project manager, one coordinated crew, daily site updates. Subcontractors we've worked with for years — not whoever answered the phone." },
+    { "step": "04", "title": "Finish", "description": "Final walk-through, punch-list completed before we call it done, and a two-year workmanship warranty on every project we touch." }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi — Elite Construction's project coordinator. Tell me about the remodel or addition you're planning and I'll help figure out scope and next steps.",
+    "accentColor": "#2C3D38",
+    "closingGoal": "qualify_handoff",
+    "tone": "warm-professional",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "both",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "What type of project are you planning — kitchen, bath, addition, or something else?",
+      "Do you have a rough budget range in mind?",
+      "Have permits been discussed, or is this early-stage?",
+      "What's your zip code?"
+    ],
+    "customInstructions": "Anchor on design-build reliability, permit management, and single-crew coordination — not lowest price. Reference licensed/bonded credentials, 2-year workmanship warranty, and the no-subcontractor-chaos differentiator. Don't quote specific numbers without a site visit; steer toward a consultation.",
+    "persona": {
+      "name": "Olivia",
+      "title": "Project Coordinator",
+      "avatarUrl": "/personas/sarah-01.jpg",
+      "proactiveBubbleText": "Hi — planning a remodel or addition? I can help you figure out scope and budget range.",
+      "proactiveBubbleDelayMs": 4000
+    },
+    "faqs": [
+      { "question": "Do you pull permits?", "answer": "Yes — we pull every permit and manage every inspection on every project. Non-negotiable." },
+      { "question": "Do you use subcontractors?", "answer": "We have long-term trade partners for electrical and plumbing, but a single project manager coordinates everything. You have one contact, not six." },
+      { "question": "How long does a kitchen remodel take?", "answer": "6–12 weeks depending on scope, custom cabinetry lead time, and permit turnaround. We'll give you a specific schedule after the site visit." },
+      { "question": "Are you licensed and bonded?", "answer": "Yes — fully licensed general contractor, bonded, and insured in Washington State." }
+    ]
+  },
+  "meta": {
+    "industry": "construction",
+    "clientId": ""
+  }
+}

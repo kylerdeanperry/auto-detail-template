@@ -1,0 +1,90 @@
+{
+  "industrySlug": "construction",
+  "displayName": "Elite Construction",
+  "theme": {
+    "paper": "#F2F0EB",
+    "paperWarm": "#E8E3D8",
+    "ink": "#1A1D1B",
+    "inkSoft": "#3C423E",
+    "accent": "#2C3D38",
+    "accentDeep": "#1E2A27",
+    "secondary": "#7A6B4E",
+    "stone": "#D4CFC0",
+    "muted": "#6E6B60"
+  },
+  "trustStrip": [
+    "Licensed General Contractor · WA",
+    "Every Permit Pulled",
+    "2-Year Workmanship Warranty"
+  ],
+  "trustBand": [
+    { "label": "Licensed General Contractor", "sub": "Washington State" },
+    { "label": "Every Permit Pulled", "sub": "Application through final inspection" },
+    { "label": "2-Year Workmanship Warranty", "sub": "On every project we touch" },
+    { "label": "BBB Accredited", "sub": "A+ Rating" }
+  ],
+  "hero": {
+    "image": "/images/generated/construction-hero-craftsman-addition.jpg",
+    "imageAlt": "A seamless craftsman home addition mid-build, framing precisely matched to the existing roofline and siding profile",
+    "badge": "Bainbridge Island · North Seattle · Licensed GC · Est. 2018",
+    "headline": "One Crew. One Contact. No Surprises.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "A design-build studio, not a bid mill",
+    "body": "A design-build remodeling studio serving Bainbridge Island and the north Seattle neighborhoods. We pull every permit, carry our own licensed crews, and manage the project from design through final inspection — no subcontractor chaos, no surprises."
+  },
+  "personas": [
+    { "label": "Kitchen & Bath Remodel", "kicker": "For the heart of your home", "href": "/services" },
+    { "label": "Room Additions", "kicker": "For the space you've outgrown", "href": "/services" },
+    { "label": "Whole-Home Renovation", "kicker": "For the home you're ready to invest in", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": false,
+    "headline": "Get a project budget range in under a minute.",
+    "body": "Tell us your project type and size and we'll return a transparent estimate range before any consultation.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
+  },
+  "zPatternRows": [
+    {
+      "label": "Permit Management",
+      "headline": "You never have to call the city. That's our job.",
+      "body": "Every project that requires a permit gets one. We handle the application, coordinate with engineers when required, schedule inspections, and get the final stamp. That permit protects your home insurance, your resale value, and the structure itself.",
+      "image": "/images/generated/construction-permit-detail.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
+    },
+    {
+      "label": "Single Crew",
+      "headline": "One project manager. One point of contact.",
+      "body": "No juggling six subcontractors who don't talk to each other. We coordinate every trade in-house or through long-term partners who know our standards. You make one call — we handle everything behind it.",
+      "image": "/images/generated/construction-framing-detail.jpg"
+    },
+    {
+      "label": "Scope First",
+      "headline": "A detailed written scope before a single dollar is spent.",
+      "body": "No round-number guesses. Every project starts with a site visit, a line-item cost breakdown, and a realistic timeline. If the scope changes during build, you're notified in writing before the change happens — not surprised at closeout.",
+      "image": "/images/generated/construction-interior-finish.jpg",
+      "cta": { "label": "See our services", "href": "/services" }
+    },
+    {
+      "label": "The Warranty",
+      "headline": "Two years of workmanship, no asterisks.",
+      "body": "Every project carries a two-year workmanship warranty. Active after the final walk-through, covers the work we did — not the materials, not the manufacturer. If it's our work, it's our warranty.",
+      "image": "/images/generated/construction-portfolio-hero-addition.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
+    }
+  ],
+  "portfolio": [
+    { "image": "/images/generated/construction-portfolio-01-kitchen.jpg", "caption": "Kitchen remodel · Bainbridge Island craftsman" },
+    { "image": "/images/generated/construction-portfolio-02-addition.jpg", "caption": "Room addition · Queen Anne" },
+    { "image": "/images/generated/construction-portfolio-03-bathroom.jpg", "caption": "Bathroom remodel · Ballard bungalow" },
+    { "image": "/images/generated/construction-portfolio-04-deck.jpg", "caption": "Deck build · Magnolia" },
+    { "image": "/images/generated/construction-portfolio-05-basement.jpg", "caption": "Basement finish · Phinney Ridge" },
+    { "image": "/images/generated/construction-portfolio-06-whole-home.jpg", "caption": "Whole-home renovation · Fremont" }
+  ],
+  "footerCta": {
+    "headline": "Ready to build something that'll last?",
+    "subhead": "We'll be in touch within a few hours to schedule a walkthrough.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  }
+}

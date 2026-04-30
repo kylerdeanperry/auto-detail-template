@@ -1,0 +1,73 @@
+{
+  "business": {
+    "name": "Elite Flooring",
+    "tagline": "Bainbridge & Seattle Hardwood, LVP & Tile",
+    "phone": "(206) 555-0149",
+    "email": "hello@eliteflooring.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A flooring studio serving Bainbridge Island and the north Seattle neighborhoods. Material selection guidance, proper subfloor prep, dustless refinishing, and clean installs — every floor built to look right on day one and hold up through a decade of PNW life.",
+    "founded": "2018",
+    "jobsCompleted": "560+"
+  },
+  "branding": {
+    "primaryColor": "#1A1D1B",
+    "accentColor": "#2C3D38",
+    "backgroundColor": "#F2F0EB",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
+  },
+  "services": [
+    { "name": "Hardwood Install", "price": "$8–$16/sqft installed", "duration": "2–5 days", "description": "Solid and engineered hardwood installation with proper acclimation, subfloor flatness verified, nailed or glued to spec. Transitions, thresholds, and base shoe finished to match. Five-year labor warranty." },
+    { "name": "LVP & Laminate", "price": "$6–$12/sqft installed", "duration": "1–3 days", "description": "Luxury vinyl plank and laminate floating installation — the right choice for PNW homes with moisture variability. Underlayment selected for your subfloor type, expansion gaps maintained." },
+    { "name": "Tile Install", "price": "$12–$22/sqft installed", "duration": "3–7 days", "description": "Floor and wall tile in kitchens, bathrooms, mudrooms, and entries. Uncoupling membrane for crack isolation, grout sealed, and transition to adjacent flooring done clean." },
+    { "name": "Hardwood Refinishing", "price": "$4–$7/sqft", "duration": "2–4 days", "description": "Dustless drum and edge sanding, stain color matching or change, and 3-coat water-based or oil-based polyurethane finish. Most floors returned to use within 24 hours of final coat." },
+    { "name": "Carpet", "price": "$5–$11/sqft installed", "duration": "1–2 days", "description": "Carpet in bedrooms, stairs, and bonus rooms with pad selected for density and use. Seams planned to minimize visibility, edges tacked and trimmed clean." },
+    { "name": "Subfloor Repair", "price": "$1,200–$4,500", "duration": "1–2 days", "description": "Squeaky floor remediation, OSB and plywood replacement, deflection correction, and self-leveling compound for floors that are out of flat. The work that makes the finish floor last." }
+  ],
+  "testimonials": [
+    { "name": "Diana C.", "location": "Bainbridge Island", "text": "Refinished our 1940s fir floors. Dustless system actually worked — no dust cloud in the house. The stain color they recommended is better than what I had originally planned.", "rating": 5 },
+    { "name": "Alex B.", "location": "Ballard, Seattle", "text": "LVP throughout our main floor. They fixed two soft spots in the subfloor before laying anything. The installer said those soft spots would have caused failures within a year otherwise.", "rating": 5 },
+    { "name": "Melissa W.", "location": "Magnolia, Seattle", "text": "Tile work in two bathrooms. Grout lines are perfectly consistent and the transitions into the hardwood hallway are seamless. Detail work I didn't expect at this price point.", "rating": 5 },
+    { "name": "Patrick O.", "location": "Fremont, Seattle", "text": "Full hardwood install on the second floor. They acclimated the wood for five days before laying a single plank — old house, varying humidity. It's been 18 months and not a single gap or buckle.", "rating": 5 }
+  ],
+  "process": [
+    { "step": "01", "title": "Consult", "description": "We assess subfloor condition, moisture levels, and existing transitions, then help you choose the right material for your actual use case — not just what looks good in a showroom." },
+    { "step": "02", "title": "Prep", "description": "Subfloor flatness verified and corrected. Moisture tested. Any squeaks, soft spots, or height transitions addressed before the first plank drops." },
+    { "step": "03", "title": "Install", "description": "Clean, systematic installation with proper acclimation, expansion gaps, and transitions planned from day one. Furniture moved and replaced. Job site clean every evening." },
+    { "step": "04", "title": "Finish", "description": "Walk-through with the homeowner before we pack up. Final grout sealing, caulk at vertical transitions, and a five-year labor warranty on hardwood installs." }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi — Elite Flooring's consultant. Tell me what kind of flooring you're thinking about and I'll help you pick the right material and get a quote started.",
+    "accentColor": "#2C3D38",
+    "closingGoal": "qualify_handoff",
+    "tone": "warm-professional",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "both",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "What type of flooring are you considering — hardwood, LVP, tile, carpet, or refinishing?",
+      "Which rooms or what area in square feet?",
+      "Do you know what's under the existing floor — concrete slab or wood subfloor?",
+      "What's your zip code?"
+    ],
+    "customInstructions": "Anchor on subfloor prep quality, material selection guidance for PNW moisture conditions, and the dustless refinishing system. Reference 5-year labor warranty on hardwood installs. Help users who are undecided between materials — this is a strength. Steer toward an in-home measure before quoting precise numbers.",
+    "persona": {
+      "name": "Olivia",
+      "title": "Flooring Consultant",
+      "avatarUrl": "/personas/sarah-01.jpg",
+      "proactiveBubbleText": "Hi — hardwood, LVP, tile, or refinishing? I can help you figure out the right fit.",
+      "proactiveBubbleDelayMs": 4000
+    },
+    "faqs": [
+      { "question": "What's the difference between solid hardwood and engineered?", "answer": "Solid hardwood can be refinished more times but is moisture-sensitive. Engineered hardwood handles PNW humidity variability better while still looking and feeling like real wood." },
+      { "question": "Is your refinishing actually dustless?", "answer": "Dustless drum and edge sanding — not zero dust, but 97%+ contained. Far better than traditional open-drum sanding." },
+      { "question": "How long does hardwood installation take?", "answer": "Most jobs are 2–5 days depending on area size. We add acclimation time if needed for solid hardwood — usually 3–5 days before install." },
+      { "question": "Do you fix subfloor problems before installing?", "answer": "Yes — always. Soft spots, squeaks, and out-of-flat subfloor are addressed before a single plank goes down." }
+    ]
+  },
+  "meta": {
+    "industry": "flooring",
+    "clientId": ""
+  }
+}

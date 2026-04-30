@@ -1,0 +1,90 @@
+{
+  "industrySlug": "concrete",
+  "displayName": "Elite Concrete",
+  "theme": {
+    "paper": "#F0EDE8",
+    "paperWarm": "#E5E0D8",
+    "ink": "#1C1C1A",
+    "inkSoft": "#3E3E38",
+    "accent": "#3C3C38",
+    "accentDeep": "#2C2C28",
+    "secondary": "#7A7468",
+    "stone": "#D4CFC8",
+    "muted": "#706C65"
+  },
+  "trustStrip": [
+    "Licensed · Bonded · Insured",
+    "Proper Base Prep Every Time",
+    "Seattle Drainage Specialists"
+  ],
+  "trustBand": [
+    { "label": "Licensed · Bonded · Insured", "sub": "Washington State" },
+    { "label": "Proper Base Prep", "sub": "Compacted sub-base, correct reinforcement spec" },
+    { "label": "Seattle Drainage Planning", "sub": "Every pour graded away from the structure" },
+    { "label": "Google Verified", "sub": "5.0 — verified reviews" }
+  ],
+  "hero": {
+    "image": "/images/generated/concrete-hero-driveway-craftsman.jpg",
+    "imageAlt": "A freshly poured exposed-aggregate driveway leading to a craftsman home, precise control joints visible, concrete surface perfectly textured",
+    "badge": "Bainbridge Island · North Seattle · Est. 2015",
+    "headline": "Poured Right. Stays Right.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "A concrete studio that starts with the base",
+    "body": "A concrete flatwork and decorative concrete studio serving Bainbridge Island and the north Seattle neighborhoods. Proper base preparation, reinforced pours, and Seattle drainage planning — done right the first time so it doesn't crack, heave, or drain toward your foundation."
+  },
+  "personas": [
+    { "label": "Driveways & Patios", "kicker": "For the surface that has to last", "href": "/services" },
+    { "label": "Foundations & Footings", "kicker": "For the structure built to code", "href": "/services" },
+    { "label": "Stamped & Decorative", "kicker": "For the finish that looks intentional", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": false,
+    "headline": "Get a concrete estimate in under a minute.",
+    "body": "Tell us the project type and square footage for a transparent price range before any site visit.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
+  },
+  "zPatternRows": [
+    {
+      "label": "The Base",
+      "headline": "A concrete job is won or lost before the truck arrives.",
+      "body": "Demo, excavation, and sub-base preparation are where most driveways fail — not the mix or the pour. We compact the base in lifts, set drainage grade away from the structure, and place reinforcement to spec before the first yard of concrete is ordered.",
+      "image": "/images/generated/concrete-base-prep.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
+    },
+    {
+      "label": "Seattle Drainage",
+      "headline": "Poured flat is the wrong grade for Seattle.",
+      "body": "Every surface needs to shed water away from your foundation and toward your drainage points. We set grade before we pour — not after. A patio that drains toward the house isn't a patio, it's a foundation problem.",
+      "image": "/images/generated/concrete-drainage-grade.jpg"
+    },
+    {
+      "label": "Control Joints",
+      "headline": "Concrete cracks. Control joints decide where.",
+      "body": "All concrete will eventually crack. Properly placed control joints guide cracks to the right place — the joint — instead of randomly across the surface. We place them at correct spacing for your slab dimensions, not wherever is convenient.",
+      "image": "/images/generated/concrete-control-joints.jpg",
+      "cta": { "label": "See our services", "href": "/services" }
+    },
+    {
+      "label": "The Cure",
+      "headline": "We don't walk away on pour day.",
+      "body": "Curing compound applied immediately after finishing. We monitor the slab through the cure window and return for final joint sealing. A rushed cure or ignored sealing schedule is how a beautiful pour turns into a surface problem inside two winters.",
+      "image": "/images/generated/concrete-portfolio-hero-driveway.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
+    }
+  ],
+  "portfolio": [
+    { "image": "/images/generated/concrete-portfolio-01-driveway.jpg", "caption": "Exposed-aggregate driveway · Bainbridge Island" },
+    { "image": "/images/generated/concrete-portfolio-02-patio.jpg", "caption": "Brushed patio · Queen Anne craftsman" },
+    { "image": "/images/generated/concrete-portfolio-03-stamped.jpg", "caption": "Stamped concrete walkway · Magnolia" },
+    { "image": "/images/generated/concrete-portfolio-04-retaining-wall.jpg", "caption": "Cast-in-place retaining wall · Ballard" },
+    { "image": "/images/generated/concrete-portfolio-05-foundation.jpg", "caption": "ADU foundation pour · Phinney Ridge" },
+    { "image": "/images/generated/concrete-portfolio-06-steps.jpg", "caption": "Entry steps + landing · Fremont" }
+  ],
+  "footerCta": {
+    "headline": "Ready for concrete that stays right through a Seattle winter?",
+    "subhead": "We'll be in touch within a few hours to schedule a site visit.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  }
+}

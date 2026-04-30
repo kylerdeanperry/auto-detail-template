@@ -1,0 +1,90 @@
+{
+  "industrySlug": "flooring",
+  "displayName": "Elite Flooring",
+  "theme": {
+    "paper": "#F5F0E8",
+    "paperWarm": "#EDE5D8",
+    "ink": "#1A1612",
+    "inkSoft": "#3C3228",
+    "accent": "#5C3E28",
+    "accentDeep": "#3E2A1C",
+    "secondary": "#9B6B3C",
+    "stone": "#D8CCBC",
+    "muted": "#7A6A58"
+  },
+  "trustStrip": [
+    "Licensed · Bonded · Insured",
+    "Dustless Refinishing System",
+    "5-Year Labor Warranty on Hardwood"
+  ],
+  "trustBand": [
+    { "label": "Licensed · Bonded · Insured", "sub": "Washington State" },
+    { "label": "Dustless Refinishing", "sub": "97%+ dust contained, not just reduced" },
+    { "label": "5-Year Labor Warranty", "sub": "On every hardwood install" },
+    { "label": "Google Verified", "sub": "5.0 — verified reviews" }
+  ],
+  "hero": {
+    "image": "/images/generated/flooring-hero-hardwood-interior.jpg",
+    "imageAlt": "Refinished wide-plank white oak floors in a craftsman home interior, morning light raking across the grain, perfect sheen and zero visible seams",
+    "badge": "Bainbridge Island · North Seattle · Est. 2018",
+    "headline": "The Right Floor. Installed Right.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "A flooring studio, not a box-store install crew",
+    "body": "A flooring studio serving Bainbridge Island and the north Seattle neighborhoods. Material selection guidance, proper subfloor prep, dustless refinishing, and clean installs — every floor built to look right on day one and hold up through a decade of PNW life."
+  },
+  "personas": [
+    { "label": "Hardwood & LVP Install", "kicker": "For the floor you'll live on for years", "href": "/services" },
+    { "label": "Hardwood Refinishing", "kicker": "For the floors already in your home", "href": "/services" },
+    { "label": "Tile & Subfloor Work", "kicker": "For the spaces that demand more", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": false,
+    "headline": "Get a flooring estimate in under a minute.",
+    "body": "Tell us the material and square footage for a transparent price range before any measure.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
+  },
+  "zPatternRows": [
+    {
+      "label": "Subfloor First",
+      "headline": "The floor is only as good as what's underneath it.",
+      "body": "We assess subfloor flatness, test for moisture, and fix every soft spot and squeak before the first plank goes down. Most flooring failures trace back to subfloor prep shortcuts taken at install. We don't take shortcuts on the part you can't see.",
+      "image": "/images/generated/flooring-subfloor-prep.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
+    },
+    {
+      "label": "Material Guidance",
+      "headline": "We help you pick the right material for your actual life.",
+      "body": "Not what's on trend. Not what we have in stock. PNW homes have moisture variability that rules out solid hardwood in some applications and makes engineered or LVP the smarter call. We give you the honest recommendation based on your subfloor, your humidity, and your use.",
+      "image": "/images/generated/flooring-material-selection.jpg"
+    },
+    {
+      "label": "Dustless Refinishing",
+      "headline": "Dustless means 97% contained, not zero. But that's a real difference.",
+      "body": "Traditional drum sanding fills your house with fine wood dust for days. Our dustless system captures 97%+ at the source. You can live in the house through refinishing, and there's no cloud that settles into every corner. Most floors returned to use within 24 hours of the final coat.",
+      "image": "/images/generated/flooring-dustless-refinish.jpg",
+      "cta": { "label": "See our services", "href": "/services" }
+    },
+    {
+      "label": "The Warranty",
+      "headline": "Five-year labor warranty on every hardwood install.",
+      "body": "Gaps, buckling, edge curling — if it's due to installation, it's on us for five years. We back that warranty because we prep correctly, acclimate the material, and install to spec. The warranty isn't marketing — it's what happens when you do the prep right.",
+      "image": "/images/generated/flooring-portfolio-hero-oak.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
+    }
+  ],
+  "portfolio": [
+    { "image": "/images/generated/flooring-portfolio-01-white-oak.jpg", "caption": "White oak install · Bainbridge Island craftsman" },
+    { "image": "/images/generated/flooring-portfolio-02-refinish-fir.jpg", "caption": "1940s fir refinish · Ballard" },
+    { "image": "/images/generated/flooring-portfolio-03-lvp-main-floor.jpg", "caption": "LVP install · main floor · Queen Anne" },
+    { "image": "/images/generated/flooring-portfolio-04-tile-bath.jpg", "caption": "Tile install · primary bathroom · Magnolia" },
+    { "image": "/images/generated/flooring-portfolio-05-hardwood-stairs.jpg", "caption": "Hardwood stairs + landing · Phinney Ridge" },
+    { "image": "/images/generated/flooring-portfolio-06-whole-home.jpg", "caption": "Full-home flooring · Fremont" }
+  ],
+  "footerCta": {
+    "headline": "Ready for floors that still look right in ten years?",
+    "subhead": "We'll be in touch within a few hours to schedule a measure.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  }
+}

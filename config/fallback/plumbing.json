@@ -1,0 +1,73 @@
+{
+  "business": {
+    "name": "Elite Plumbing",
+    "tagline": "Bainbridge & Seattle Licensed Master Plumbers",
+    "phone": "(206) 555-0143",
+    "email": "hello@eliteplumbing.co",
+    "serviceArea": "Bainbridge Island & North Seattle — Ballard, Magnolia, Queen Anne, Fremont, Wallingford, Phinney Ridge, Green Lake",
+    "about": "A licensed master plumbing studio serving Bainbridge Island and the north Seattle neighborhoods. Emergency response, drain clearing, water heater replacement, and remodel rough-in done properly — permit pulled, inspection passed, no gray-area work.",
+    "founded": "2016",
+    "jobsCompleted": "1,400+"
+  },
+  "branding": {
+    "primaryColor": "#0D1F2D",
+    "accentColor": "#1B4F8A",
+    "backgroundColor": "#F4F6F8",
+    "logo": "/logo.svg",
+    "font": "Fraunces"
+  },
+  "services": [
+    { "name": "Emergency Repair", "price": "$195 service call", "duration": "Same-day for active leaks", "description": "Burst pipe, major leak, sewage backup, or no hot water. Licensed plumber on-site the same day for active emergencies. Flat-rate diagnosis before a wrench turns." },
+    { "name": "Drain Cleaning", "price": "$189–$450", "duration": "1–2 hours", "description": "Camera inspection, auger clearing, and hydro-jetting for kitchen sinks, bath drains, floor drains, and main sewer lines. We find the actual cause, not just clear the symptom." },
+    { "name": "Water Heater Replacement", "price": "$1,400–$4,200", "duration": "Half day", "description": "Tank and tankless water heater replacement — gas, electric, and heat-pump hybrid. Permit pulled, expansion tank installed where code requires, old unit hauled. Same-day service when units are in stock." },
+    { "name": "Remodel Rough-In", "price": "Quote on site", "duration": "1–5 days", "description": "New construction and remodel rough-in plumbing for kitchens, bathrooms, laundry rooms, and ADUs. Permit pulled, plans reviewed, inspections managed start to finish." },
+    { "name": "Fixture Installation", "price": "$250–$850", "duration": "1–3 hours", "description": "Faucet, toilet, shower valve, garbage disposal, and supply line replacement. Supply lines shut off, fixture installed to manufacturer spec, water pressure verified before leaving." },
+    { "name": "Sewer & Drain Line", "price": "$3,500–$14,000", "duration": "1–5 days", "description": "Camera diagnostic, trenchless lining, and full line replacement for cast iron, clay tile, and Orangeburg sewer lines. Permit pulled, engineering review for large jobs, work guaranteed." }
+  ],
+  "testimonials": [
+    { "name": "Tom B.", "location": "Bainbridge Island", "text": "Burst pipe under the kitchen sink at 11pm. Called the emergency line and had a plumber at the door by 8am with the right parts. Fixed in two hours — no water damage because they moved fast.", "rating": 5 },
+    { "name": "Rachel M.", "location": "Queen Anne, Seattle", "text": "Water heater failed on a Thursday. They had a replacement unit installed the same afternoon. Pulled the permit, installed the expansion tank they said was missing. Everything done right.", "rating": 5 },
+    { "name": "Kevin L.", "location": "Ballard, Seattle", "text": "Camera inspection found tree root intrusion in the sewer line that explained years of slow drains. Trenchless liner instead of full excavation saved us thousands. No surprises on price.", "rating": 5 },
+    { "name": "Amy P.", "location": "Fremont, Seattle", "text": "Bathroom remodel rough-in. They coordinated with our general contractor, pulled the permit, and passed inspection first visit. That's not always how it goes.", "rating": 5 }
+  ],
+  "process": [
+    { "step": "01", "title": "Diagnose", "description": "On-site within 24 hours — same-day for active leaks. Licensed plumber assesses the actual issue, explains it, and quotes in writing before any work starts." },
+    { "step": "02", "title": "Permit", "description": "Every job that requires a permit gets one. We pull it, schedule the inspection, and pass it before we close the job. The permit is proof the work is safe and code-compliant." },
+    { "step": "03", "title": "Repair", "description": "Licensed master plumber on every job. Quality parts, proper connections, and a clean job site every day. No temporary fixes called permanent, no shortcuts on supply or drain line specs." },
+    { "step": "04", "title": "Guarantee", "description": "One-year workmanship warranty on all installations. Emergency line active after hours for anything that comes up. We stand behind the work." }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "greeting": "Hi — Elite Plumbing's coordinator. Emergency, repair, or a new install? I'll get you sorted fast.",
+    "accentColor": "#1B4F8A",
+    "closingGoal": "qualify_handoff",
+    "tone": "warm-direct",
+    "quoteStyle": "range_from_services",
+    "handoffMethod": "both",
+    "handoffContact": "",
+    "qualifyingQuestions": [
+      "Is this an emergency — active leak, burst pipe, or sewage backup?",
+      "If it's a repair, roughly where is the issue — kitchen, bathroom, or main line?",
+      "Is your water shut off right now?",
+      "What's your zip code?"
+    ],
+    "customInstructions": "Lead with urgency for any active leak, no-heat, or sewage backup — these are emergencies. Anchor on licensed master plumber credentials, permit management, and flat-rate diagnosis. Reference camera inspection capability for drain issues. Emergency-first tone for anything that sounds like water damage risk.",
+    "persona": {
+      "name": "Olivia",
+      "title": "Service Coordinator",
+      "avatarUrl": "/personas/sarah-01.jpg",
+      "proactiveBubbleText": "Hi — plumbing emergency, repair, or new install? I can help right now.",
+      "proactiveBubbleDelayMs": 3000
+    },
+    "faqs": [
+      { "question": "Do you handle plumbing emergencies?", "answer": "Yes — active leaks, burst pipes, and sewage backup. Same-day service, $195 service call." },
+      { "question": "Do you install water heaters?", "answer": "Yes — tank and tankless, gas and electric. Same-day service when units are in stock." },
+      { "question": "Do you do camera inspections?", "answer": "Yes — camera inspection for drain and sewer line diagnosis before recommending repair or replacement." },
+      { "question": "Do you pull permits?", "answer": "Yes — every job that requires a permit gets one, handled start to finish." }
+    ]
+  },
+  "meta": {
+    "industry": "plumbing",
+    "clientId": ""
+  }
+}

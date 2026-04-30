@@ -1,0 +1,90 @@
+{
+  "industrySlug": "electrical",
+  "displayName": "Elite Electric",
+  "theme": {
+    "paper": "#F5F3EE",
+    "paperWarm": "#EDE8DC",
+    "ink": "#1A1A16",
+    "inkSoft": "#3C3C30",
+    "accent": "#5A4400",
+    "accentDeep": "#3E2E00",
+    "secondary": "#B87E0A",
+    "stone": "#D8D4C0",
+    "muted": "#6E6B56"
+  },
+  "trustStrip": [
+    "Licensed Master Electrician · WA",
+    "Every Permit Pulled",
+    "Licensed · Bonded · Insured"
+  ],
+  "trustBand": [
+    { "label": "Licensed Master Electrician", "sub": "Washington State on every job" },
+    { "label": "Every Permit Pulled", "sub": "Application through inspection sign-off" },
+    { "label": "EV Charger Specialists", "sub": "Level 2 EVSE with load evaluation" },
+    { "label": "BBB Accredited", "sub": "A+ Rating" }
+  ],
+  "hero": {
+    "image": "/images/generated/electrical-hero-panel-detail.jpg",
+    "imageAlt": "A new 200A electrical panel installed clean in a Seattle craftsman home, circuits precisely labeled and wiring routed with precision",
+    "badge": "Bainbridge Island · North Seattle · Licensed Master Electrician · Est. 2016",
+    "headline": "Permitted. Inspected. Done Right.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "A licensed electrical studio, not a gray-area operation",
+    "body": "A licensed master electrician serving Bainbridge Island and the north Seattle neighborhoods. Every permit pulled, every circuit inspected, every job done to code — no gray-area DIY risk, no callbacks."
+  },
+  "personas": [
+    { "label": "Panel Upgrades & EV Chargers", "kicker": "For the home getting electrified", "href": "/services" },
+    { "label": "Emergency & Repair", "kicker": "For the problem that can't wait", "href": "/services" },
+    { "label": "Lighting & Circuits", "kicker": "For the home you're improving", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": false,
+    "headline": "Get an electrical estimate in under a minute.",
+    "body": "Tell us what you need and we'll return a transparent price range before any call.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
+  },
+  "zPatternRows": [
+    {
+      "label": "Emergency First",
+      "headline": "No power, burning smell, or sparking outlet? That's a right-now problem.",
+      "body": "Licensed tech on-site same day for true electrical emergencies. Flat-rate diagnostic quote before any work starts. Not because it sounds good — because a failing main breaker or arcing outlet is a fire risk that doesn't improve overnight.",
+      "image": "/images/generated/electrical-emergency-panel.jpg",
+      "cta": { "label": "See our services", "href": "/services" }
+    },
+    {
+      "label": "EV Charger Done Right",
+      "headline": "We check your panel load before we quote the charger.",
+      "body": "A Level 2 EVSE needs a dedicated 50A circuit and a panel with capacity to spare. We evaluate before we commit — not after we've already started pulling wire. If the panel needs an upgrade first, we'll tell you and scope both together.",
+      "image": "/images/generated/electrical-ev-charger-install.jpg"
+    },
+    {
+      "label": "Permit Every Time",
+      "headline": "The permit isn't paperwork. It's protection.",
+      "body": "Unpermitted electrical work voids homeowner's insurance, creates liability at resale, and — more importantly — means no inspector checked it. Every job that requires a permit gets one. We handle the application and schedule the inspection.",
+      "image": "/images/generated/electrical-wiring-clean.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
+    },
+    {
+      "label": "Clean Install",
+      "headline": "Circuits labeled. Wiring run clean. Nothing hidden that shouldn't be.",
+      "body": "No splice-junction-box shortcuts buried in the wall. Circuits labeled clearly on completion. Wiring run through conduit or properly secured. We close the job the way we'd want it if it were our own house.",
+      "image": "/images/generated/electrical-portfolio-hero-panel.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
+    }
+  ],
+  "portfolio": [
+    { "image": "/images/generated/electrical-portfolio-01-panel-upgrade.jpg", "caption": "200A panel upgrade · Bainbridge Island" },
+    { "image": "/images/generated/electrical-portfolio-02-ev-charger.jpg", "caption": "Level 2 EV charger · Queen Anne garage" },
+    { "image": "/images/generated/electrical-portfolio-03-recessed-lighting.jpg", "caption": "Recessed lighting install · Magnolia" },
+    { "image": "/images/generated/electrical-portfolio-04-rewire.jpg", "caption": "Knob-and-tube rewire · Ballard 1920s bungalow" },
+    { "image": "/images/generated/electrical-portfolio-05-outdoor-circuits.jpg", "caption": "Outdoor circuits + outlets · Phinney Ridge" },
+    { "image": "/images/generated/electrical-portfolio-06-commercial.jpg", "caption": "Light commercial wiring · Fremont" }
+  ],
+  "footerCta": {
+    "headline": "Ready for electrical work that passes inspection?",
+    "subhead": "We'll be in touch within a few hours to schedule a visit.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  }
+}

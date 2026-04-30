@@ -1,0 +1,90 @@
+{
+  "industrySlug": "landscaping",
+  "displayName": "Elite Landscaping",
+  "theme": {
+    "paper": "#F2F0EB",
+    "paperWarm": "#E5E3D8",
+    "ink": "#1A1D1B",
+    "inkSoft": "#3C423E",
+    "accent": "#2C4A2E",
+    "accentDeep": "#1E3620",
+    "secondary": "#5A7A4E",
+    "stone": "#D0D4C8",
+    "muted": "#6B7060"
+  },
+  "trustStrip": [
+    "Licensed · Bonded · Insured",
+    "ISA-Certified Arborist Consultations",
+    "Year-Round Maintenance Available"
+  ],
+  "trustBand": [
+    { "label": "Licensed · Bonded · Insured", "sub": "Washington State" },
+    { "label": "ISA-Certified Arborist", "sub": "Consultation for protected trees" },
+    { "label": "Year-Round Maintenance", "sub": "Same crew, every visit" },
+    { "label": "Google Verified", "sub": "5.0 — verified reviews" }
+  ],
+  "hero": {
+    "image": "/images/generated/landscaping-hero-garden-craftsman.jpg",
+    "imageAlt": "A professionally designed Pacific Northwest garden with layered plantings, stone walkway, and mature trees surrounding a craftsman home",
+    "badge": "Bainbridge Island · North Seattle · Est. 2017",
+    "headline": "Designed for the PNW. Built to Last.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  },
+  "intro": {
+    "label": "A design-forward studio, not a mow-and-blow crew",
+    "body": "A design-forward landscaping studio serving Bainbridge Island and the north Seattle neighborhoods. From full landscape installs and hardscape to year-round maintenance — we build it right and keep it looking that way through every PNW season."
+  },
+  "personas": [
+    { "label": "Landscape Design + Install", "kicker": "For the yard you've imagined", "href": "/services" },
+    { "label": "Hardscape & Patios", "kicker": "For the outdoor space that earns its keep", "href": "/services" },
+    { "label": "Maintenance Plans", "kicker": "For the property that stays beautiful", "href": "/services" }
+  ],
+  "configuratorTeaser": {
+    "enabled": false,
+    "headline": "Get a landscape estimate in under a minute.",
+    "body": "Tell us about your project and we'll return a budget range before any site visit.",
+    "phoneMockImage": "/images/generated/estimator-phone-mock.jpg"
+  },
+  "zPatternRows": [
+    {
+      "label": "Drainage First",
+      "headline": "We design around your drainage problem, not past it.",
+      "body": "PNW drainage is the thing every landscaping quote should address first and most skip entirely. We assess slope, soil type, and existing drainage before we recommend a single plant or paver. A properly graded install lasts. One that ignores drainage doesn't.",
+      "image": "/images/generated/landscaping-drainage-install.jpg",
+      "cta": { "label": "See the process", "href": "/services" }
+    },
+    {
+      "label": "PNW Plant Selection",
+      "headline": "Plants selected for how they actually perform here.",
+      "body": "Not what's trendy in California or what the box store had on pallets this weekend. PNW-adapted species that thrive in our soil, our rain pattern, and our shoulder seasons — selected for year-round structure and color, not just the day of install.",
+      "image": "/images/generated/landscaping-plant-install.jpg"
+    },
+    {
+      "label": "Hardscape Built Right",
+      "headline": "Patios and walls built to handle Seattle freeze-thaw.",
+      "body": "A paver patio that heaves by spring isn't a patio — it's a liability. Properly compacted sub-base, drainage aggregate behind retaining walls, and joint patterns that move with the season. The base prep is most of the job. We don't shortcut it.",
+      "image": "/images/generated/landscaping-patio-install.jpg",
+      "cta": { "label": "See our services", "href": "/services" }
+    },
+    {
+      "label": "Year-Round Maintenance",
+      "headline": "Same crew, same property, consistent results.",
+      "body": "Maintenance plans with the same crew every visit — not whoever answered the phone this week. They know your property, they know your preferences, and they don't need instructions each time. Weekly, bi-weekly, and seasonal options.",
+      "image": "/images/generated/landscaping-maintenance-crew.jpg",
+      "cta": { "label": "View the portfolio", "href": "/portfolio" }
+    }
+  ],
+  "portfolio": [
+    { "image": "/images/generated/landscaping-portfolio-01-garden-install.jpg", "caption": "Full landscape install · Bainbridge Island" },
+    { "image": "/images/generated/landscaping-portfolio-02-patio-stone.jpg", "caption": "Natural stone patio · Queen Anne" },
+    { "image": "/images/generated/landscaping-portfolio-03-retaining-wall.jpg", "caption": "Retaining wall + steps · Magnolia" },
+    { "image": "/images/generated/landscaping-portfolio-04-irrigation.jpg", "caption": "Irrigation install · Ballard craftsman" },
+    { "image": "/images/generated/landscaping-portfolio-05-front-garden.jpg", "caption": "Front garden redesign · Phinney Ridge" },
+    { "image": "/images/generated/landscaping-portfolio-06-seasonal.jpg", "caption": "Seasonal cleanup + mulch · Fremont" }
+  ],
+  "footerCta": {
+    "headline": "Ready for a landscape that looks intentional all year?",
+    "subhead": "We'll be in touch within a few hours to schedule a site visit.",
+    "cta": { "label": "Get a Quote", "href": "/contact" }
+  }
+}
